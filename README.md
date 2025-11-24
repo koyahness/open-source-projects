@@ -43,6 +43,22 @@ Write tests: Bitcoin Core for example is covered by many tests, but patches that
 - Steps to reproduce the issue
 - Actual vs. expected behavior
 
+#### 🔭 Workflow for Pull Requests
+
+Fork off the develop branch and make your changes there.
+
+Your commit messages should detail why you made your change in addition to what you did (unless it is a tiny change).
+
+Additionally, if you are writing a new feature, please ensure you add appropriate test cases under test/
+
+Make sure you respect the coding style for this project. Also, even though we do CI testing.
+
+Please test your code and ensure that it builds locally before submitting a pull request.
+
+Do a PR review checklist. https://github.com/argotorg/solidity/blob/develop/ReviewChecklist.md
+
+
+
 # ⚡ Bitcoin blockchain
 
 ### BTC docs and websites
