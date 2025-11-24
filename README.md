@@ -130,7 +130,17 @@ https://github.com/orgs/ethereum/projects/17
 
 ### Ethereum Chain Code review
 
+If you're looking for the Ethereum blockchain itself, there is no single repo.
+Instead, Ethereum has multiple implementations of the protocol written in different programming languages for security and diversity.
+
+https://github.com/ethereum
+
+https://github.com/ethereum/go-ethereum
+
+https://github.com/ethereum/consensus-specs
+
 ### Base docs and websites
+https://github.com/ethereum/ethereum-org-website
 
 ### Base Chain Code review
 
