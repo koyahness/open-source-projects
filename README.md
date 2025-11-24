@@ -128,10 +128,19 @@ https://github.com/orgs/ethereum/projects/17
 
 ### Ethereum docs and websites
 
+https://ethereum.org/contributing/
+
+https://ethereum.org/developers/docs/nodes-and-clients/#execution-clients
+
 ### Ethereum Chain Code review
 
 If you're looking for the Ethereum blockchain itself, there is no single repo.
+
 Instead, Ethereum has multiple implementations of the protocol written in different programming languages for security and diversity.
+
+This makes the network stronger and more diverse. The ideal goal is to achieve diversity without any client dominating to reduce any single points of failure.
+
+The clients can be seen here: https://ethereum.org/developers/docs/nodes-and-clients/#execution-clients
 
 https://github.com/ethereum
 
