@@ -113,7 +113,13 @@ https://github.com/DigiByte-Core/digibyte
 
 ### Solidity docs and websites
 
+Solidity is a curly-bracket language designed to target the Ethereum Virtual Machine (EVM).
+It is influenced by C++, Python, and JavaScript.
+
 https://github.com/argotorg/solidity/blob/develop/docs/index.rst
+
+https://github.com/argotorg/solidity/tree/develop/docs
+
 
 
 ### Ethereum docs and websites
