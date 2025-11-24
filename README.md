@@ -120,6 +120,7 @@ https://github.com/argotorg/solidity/blob/develop/docs/index.rst
 
 https://github.com/argotorg/solidity/tree/develop/docs
 
+https://docs.soliditylang.org/en/v0.8.30/contributing.html
 
 
 ### Ethereum docs and websites
