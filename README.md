@@ -113,6 +113,9 @@ https://github.com/DigiByte-Core/digibyte
 
 ### Solidity docs and websites
 
+https://github.com/argotorg/solidity/blob/develop/docs/index.rst
+
+
 ### Ethereum docs and websites
 
 ### Ethereum Chain Code review
