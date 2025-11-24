@@ -26,7 +26,7 @@ Here are some ideas to get you started:
 
 ## Looking for free software any developer can contribute to the project?
 
-### BTC Docs
+### BTC docs and websites
 <!--
 ["**Bitcoin contributing**"](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md)
 -->
@@ -39,6 +39,8 @@ https://github.com/bitcoin/bitcoin/blob/master/README.md
 https://github.com/bitcoin/bitcoin/tree/master/doc
 
 https://github.com/bitcoin-dot-org/developer.bitcoin.org
+
+https://github.com/bitcoin-core/bitcoincore.org
 
 ### BTC Code review
 https://github.com/bitcoin/bitcoin
