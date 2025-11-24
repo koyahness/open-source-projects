@@ -84,5 +84,7 @@ https://github.com/DigiAsset-Core/DigiAsset_Core/tree/master/web
 
 https://github.com/DigiByte-Core/digibyte
 
+https://github.com/DigiByte-Core/digibyte/tree/feature/digidollar-v1
+
 
 
