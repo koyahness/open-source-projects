@@ -29,10 +29,8 @@ https://github.com/bitcoin/bitcoin/blob/master/README.md
 https://github.com/bitcoin/bitcoin/tree/master/doc
 
 https://github.com/bitcoin-dot-org/developer.bitcoin.org
-```
 
-# Code review
-
+### BTC Code review
 https://github.com/bitcoin/bitcoin
 
 Starter Projects
@@ -42,7 +40,8 @@ Fix existing issues: the issue tracker is the best place to find a useful way to
 
 Write tests: Bitcoin Core is covered by many tests, but patches that improve test coverage are always welcome and are a great way to build familiarity with the codebase. See the documentation about automated testing.
 
-#More free software projects
+### More free software projects
+
 https://github.com/petertodd/python-bitcoinlib
 
 https://github.com/luke-jr/python-blkmaker
