@@ -1,4 +1,4 @@
-## Hi there, welcome to Koyah world of web3 in the EVM, SVM, cosmos and BTC ecosystems.⌨️
+# Hi there, welcome to Koyah world of web3 in the EVM, SVM, cosmos and BTC ecosystems.⌨️
 
 <!--
 **koyaness/koyaness** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -16,7 +16,7 @@ Here are some ideas to get you started:
 -->
 ## Looking for free software any developer can contribute to the project?
 
-# BTC Docs
+### BTC Docs
 <!--
 ["**Bitcoin contributing**"](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md)
 -->
@@ -25,6 +25,8 @@ https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md
 https://github.com/bitcoin/bitcoin/blob/master/doc/developer-notes.md
 
 https://github.com/bitcoin-dot-org/developer.bitcoin.org
+
+https://github.com/bitcoin/bitcoin/tree/master/doc
 ```
 
 # Code review
