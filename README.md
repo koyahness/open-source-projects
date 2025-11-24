@@ -24,9 +24,11 @@ https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md
 
 https://github.com/bitcoin/bitcoin/blob/master/doc/developer-notes.md
 
-https://github.com/bitcoin-dot-org/developer.bitcoin.org
+https://github.com/bitcoin/bitcoin/blob/master/README.md
 
 https://github.com/bitcoin/bitcoin/tree/master/doc
+
+https://github.com/bitcoin-dot-org/developer.bitcoin.org
 ```
 
 # Code review
