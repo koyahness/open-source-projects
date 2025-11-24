@@ -19,11 +19,13 @@ Here are some ideas to get you started:
 #### There are several aspects you can help on:
 
 - 👯 Improving documentation (see README.md and doc folder)
-- 👯 Translations
+- 👯 Translations, the documentation into more languages
 - 👯 Testing code, testing releases
 - 👯 Participate on the mailing lists
 - 👯 Improving UIs
-- 👯 Coding (fix open issues or implement new features)
+- 👯 Coding (fix open issues or implement new features; especially those tagged as “good first issue” which are meant as introductory issues for external contributors)
+- 👯 Reporting issues
+- 👯 Responding to questions from other users
 
 #### Starter Projects
 
