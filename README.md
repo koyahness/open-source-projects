@@ -52,7 +52,8 @@ https://github.com/bitcoin-dot-org/developer.bitcoin.org
 
 https://github.com/bitcoin-core/bitcoincore.org
 
-### BTC Code review
+### BTC Chain Code review
+
 https://github.com/bitcoin/bitcoin
 
 ### More free software projects related to Bitcoin
@@ -68,5 +69,22 @@ https://github.com/spesmilo/electrum
 https://github.com/btcsuite/btcwallet
 
 # Digibyte blockchain
+
+### DGB docs and websites
+
+https://github.com/DigiByte-Core/digibyte/wiki/Community#community-driven-social-media
+
+https://github.com/DigiByte-Core
+
+https://github.com/orgs/DigiByte-Core/discussions
+
+https://github.com/DigiAsset-Core/DigiAsset_Core/tree/master/web
+
+### DGB Chain Code review
+
+https://github.com/DigiByte-Core/digibyte
+
+
+
 
 
