@@ -55,7 +55,7 @@ Make sure you respect the coding style for this project. Also, even though we do
 
 Please test your code and ensure that it builds locally before submitting a pull request.
 
-Do a PR review checklist. https://github.com/argotorg/solidity/blob/develop/ReviewChecklist.md
+Do a PR review checklist, example: https://github.com/argotorg/solidity/blob/develop/ReviewChecklist.md
 
 
 
