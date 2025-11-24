@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-## Looking for free software any developer can contribute to the project?
+## Looking for free software that any developer can contribute to the project?
 
 #### There are several aspects you can help on:
 
