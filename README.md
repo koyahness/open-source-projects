@@ -26,6 +26,8 @@ Here are some ideas to get you started:
 
 ## Looking for free software any developer can contribute to the project?
 
+# Bitcoin
+
 ### BTC docs and websites
 <!--
 ["**Bitcoin contributing**"](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md)
