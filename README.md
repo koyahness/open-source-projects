@@ -14,6 +14,16 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+there are several aspects you can help on:
+
+- 👯 Improving our documentation (see README.md and doc folder)
+- 👯 Translations
+- 👯 Testing code, testing releases
+- 👯 Participate on the mailing lists
+- 👯 Improving our UIs
+- 👯 Coding (fix open issues or implement new features)
+
+
 ## Looking for free software any developer can contribute to the project?
 
 ### BTC Docs
