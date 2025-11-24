@@ -122,6 +122,9 @@ https://github.com/argotorg/solidity/tree/develop/docs
 
 https://docs.soliditylang.org/en/v0.8.30/contributing.html
 
+https://github.com/argotorg/solidity
+
+https://github.com/orgs/ethereum/projects/17
 
 ### Ethereum docs and websites
 
