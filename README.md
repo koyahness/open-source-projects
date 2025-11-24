@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-there are several aspects you can help on:
+#### There are several aspects you can help on:
 
 - 👯 Improving our documentation (see README.md and doc folder)
 - 👯 Translations
