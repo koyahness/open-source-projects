@@ -27,11 +27,11 @@ Here are some ideas to get you started:
 
 #### Starter Projects
 
-Do you want to begin coding for Bitcoin Core etc but don’t have a specific improvement in mind? Here are a few ideas:
+Do you want to begin coding for Bitcoin Core and others etc but don’t have a specific improvement in mind? Here are a few ideas:
 
-Fix existing issues: the issue tracker is the best place to find a useful way to contribute to Bitcoin Core. Before starting to write any patches for issues you find, you may want to comment on the issue to make sure nobody else is already working on it.
+Fix existing issues: the issue tracker is the best place to find a useful way to contribute to projects. Before starting to write any patches for issues you find, you may want to comment on the issue to make sure nobody else is already working on it.
 
-Write tests: Bitcoin Core is covered by many tests, but patches that improve test coverage are always welcome and are a great way to build familiarity with the codebase. See the documentation about automated testing.
+Write tests: Bitcoin Core for example is covered by many tests, but patches that improve test coverage are always welcome and are a great way to build familiarity with the codebase. See the documentation about automated testing etc.
 
 
 # Bitcoin blockchain
