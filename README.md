@@ -109,7 +109,7 @@ https://github.com/DigiAsset-Core/DigiAsset_Core/tree/master/web
 
 https://github.com/DigiByte-Core/digibyte
 
-# ⚡ Ethereum and EVM blockchains
+# ⚡ Ethereum and EVM blockchains (L1s and L2s)
 
 ### Solidity docs and websites
 
