@@ -14,6 +14,8 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+## Looking for free software any developer can contribute to the project?
+
 #### There are several aspects you can help on:
 
 - 👯 Improving documentation (see README.md and doc folder)
@@ -23,10 +25,16 @@ Here are some ideas to get you started:
 - 👯 Improving UIs
 - 👯 Coding (fix open issues or implement new features)
 
+#### Starter Projects
 
-## Looking for free software any developer can contribute to the project?
+Do you want to begin coding for Bitcoin Core etc but don’t have a specific improvement in mind? Here are a few ideas:
 
-# Bitcoin
+Fix existing issues: the issue tracker is the best place to find a useful way to contribute to Bitcoin Core. Before starting to write any patches for issues you find, you may want to comment on the issue to make sure nobody else is already working on it.
+
+Write tests: Bitcoin Core is covered by many tests, but patches that improve test coverage are always welcome and are a great way to build familiarity with the codebase. See the documentation about automated testing.
+
+
+# Bitcoin blockchain
 
 ### BTC docs and websites
 <!--
@@ -47,16 +55,7 @@ https://github.com/bitcoin-core/bitcoincore.org
 ### BTC Code review
 https://github.com/bitcoin/bitcoin
 
-
-#### Starter Projects
-
-Do you want to begin coding for Bitcoin Core but don’t have a specific improvement in mind? Here are a few ideas:
-
-Fix existing issues: the issue tracker is the best place to find a useful way to contribute to Bitcoin Core. Before starting to write any patches for issues you find, you may want to comment on the issue to make sure nobody else is already working on it.
-
-Write tests: Bitcoin Core is covered by many tests, but patches that improve test coverage are always welcome and are a great way to build familiarity with the codebase. See the documentation about automated testing.
-
-### More free software projects
+### More free software projects related to Bitcoin
 
 https://github.com/petertodd/python-bitcoinlib
 
@@ -67,3 +66,7 @@ https://github.com/luke-jr/eloipool
 https://github.com/spesmilo/electrum
 
 https://github.com/btcsuite/btcwallet
+
+# Digibyte blockchain
+
+
