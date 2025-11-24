@@ -35,6 +35,13 @@ Fix existing issues: the issue tracker is the best place to find a useful way to
 
 Write tests: Bitcoin Core for example is covered by many tests, but patches that improve test coverage are always welcome and are a great way to build familiarity with the codebase. See the documentation about automated testing etc.
 
+#### How to Report Issues
+
+- Software version
+- Source code (if applicable)
+- Operating system
+- Steps to reproduce the issue
+- Actual vs. expected behavior
 
 # Bitcoin blockchain
 
