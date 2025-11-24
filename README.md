@@ -84,17 +84,5 @@ https://github.com/DigiAsset-Core/DigiAsset_Core/tree/master/web
 
 https://github.com/DigiByte-Core/digibyte
 
-# Ethereum and EVM blockchains
-
-### Solidity docs and websites
-
-### Ethereum docs and websites
-
-
-### Base docs and websites
-
-
-### Monad docs and websites
-
 
 
