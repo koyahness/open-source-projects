@@ -48,7 +48,8 @@ https://github.com/bitcoin-core/bitcoincore.org
 https://github.com/bitcoin/bitcoin
 
 
-Starter Projects
+#### Starter Projects
+
 Do you want to begin coding for Bitcoin Core but don’t have a specific improvement in mind? Here are a few ideas:
 
 Fix existing issues: the issue tracker is the best place to find a useful way to contribute to Bitcoin Core. Before starting to write any patches for issues you find, you may want to comment on the issue to make sure nobody else is already working on it.
