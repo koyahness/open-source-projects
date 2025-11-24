@@ -16,11 +16,11 @@ Here are some ideas to get you started:
 -->
 #### There are several aspects you can help on:
 
-- 👯 Improving our documentation (see README.md and doc folder)
+- 👯 Improving documentation (see README.md and doc folder)
 - 👯 Translations
 - 👯 Testing code, testing releases
 - 👯 Participate on the mailing lists
-- 👯 Improving our UIs
+- 👯 Improving UIs
 - 👯 Coding (fix open issues or implement new features)
 
 
