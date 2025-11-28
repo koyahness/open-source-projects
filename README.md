@@ -231,6 +231,8 @@ https://mondo.celo.org/governance
 
 # ⚡⚡ Dev infra, communities, DAOs, hackathons, tutorials etc
 
+https://intel.arkm.com/settings
+
 https://talent.app/~/settings
 
 https://buidlguidl.com/
