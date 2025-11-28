@@ -61,7 +61,7 @@ Do a PR review checklist, example: https://github.com/argotorg/solidity/blob/dev
 
 # ⚡ Bitcoin blockchain
 
-### BTC docs and websites
+### 💬 BTC docs and websites
 <!--
 ["**Bitcoin contributing**"](https://github.com/bitcoin/bitcoin/blob/master/CONTRIBUTING.md)
 -->
@@ -95,7 +95,7 @@ https://github.com/btcsuite/btcwallet
 
 # ⚡ Digibyte blockchain
 
-### DGB docs and websites
+### 💬 DGB docs and websites
 
 https://github.com/DigiByte-Core/digibyte/wiki/Community#community-driven-social-media
 
@@ -111,7 +111,7 @@ https://github.com/DigiByte-Core/digibyte
 
 # ⚡ Ethereum and EVM blockchains (L1s and L2s)
 
-### Solidity docs and websites
+### 💬 Solidity docs and websites
 
 Solidity is a curly-bracket language designed to target the Ethereum Virtual Machine (EVM).
 It is influenced by C++, Python, and JavaScript.
@@ -126,7 +126,7 @@ https://github.com/argotorg/solidity
 
 https://github.com/orgs/ethereum/projects/17
 
-### Ethereum docs and websites
+### 💬 Ethereum docs and websites
 
 https://ethereum.org/contributing/
 
@@ -148,24 +148,24 @@ https://github.com/ethereum/go-ethereum
 
 https://github.com/ethereum/consensus-specs
 
-### Base docs and websites
+### 💬 Base docs and websites
 https://github.com/ethereum/ethereum-org-website
 
 ### Base chain code review
 
-### Optimism docs and websites
+### 💬 Optimism docs and websites
 
 ### Optimism chain code review
 
-### Monad docs and websites
+### 💬 Monad docs and websites
 
 ### Monad chain code review
 
-### Celo docs and websites
+### 💬 Celo docs and websites
 
 ### Celo chain code review
 
-### Scroll docs and websites
+### 💬 Scroll docs and websites
 
 ### Scroll chain code review
 
