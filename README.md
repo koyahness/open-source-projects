@@ -193,6 +193,8 @@ https://pass.celopg.eco/badges?safe=celo:0x0F3f6e3f5d34942734d16fCE2Be9995e5D59b
 
 https://www.tutorialspoint.com/solidity/solidity_overview.htm
 
+https://thirdweb.com/
+
 https://cryptozombies.io/en/lesson/1/chapter/14
 
 https://docs.reown.com/appkit/next/core/installation
