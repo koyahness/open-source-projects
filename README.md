@@ -183,6 +183,8 @@ https://www.optimism.io/op-stack
 
 https://www.superchain.eco/
 
+https://docs.superchain.eco/accounts/badges-overview#current-super-account-badges
+
 ### 🔭 Optimism chain code review
 
 https://github.com/ethereum-optimism
