@@ -159,6 +159,8 @@ https://github.com/ethereum/ethereum-org-website
 
 ### 🔭 Base chain code review
 
+https://github.com/base/chains
+
 ## 🌱 Optimism
 
 ### 💬 Optimism docs and websites
