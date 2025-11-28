@@ -187,4 +187,10 @@ https://console.optimism.io/getting-started
 
 # ⚡ Cosmos blockchain SDK
 
-# ⚡⚡ Dev Infra
+# ⚡⚡ Dev Infra, Hackathons etc
+
+https://docs.reown.com/appkit/next/core/installation
+
+https://app.divvi.xyz/builders/onboarding
+
+
