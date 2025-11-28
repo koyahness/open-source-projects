@@ -169,6 +169,16 @@ https://thirdweb.com/optimism
 
 https://github.com/ethereum-optimism/developers/discussions
 
+https://community.optimism.io/citizens-house/citizen-house-overview
+
+https://docs.optimism.io/
+
+https://docs.optimism.io/app-developers/guides/building-apps
+
+https://localchain.optimism.io/
+
+https://www.optimism.io/op-stack
+
 ### 🔭 Optimism chain code review
 
 https://github.com/ethereum-optimism
