@@ -233,11 +233,15 @@ https://mondo.celo.org/governance
 
 https://intel.arkm.com/settings
 
-https://www.oklink.com/base
+https://www.oklink.com/
+
+https://thesuperscan.io/
 
 https://talent.app/~/settings
 
 https://buidlguidl.com/
+
+https://dashboard.tenderly.co/
 
 https://mint.cryptonomads.org/mint
 
