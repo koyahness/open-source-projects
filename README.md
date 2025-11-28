@@ -111,6 +111,8 @@ https://github.com/DigiByte-Core/digibyte
 
 # ⚡ Ethereum and EVM blockchains (L1s and L2s)
 
+## 🌱 Solidity
+
 ### 💬 Solidity docs and websites
 
 Solidity is a curly-bracket language designed to target the Ethereum Virtual Machine (EVM).
@@ -148,22 +150,32 @@ https://github.com/ethereum/go-ethereum
 
 https://github.com/ethereum/consensus-specs
 
+## 🌱 Base
+
 ### 💬 Base docs and websites
 https://github.com/ethereum/ethereum-org-website
 
 ### 🔭 Base chain code review
 
+## 🌱 Optimism
+
 ### 💬 Optimism docs and websites
 
 ### 🔭 Optimism chain code review
+
+## 🌱 Monad
 
 ### 💬 Monad docs and websites
 
 ### 🔭 Monad chain code review
 
+## 🌱 Celo
+
 ### 💬 Celo docs and websites
 
 ### 🔭 Celo chain code review
+
+## 🌱 Scroll
 
 ### 💬 Scroll docs and websites
 
