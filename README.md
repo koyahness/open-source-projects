@@ -209,6 +209,12 @@ https://pass.celopg.eco/badges/
 
 ### 🔭 Scroll chain code review
 
+## 🌱 Arbitrum
+
+### 💬  Arbitrum docs and websites
+
+### 🔭  Arbitrum chain code review
+
 # ⚡ Solana blockchain
 
 # ⚡ Cosmos blockchain SDK
