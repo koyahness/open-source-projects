@@ -77,7 +77,7 @@ https://github.com/bitcoin-dot-org/developer.bitcoin.org
 
 https://github.com/bitcoin-core/bitcoincore.org
 
-### BTC chain code review
+### 🔭 BTC chain code review
 
 https://github.com/bitcoin/bitcoin
 
@@ -105,7 +105,7 @@ https://github.com/orgs/DigiByte-Core/discussions
 
 https://github.com/DigiAsset-Core/DigiAsset_Core/tree/master/web
 
-### DGB chain code review
+### 🔭 DGB chain code review
 
 https://github.com/DigiByte-Core/digibyte
 
@@ -132,7 +132,7 @@ https://ethereum.org/contributing/
 
 https://ethereum.org/developers/docs/nodes-and-clients/#execution-clients
 
-### Ethereum chain code review
+### 🔭 Ethereum chain code review
 
 If you're looking for the Ethereum blockchain itself, there is no single repo.
 
@@ -151,23 +151,23 @@ https://github.com/ethereum/consensus-specs
 ### 💬 Base docs and websites
 https://github.com/ethereum/ethereum-org-website
 
-### Base chain code review
+### 🔭 Base chain code review
 
 ### 💬 Optimism docs and websites
 
-### Optimism chain code review
+### 🔭 Optimism chain code review
 
 ### 💬 Monad docs and websites
 
-### Monad chain code review
+### 🔭 Monad chain code review
 
 ### 💬 Celo docs and websites
 
-### Celo chain code review
+### 🔭 Celo chain code review
 
 ### 💬 Scroll docs and websites
 
-### Scroll chain code review
+### 🔭 Scroll chain code review
 
 # ⚡ Solana blockchain
 
