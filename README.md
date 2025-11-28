@@ -167,7 +167,7 @@ https://account.superchain.eco/
 
 https://thirdweb.com/optimism
 
-
+https://github.com/ethereum-optimism/developers/discussions
 
 ### 🔭 Optimism chain code review
 
