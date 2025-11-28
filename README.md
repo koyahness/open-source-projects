@@ -189,7 +189,11 @@ https://pass.celopg.eco/badges?safe=celo:0x0F3f6e3f5d34942734d16fCE2Be9995e5D59b
 
 # ⚡ Cosmos blockchain SDK
 
-# ⚡⚡ Dev infra, communities, hackathons etc
+# ⚡⚡ Dev infra, communities, DAOs, hackathons, tutorials etc
+
+https://www.tutorialspoint.com/solidity/solidity_overview.htm
+
+https://cryptozombies.io/en/lesson/1/chapter/14
 
 https://docs.reown.com/appkit/next/core/installation
 
@@ -200,3 +204,5 @@ https://devfolio.co/hackathons
 https://www.karmahq.xyz/
 
 https://ethdenver2026.devfolio.co/overview
+
+https://snapshot.box/#/
