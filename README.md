@@ -197,4 +197,4 @@ https://devfolio.co/hackathons
 
 https://www.karmahq.xyz/
 
-
+https://ethdenver2026.devfolio.co/overview
