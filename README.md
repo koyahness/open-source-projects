@@ -160,6 +160,7 @@ https://github.com/ethereum/ethereum-org-website
 ## 🌱 Optimism
 
 ### 💬 Optimism docs and websites
+https://console.optimism.io/getting-started
 
 ### 🔭 Optimism chain code review
 
