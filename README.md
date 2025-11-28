@@ -163,7 +163,17 @@ https://github.com/ethereum/ethereum-org-website
 
 https://console.optimism.io/getting-started
 
+https://account.superchain.eco/
+
+https://thirdweb.com/optimism
+
+
+
 ### 🔭 Optimism chain code review
+
+https://github.com/ethereum-optimism
+
+https://github.com/ethereum-optimism/superchain-ops
 
 ## 🌱 Monad
 
