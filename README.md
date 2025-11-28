@@ -161,6 +161,8 @@ https://github.com/ethereum/ethereum-org-website
 
 ### 💬 Optimism docs and websites
 
+https://vote.optimism.io/delegates
+
 https://console.optimism.io/getting-started
 
 https://account.superchain.eco/
