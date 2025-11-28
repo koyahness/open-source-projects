@@ -193,4 +193,8 @@ https://docs.reown.com/appkit/next/core/installation
 
 https://app.divvi.xyz/builders/onboarding
 
+https://devfolio.co/hackathons
+
+https://www.karmahq.xyz/
+
 
