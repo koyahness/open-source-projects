@@ -154,6 +154,8 @@ https://github.com/ethereum/consensus-specs
 
 ### 💬 Base docs and websites
 https://github.com/ethereum/ethereum-org-website
+- **Builder Resource Kit:** https://www.base.org/build
+- **Documentation:** https://docs.base.org/
 
 ### 🔭 Base chain code review
 
@@ -197,6 +199,10 @@ https://github.com/ethereum-optimism/superchain-ops
 
 https://pass.celopg.eco/badges/
 
+https://pass.celopg.eco/welcome
+
+https://mondo.celo.org/governance
+
 ### 🔭 Celo chain code review
 
 ## 🌱 Monad
@@ -223,6 +229,12 @@ https://pass.celopg.eco/badges/
 
 # ⚡⚡ Dev infra, communities, DAOs, hackathons, tutorials etc
 
+https://talent.app/~/settings
+
+https://buidlguidl.com/
+
+https://mint.cryptonomads.org/mint
+
 https://www.tutorialspoint.com/solidity/solidity_overview.htm
 
 https://thirdweb.com/
@@ -246,3 +258,5 @@ https://snapshot.box/#/
 https://www.alchemy.com/
 
 https://docs.attest.org/docs/welcome
+
+https://purple.construction/proposals/
