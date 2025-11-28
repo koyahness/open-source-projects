@@ -175,6 +175,8 @@ https://console.optimism.io/getting-started
 
 ### 💬 Celo docs and websites
 
+https://pass.celopg.eco/badges?safe=celo:0x0F3f6e3f5d34942734d16fCE2Be9995e5D59bC2b
+
 ### 🔭 Celo chain code review
 
 ## 🌱 Scroll
