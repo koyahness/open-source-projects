@@ -195,6 +195,8 @@ https://www.tutorialspoint.com/solidity/solidity_overview.htm
 
 https://thirdweb.com/
 
+https://thirdweb.com/optimism
+
 https://cryptozombies.io/en/lesson/1/chapter/14
 
 https://docs.reown.com/appkit/next/core/installation
