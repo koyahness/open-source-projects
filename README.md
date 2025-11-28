@@ -189,12 +189,6 @@ https://github.com/ethereum-optimism
 
 https://github.com/ethereum-optimism/superchain-ops
 
-## 🌱 Monad
-
-### 💬 Monad docs and websites
-
-### 🔭 Monad chain code review
-
 ## 🌱 Celo
 
 ### 💬 Celo docs and websites
@@ -202,6 +196,12 @@ https://github.com/ethereum-optimism/superchain-ops
 https://pass.celopg.eco/badges/
 
 ### 🔭 Celo chain code review
+
+## 🌱 Monad
+
+### 💬 Monad docs and websites
+
+### 🔭 Monad chain code review
 
 ## 🌱 Scroll
 
