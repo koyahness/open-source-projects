@@ -168,3 +168,7 @@ https://github.com/ethereum/ethereum-org-website
 ### Scroll docs and websites
 
 ### Scroll chain code review
+
+# ⚡ Solan blockchain
+
+# ⚡ Cosmos blockchain SDK
