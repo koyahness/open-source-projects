@@ -179,6 +179,8 @@ https://localchain.optimism.io/
 
 https://www.optimism.io/op-stack
 
+https://www.superchain.eco/
+
 ### 🔭 Optimism chain code review
 
 https://github.com/ethereum-optimism
@@ -195,7 +197,7 @@ https://github.com/ethereum-optimism/superchain-ops
 
 ### 💬 Celo docs and websites
 
-https://pass.celopg.eco/badges?safe=celo:0x0F3f6e3f5d34942734d16fCE2Be9995e5D59bC2b
+https://pass.celopg.eco/badges/
 
 ### 🔭 Celo chain code review
 
