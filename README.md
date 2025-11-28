@@ -243,6 +243,8 @@ https://www.oklink.com/
 
 https://thesuperscan.io/
 
+https://app.arkada.gg/en
+
 https://tenderly.co/
 
 https://talent.app/~/settings
