@@ -153,10 +153,18 @@ https://github.com/ethereum/ethereum-org-website
 
 ### Base Chain Code review
 
+### Optimism docs and websites
+
+### Optimism Chain Code review
+
 ### Monad docs and websites
 
 ### Monad Chain Code review
 
-### Celo Code review
+### Celo docs and websites
 
-### Scroll Code review
+### Celo Chain Code review
+
+### Scroll docs and websites
+
+### Scroll Chain Code review
