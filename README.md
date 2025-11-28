@@ -207,6 +207,12 @@ https://mondo.celo.org/governance
 
 ### 🔭 Celo chain code review
 
+## 🌱 Soneium
+
+### 💬 Soneium docs and websites
+
+### 🔭 Soneium chain code review
+
 ## 🌱 Monad
 
 ### 💬 Monad docs and websites
