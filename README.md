@@ -308,6 +308,8 @@ https://purple.construction/proposals/
 
 https://github.com/talentprotocol/.github
 
+https://github.com/talentprotocol/buidlerfi
+
 https://github.com/0xleal/build
 
 https://github.com/filmacedo/EAS-builder-registry
@@ -321,3 +323,46 @@ https://github.com/RubenSousaDinis/eth-global-creator-rewards
 https://github.com/talentprotocol/talent-app-starter-kit-v0
 
 https://github.com/talentprotocol/base200
+
+https://github.com/pcbo/oracles-fit
+
+https://github.com/pcbo/pcbo-site
+
+https://github.com/pcbo/pcbo-xyz
+
+https://github.com/HackerSchool/free2p
+
+https://github.com/FutureWorksTechConference/FAQ.md
+
+https://github.com/pcbo/Less
+
+https://github.com/celo-org/celo-mondo
+
+https://github.com/0xleal/build
+
+https://github.com/pcbo/celo-mondo
+
+https://github.com/pcbo/web
+
+https://github.com/talentprotocol/lambda-functions
+
+https://github.com/talentprotocol/ecosystem
+
+https://github.com/talentprotocol/contracts
+
+https://github.com/talentprotocol/subgraph
+
+https://github.com/talentprotocol/talent-vault-the-graph
+
+https://github.com/builders-garden/buildbot
+
+https://github.com/0xleal/despedi-me
+
+https://github.com/ssdjet/crypto-ecosystems
+
+https://github.com/DefiLlama/DefiLlama-Adapters
+
+https://github.com/0xleal/advent-of-code-2021
+
+
+
