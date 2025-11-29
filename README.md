@@ -157,7 +157,9 @@ https://github.com/ethereum/consensus-specs
 ### 💬 Base docs and websites
 https://github.com/ethereum/ethereum-org-website
 - **Builder Resource Kit:** https://www.base.org/build
-- **Documentation:** https://docs.base.org/
+- **Documentation:**
+- https://docs.base.org/
+- https://docs.base.org/learn/welcome
 
 ### 🔭 Base chain code review
 
@@ -210,7 +212,6 @@ https://mondo.celo.org/governance
 ### 🔭 Celo chain code review
 
 https://github.com/celo-org/celo-monorepo
-
 
 https://github.com/celo-org/op-geth
 
