@@ -165,6 +165,8 @@ https://github.com/ethereum/ethereum-org-website
 
 https://github.com/base/chains
 
+https://www.base.dev/apps
+
 ## 🌱 Optimism
 
 ### 💬 Optimism docs and websites
