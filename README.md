@@ -109,6 +109,8 @@ https://github.com/DigiAsset-Core/DigiAsset_Core/tree/master/web
 
 https://github.com/DigiByte-Core/digibyte
 
+https://github.com/DigiByte-Core/digibyte/tree/feature/digidollar-v1
+
 # ⚡ Ethereum and EVM blockchains (L1s and L2s)
 
 ## 🌱 Solidity
@@ -459,10 +461,6 @@ https://github.com/JulioMCruz/PermissionlessII-Hackathon-Benchmarker
 https://github.com/Nomadic-Accelerationism/Nomadic-App
 
 https://talentprotocol.com/codalabs/projects
-
-
-
-https://github.com/DigiByte-Core/digibyte/tree/feature/digidollar-v1
 
 
 
