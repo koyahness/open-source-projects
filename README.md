@@ -207,6 +207,12 @@ https://mondo.celo.org/governance
 
 ### 🔭 Celo chain code review
 
+https://github.com/celo-org/celo-monorepo
+
+
+https://github.com/celo-org/op-geth
+
+
 # ⚡⚡ Dev infra, communities, DAOs, hackathons, tutorials etc
 
 #### Data analytics
