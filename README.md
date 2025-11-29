@@ -251,6 +251,11 @@ https://app.arkada.gg/en
 
 https://dashboard.tenderly.co/
 
+#### Dev miletones and builder metrics
+
+- Top 500: https://talentprotocol.com/~/earn/base-autumn
+- Top 100: https://talentprotocol.com/~/earn/celo
+- Top 100: https://talentprotocol.com/~/earn/walletconnect
 
 #### Dev 101
 
@@ -294,3 +299,13 @@ https://www.alchemy.com/
 https://docs.attest.org/docs/welcome
 
 https://purple.construction/proposals/
+
+#### Other repos
+https://github.com/talentprotocol/.github
+https://github.com/0xleal/build
+https://github.com/filmacedo/EAS-builder-registry
+https://github.com/filmacedo/attest-fest
+https://github.com/talentprotocol/creator-score-miniapp
+https://github.com/RubenSousaDinis/eth-global-creator-rewards
+https://github.com/talentprotocol/talent-app-starter-kit-v0
+https://github.com/talentprotocol/base200
