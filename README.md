@@ -249,16 +249,14 @@ https://thesuperscan.io/
 
 https://app.arkada.gg/en
 
-https://buidlguidl.com/
-
 https://dashboard.tenderly.co/
-
-https://mint.cryptonomads.org/mint
 
 
 #### Dev 101
 
 https://www.cyfrin.io/updraft
+
+https://buidlguidl.com/
 
 https://speedrunethereum.com/
 
@@ -266,10 +264,10 @@ https://www.tutorialspoint.com/solidity/solidity_overview.htm
 
 https://cryptozombies.io/en/lesson/1/chapter/14
 
-https://buidlguidl.com/
-
 
 #### Dev infra and communities
+
+https://mint.cryptonomads.org/mint
 
 https://www.portalhq.io/
 
