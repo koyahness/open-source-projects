@@ -251,8 +251,6 @@ https://app.arkada.gg/en
 
 https://dashboard.tenderly.co/
 
-https://playground.ethidentitykit.com/?path=/docs/organisms-profile-card--component-docs
-
 https://efp.app/
 
 #### Dev miletones and builder metrics
@@ -280,6 +278,12 @@ https://speedrunethereum.com/
 https://www.tutorialspoint.com/solidity/solidity_overview.htm
 
 https://cryptozombies.io/en/lesson/1/chapter/14
+
+https://hub.encode.club/ethereum
+
+https://playground.ethidentitykit.com/?path=/docs/organisms-profile-card--component-docs
+
+https://devfolio.co/discover
 
 
 #### Dev infra and communities
@@ -465,7 +469,6 @@ https://github.com/JulioMCruz/BUILDH3R-ETHCC
 https://github.com/JulioMCruz/scaffold-eth-shadcn
 
 https://github.com/JulioMCruz/Scaffold-Eth-2-Shadcn
-
 
 https://github.com/JulioMCruz/EncodeClub-Digital-Identity-Hackathon
 
