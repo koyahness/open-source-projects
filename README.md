@@ -284,6 +284,10 @@ https://thirdweb.com/optimism
 
 https://docs.reown.com/appkit/next/core/installation
 
+https://docs.reown.com/appkit/overview
+
+https://docs.walletconnect.network/wallet-sdk/overview
+
 https://app.divvi.xyz/builders/onboarding
 
 https://devfolio.co/hackathons
