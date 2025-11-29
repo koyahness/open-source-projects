@@ -251,11 +251,14 @@ https://app.arkada.gg/en
 
 https://dashboard.tenderly.co/
 
+https://playground.ethidentitykit.com/?path=/docs/organisms-profile-card--component-docs
+
 #### Dev miletones and builder metrics
 
 - Top 500: https://talentprotocol.com/~/earn/base-autumn
 - Top 100: https://talentprotocol.com/~/earn/celo
 - Top 100: https://talentprotocol.com/~/earn/walletconnect
+- https://efp.app/
 
 #### Dev 101
 
