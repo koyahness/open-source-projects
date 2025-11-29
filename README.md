@@ -265,6 +265,7 @@ https://efp.app/
 - Super account score: https://account.superchain.eco/
 - https://speedrunethereum.com/
 - Batch starting on Jan 7, 2026! (complete spped run): https://buidlguidl.com/batches
+- https://ethglobal.com/packs
 
 #### Dev 101
 
@@ -314,6 +315,8 @@ https://docs.attest.org/docs/welcome
 https://purple.construction/proposals/
 
 Everything you need to build dApps on Ethereum: https://scaffoldeth.io/
+
+https://scaffoldeth.io/extensions
 
 #### Other repos
 
