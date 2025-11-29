@@ -260,6 +260,11 @@ https://efp.app/
 - Top 500: https://talentprotocol.com/~/earn/base-autumn
 - Top 100: https://talentprotocol.com/~/earn/celo
 - Top 100: https://talentprotocol.com/~/earn/walletconnect
+- Celo Prosperity Score and Proof of Ship and endorsements: https://pass.celopg.eco/badges/
+- Super account score: https://console.optimism.io/getting-started
+- Super account score: https://account.superchain.eco/
+- https://speedrunethereum.com/
+- Batch starting on Jan 7, 2026! (complete spped run): https://buidlguidl.com/batches
 
 #### Dev 101
 
@@ -307,6 +312,8 @@ https://www.alchemy.com/
 https://docs.attest.org/docs/welcome
 
 https://purple.construction/proposals/
+
+Everything you need to build dApps on Ethereum: https://scaffoldeth.io/
 
 #### Other repos
 
