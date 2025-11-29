@@ -267,6 +267,7 @@ https://efp.app/
 - Batch starting on Jan 7, 2026! (complete spped run): https://buidlguidl.com/batches
 - https://ethglobal.com/packs
 - [https://www.karmahq.xyz/](https://www.karmahq.xyz/my-projects)
+- https://dashboard.reown.com/
 
 #### Dev 101
 
