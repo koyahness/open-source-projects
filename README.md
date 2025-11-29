@@ -237,7 +237,7 @@ https://mondo.celo.org/governance
 
 # ⚡⚡ Dev infra, communities, DAOs, hackathons, tutorials etc
 
-#### data analytics
+#### Data analytics
 
 https://intel.arkm.com/settings
 
@@ -249,10 +249,6 @@ https://thesuperscan.io/
 
 https://app.arkada.gg/en
 
-https://tenderly.co/
-
-
-
 https://buidlguidl.com/
 
 https://dashboard.tenderly.co/
@@ -260,15 +256,28 @@ https://dashboard.tenderly.co/
 https://mint.cryptonomads.org/mint
 
 
-#### Dev 1010
+#### Dev 101
+
+https://www.cyfrin.io/updraft
+
+https://speedrunethereum.com/
 
 https://www.tutorialspoint.com/solidity/solidity_overview.htm
+
+https://cryptozombies.io/en/lesson/1/chapter/14
+
+https://buidlguidl.com/
+
+
+#### Dev infra and communities
+
+https://www.portalhq.io/
+
+https://tenderly.co/
 
 https://thirdweb.com/
 
 https://thirdweb.com/optimism
-
-https://cryptozombies.io/en/lesson/1/chapter/14
 
 https://docs.reown.com/appkit/next/core/installation
 
