@@ -163,6 +163,8 @@ https://github.com/ethereum/ethereum-org-website
 - https://docs.base.org/mini-apps/quickstart/migrate-existing-apps
 - https://github.com/base/demos/tree/master/mini-apps/templates/farcaster-sdk/mini-app-full-demo
 - https://docs.base.org/onchainkit/latest/getting-started/overview
+- **Activities:**
+- https://farcaster.xyz/miniapps/SCswm2ZxAD9C/bountycaster
 
 
 ### 🔭 Base chain code review and miniapps/apps
@@ -217,11 +219,13 @@ https://pass.celopg.eco/welcome
 
 https://mondo.celo.org/governance
 
-### 🔭 Celo chain code review
+### 🔭 Celo chain code review and miniapps/apps
 
 https://github.com/celo-org/celo-monorepo
 
 https://github.com/celo-org/op-geth
+
+https://farcaster.xyz/miniapps/XhQmVJM8RIeD/celo-builder-rewards
 
 
 # ⚡⚡ Dev infra, communities, DAOs, hackathons, tutorials etc
