@@ -160,6 +160,10 @@ https://github.com/ethereum/ethereum-org-website
 - **Documentation:**
 - https://docs.base.org/
 - https://docs.base.org/learn/welcome
+- https://docs.base.org/mini-apps/quickstart/migrate-existing-apps
+- https://github.com/base/demos/tree/master/mini-apps/templates/farcaster-sdk/mini-app-full-demo
+- https://docs.base.org/onchainkit/latest/getting-started/overview
+
 
 ### 🔭 Base chain code review
 
