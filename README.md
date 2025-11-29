@@ -237,7 +237,11 @@ https://mondo.celo.org/governance
 
 # ⚡⚡ Dev infra, communities, DAOs, hackathons, tutorials etc
 
+#### data analytics
+
 https://intel.arkm.com/settings
+
+https://talent.app/~/settings
 
 https://www.oklink.com/
 
@@ -247,13 +251,16 @@ https://app.arkada.gg/en
 
 https://tenderly.co/
 
-https://talent.app/~/settings
+
 
 https://buidlguidl.com/
 
 https://dashboard.tenderly.co/
 
 https://mint.cryptonomads.org/mint
+
+
+#### Dev 1010
 
 https://www.tutorialspoint.com/solidity/solidity_overview.htm
 
