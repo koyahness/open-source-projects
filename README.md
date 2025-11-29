@@ -305,11 +305,19 @@ https://docs.attest.org/docs/welcome
 https://purple.construction/proposals/
 
 #### Other repos
+
 https://github.com/talentprotocol/.github
+
 https://github.com/0xleal/build
+
 https://github.com/filmacedo/EAS-builder-registry
+
 https://github.com/filmacedo/attest-fest
+
 https://github.com/talentprotocol/creator-score-miniapp
+
 https://github.com/RubenSousaDinis/eth-global-creator-rewards
+
 https://github.com/talentprotocol/talent-app-starter-kit-v0
+
 https://github.com/talentprotocol/base200
