@@ -207,34 +207,6 @@ https://mondo.celo.org/governance
 
 ### 🔭 Celo chain code review
 
-## 🌱 Soneium
-
-### 💬 Soneium docs and websites
-
-### 🔭 Soneium chain code review
-
-## 🌱 Monad
-
-### 💬 Monad docs and websites
-
-### 🔭 Monad chain code review
-
-## 🌱 Scroll
-
-### 💬 Scroll docs and websites
-
-### 🔭 Scroll chain code review
-
-## 🌱 Arbitrum
-
-### 💬  Arbitrum docs and websites
-
-### 🔭  Arbitrum chain code review
-
-# ⚡ Solana blockchain
-
-# ⚡ Cosmos blockchain SDK
-
 # ⚡⚡ Dev infra, communities, DAOs, hackathons, tutorials etc
 
 #### Data analytics
