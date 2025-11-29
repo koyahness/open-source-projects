@@ -165,11 +165,13 @@ https://github.com/ethereum/ethereum-org-website
 - https://docs.base.org/onchainkit/latest/getting-started/overview
 
 
-### 🔭 Base chain code review
+### 🔭 Base chain code review and miniapps/apps
 
 https://github.com/base/chains
 
 https://www.base.dev/apps
+
+https://farcaster.xyz/miniapps/003OFAiGOJCy/base-builder-rewards
 
 ## 🌱 Optimism
 
