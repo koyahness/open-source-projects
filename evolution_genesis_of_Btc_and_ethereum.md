@@ -3,6 +3,8 @@ The history of Bitcoin and Ethereum marks the two fundamental phases of blockcha
 1. Bitcoin: A Peer-to-Peer Electronic Cash System
 Bitcoin was born directly out of the 2008 financial crisis, offering a radical, trust-less alternative to the centralized banking system.
 Genesis (2008–2009)
+
+
 | Key Figure | Satoshi Nakamoto (Pseudonym) |
 |---|---|
 | White Paper | Bitcoin: A Peer-to-Peer Electronic Cash System (October 31, 2008) |
@@ -11,6 +13,8 @@ Genesis (2008–2009)
 | Genesis Block Message | The text "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks" was embedded in the first block, serving as both a timestamp and a philosophical statement criticizing central bank bailouts. |
 | First Transaction | January 12, 2009, between Satoshi Nakamoto and Hal Finney. |
 | First Real-World Purchase | May 22, 2010 (Bitcoin Pizza Day), when programmer Laszlo Hanyecz bought two pizzas for 10,000 BTC. |
+
+
 Core Design Principles
 Bitcoin is secured by Proof-of-Work (PoW), a computationally intensive process (mining) that secures the network. Its supply is algorithmically capped at 21 million coins, enforcing digital scarcity.
 Evolutionary Milestones
