@@ -112,7 +112,7 @@ Full Danksharding (projected target 2026–2027) is the final stage of the "Surg
 
 The relationship is simple: PeerDAS (EIP-7594) implements the crucial, complex technology (DAS) required for safe data scaling. Full Danksharding is the final act of turning the dial up to the maximum capacity once that technology is fully proven and adopted.
 
-## 🔑 Key Concurrent Upgrades
+## 2. 🔑 Key Concurrent Upgrades
 
 Full Danksharding is not the only thing happening. Several other upgrades are essential for creating the robust, scalable network Ethereum envisions:
 
