@@ -58,7 +58,7 @@ The Fusaka upgrade, scheduled for December 2025, centers on implementing Peer Da
 | Feature | Pre-PeerDAS (Current EIP-4844) | Post-PeerDAS (Fusaka) |
 |---|---|---|
 | Data Verification | Every full Ethereum node must download and store all the "blob" data posted by rollups to verify data availability. | Nodes download and store only a small, random fraction (e.g., 1/8th) of the blob data. |
-| Data Security | Relies on every node checking all data. | Relies on cryptographic techniques like Erasure Coding and KZG Proofs. If a malicious entity withholds data, the random sampling will detect it with a very high probability (as low as 10^(-24) error probability). |
+| Data Security | Relies on every node checking all data. | Relies on cryptographic techniques like Erasure Coding and KZG Proofs. If a malicious entity withholds data, the random sampling will detect it with a very high probability (as low as 10<sup>(-24) error probability). |
 | Scaling Impact | Limited data capacity, which leads to fee spikes when Layer-2 demand exceeds the current blob limit. | Allows for an 8x (or more) increase in total blob capacity without requiring nodes to significantly upgrade hardware or bandwidth. |
 | Fee Reduction | Fees are reduced compared to calldata, but costs spike with high demand. | The massive increase in capacity should lead to lower, more predictable, and sustained low fees on Layer-2 networks. |
 
@@ -196,7 +196,7 @@ Verkle trees use advanced cryptography, specifically Vector Commitments and Poly
 
 | Feature | Merkle Patricia Tries (Current) | Verkle Trees (Future) |
 |---|---|---|
-| Proof/Witness Size | Large (e.g., $\approx 1 kilobyte for a billion data pieces). | Extremely Small (e.g., <150 bytes for the same data set). This is a $\mathbf{10-20\times} reduction. |
+| Proof/Witness Size | Large (e.g., approx 1 kilobyte for a billion data pieces). | Extremely Small (e.g., < 150 bytes for the same data set). This is a 10-20X times} reduction. |
 | Proof Mechanism | Requires providing all sister nodes on the path from the data leaf up to the root. | Requires providing only the path and a single, fixed-size proof that verifies all parent-child links. |
 | Efficiency | Slower verification as the state grows deeper. | Constant-sized, fast verification regardless of the state size. |
 
