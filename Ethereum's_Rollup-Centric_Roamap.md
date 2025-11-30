@@ -43,7 +43,7 @@ Vitalik Buterin's conceptual framework organizes the network's evolution into di
  * Purge: History pruning and protocol simplification
  * Splurge: Miscellaneous User Experience (UX) and performance improvements
 
-# Would you like to explore the technical mechanisms of PeerDAS from the Fusaka upgrade or the Account Abstraction features in Pectra?
+### Would you like to explore the technical mechanisms of PeerDAS from the Fusaka upgrade or the Account Abstraction features in Pectra?
 
 Both PeerDAS (Fusaka) and Account Abstraction (Pectra) are revolutionary for different reasons: PeerDAS addresses the core technical problem of data scalability, while Account Abstraction addresses the core user problem of experience.
 
