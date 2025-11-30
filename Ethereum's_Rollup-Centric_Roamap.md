@@ -205,6 +205,7 @@ The primary benefit of Verkle trees is enabling Statelessness and reducing the b
  * Lower Barrier to Entry: Since a node only needs to download the tiny witness to verify a block, the cost of running a full node is dramatically reduced. This is a massive boost to decentralization.
  * Faster Sync Times: New nodes can sync and start verifying the chain much faster, as they don't need to download the full state database, only the small proofs.
  * Safer L1 Gas Limit Increase: By making block verification faster and lighter, the network gains a safer pathway to potentially increasing the Layer 1 gas limit, which provides more room for rollups to grow their data throughput.
- * 
+
+
 Both DAS and Verkle Trees are essential components of Ethereum's "Surge" and "Verge" phases, tackling scaling and decentralization, respectively.
 
