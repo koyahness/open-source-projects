@@ -1,4 +1,3 @@
-
 📜 Ethereum's Rollup-Centric Roadmap and Key Upgrades
 
 This timeline details the past, current, and future milestones that define Ethereum's strategy to scale primarily through Layer-2 rollups.
