@@ -81,17 +81,17 @@ EIP-7702 introduces a new transaction type that allows an Externally Owned Accou
 | Security & Recovery | Single private key is the only point of control and failure. | Enables complex logic like social recovery, session keys (pre-approving certain actions for a limited time), and spending limits. |
 | Wallet Migration | Required users to deploy a separate smart contract wallet and transfer all assets (costly and complex). | Allows existing EOAs to gain smart-wallet features without creating a new address or migrating assets. |
 
-Why it's a Game Changer for Rollups
+Why it's a Game Changer for Rollups?
 
 Rollups are already cheap, but they are often difficult for new users to navigate. Account Abstraction solves this by:
 
  * Simplifying DeFi UX: Turning multi-click, multi-signature actions into one-click confirmations.
- * 
+   
  * Onboarding New Users: Eliminating the need for users to hold native ETH for gas, which is a major barrier to entry.
- * 
+
 Together, PeerDAS (lowering the cost of Layer-2s) and Account Abstraction (lowering the complexity of Layer-2s) represent the dual focus of Ethereum's roadmap to achieve mass adoption.
 
-Would you like to explore the concept of Full Danksharding and how it builds on PeerDAS?
+### Would you like to explore the concept of Full Danksharding and how it builds on PeerDAS?
 
 That's the ultimate destination on the Ethereum roadmap. Full Danksharding is the culmination of all the previous scaling efforts and represents the point where Layer-2 transaction fees are driven near zero, enabling truly mass-market applications.
 
@@ -112,23 +112,34 @@ Full Danksharding (projected target 2026–2027) is the final stage of the "Surg
 
 The relationship is simple: PeerDAS (EIP-7594) implements the crucial, complex technology (DAS) required for safe data scaling. Full Danksharding is the final act of turning the dial up to the maximum capacity once that technology is fully proven and adopted.
 
-🔑 Key Concurrent Upgrades
+## 🔑 Key Concurrent Upgrades
+
 Full Danksharding is not the only thing happening. Several other upgrades are essential for creating the robust, scalable network Ethereum envisions:
-A. Verkle Trees (The Verge Phase)
+
+### A. Verkle Trees (The Verge Phase)
+
 | Concept | Impact on Scaling and Rollups |
 |---|---|
 | State Compression | Verkle trees replace the existing Merkle Patricia Tree data structure. They use a cryptographic method that allows validators to verify the entire state of Ethereum with a dramatically smaller proof (witness). |
 | Statelessness | This significantly reduces the storage and bandwidth burden on nodes. It makes it easier and cheaper for anyone to run a full Ethereum node (e.g., on a basic machine), strengthening decentralization—which is the ultimate security layer that rollups rely on. |
 | L1 Throughput | The ability to efficiently verify blocks with smaller proofs may safely allow for an increase in the Layer-1 execution gas limit, providing another layer of throughput increase. |
-B. Rollup Decentralization (The Purge Phase)
+
+
+### B. Rollup Decentralization (The Purge Phase)
+
 | Concept | Impact on Scaling and Rollups |
 |---|---|
 | Decentralized Sequencers | Today, most rollups rely on a single, centralized entity (the Sequencer) to order transactions and send them to Ethereum. This creates a risk of censorship and downtime. |
 | Based Rollups / Shared Sequencers | The roadmap includes moving to decentralized sequencing (e.g., using Ethereum's own validator set to sequence L2 transactions, known as "Based Rollups," or using a shared decentralized network). This eliminates the single point of failure and makes the entire rollup ecosystem as trustless as Ethereum L1. |
-C. Single Slot Finality (SSF)
+
+
+### C. Single Slot Finality (SSF)
+
 | Concept | Impact on Scaling and Rollups |
 |---|---|
 | Faster Finality | Aims to reduce the time it takes for a block to be finalized from the current \approx 13 minutes to a single 12-second slot. |
 | Improved L2 Bridges | SSF is critical for fast, secure cross-rollup communication. It will dramatically reduce the waiting period required for assets to move between Layer-2 networks, making the entire ecosystem feel more unified. |
+
 In summary, the journey to Full Danksharding is about more than just data capacity; it's about marrying maximum throughput (Danksharding) with better user experience (Account Abstraction) and enhanced decentralization (Verkle Trees & Sequencer Decentralization).
+
 Do you have any questions about the security implications of Data Availability Sampling, or would you like to know more about the Verkle Trees upgrade?
