@@ -196,7 +196,7 @@ Verkle trees use advanced cryptography, specifically Vector Commitments and Poly
 
 | Feature | Merkle Patricia Tries (Current) | Verkle Trees (Future) |
 |---|---|---|
-| Proof/Witness Size | Large (e.g., approx 1 kilobyte for a billion data pieces). | Extremely Small (e.g., < 150 bytes for the same data set). This is a 10-20X times} reduction. |
+| Proof/Witness Size | Large (e.g., approx 1 kilobyte for a billion data pieces). | Extremely Small (e.g., < 150 bytes for the same data set). This is a 10-20X times reduction. |
 | Proof Mechanism | Requires providing all sister nodes on the path from the data leaf up to the root. | Requires providing only the path and a single, fixed-size proof that verifies all parent-child links. |
 | Efficiency | Slower verification as the state grows deeper. | Constant-sized, fast verification regardless of the state size. |
 
