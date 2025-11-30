@@ -8,7 +8,7 @@ This timeline details the past, current, and future milestones that define Ether
 |---|---|---|
 | Oct 2020 | Vitalik Buterin publishes "A rollup-centric Ethereum roadmap" | Officially signaled the pivot in scaling strategy from sharding-first to rollup-first. |
 | Dec 2020 | Beacon Chain Launch | Introduced the Proof-of-Stake (PoS) mechanism on a parallel chain. |
-| Sep 2022 | The Merge | Ethereum transitions its consensus mechanism from Proof-of-Work to Proof-of-Stake (PoS). Energy usage dropped by \sim99.95\%. Set the fundamental security layer for rollups. |
+| Sep 2022 | The Merge | Ethereum transitions its consensus mechanism from Proof-of-Work to Proof-of-Stake (PoS). Energy usage dropped by 99.95% Set the fundamental security layer for rollups. |
 | Apr 2023 | Shapella (Shanghai + Capella) | Enabled staked ETH withdrawals, significantly improving validator flexibility and capital efficiency. |
 | Mar 2024 | Dencun Upgrade | Introduces EIP-4844 (Proto-Danksharding). This added new "blob" transactions for cheaper Layer-2 data posting, dramatically reducing L2 fees and congestion. |
 
