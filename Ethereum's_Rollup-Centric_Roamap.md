@@ -199,6 +199,7 @@ Verkle trees use advanced cryptography, specifically Vector Commitments and Poly
 | Proof/Witness Size | Large (e.g., \approx 1 kilobyte for a billion data pieces). | Extremely Small (e.g., <150 bytes for the same data set). This is a \mathbf{10-20\times} reduction. |
 | Proof Mechanism | Requires providing all sister nodes on the path from the data leaf up to the root. | Requires providing only the path and a single, fixed-size proof that verifies all parent-child links. |
 | Efficiency | Slower verification as the state grows deeper. | Constant-sized, fast verification regardless of the state size. |
+
 The Impact on Ethereum's Decentralization
 The primary benefit of Verkle trees is enabling Statelessness and reducing the burden on nodes:
  * Lower Barrier to Entry: Since a node only needs to download the tiny witness to verify a block, the cost of running a full node is dramatically reduced. This is a massive boost to decentralization.
