@@ -170,7 +170,7 @@ B. Random Sampling
  * Instead of downloading the entire block, light clients (and nodes) randomly request and check only a few samples (e.g., 50 samples) from the M pieces of the expanded data.
  * If the samples requested are successfully retrieved and verify correctly (using KZG proofs), the client has extremely high statistical confidence (a near 100% certainty) that all the data is available.
 
-   Probability of missing malicious block  (\pprox) (1/2)<sup>(Samples Checked)</sup>
+   Probability of missing malicious block  (\approx) (1/2)<sup>(Samples Checked)</sup>
    
 By checking 50 samples, the probability of missing a block where 50% of the data is withheld is virtually zero.
 
