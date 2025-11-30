@@ -31,14 +31,22 @@ While Automated Market Makers (AMMs) determine prices based on liquidity pools, 
 ## 2. Ensuring Security and Integrity (The Oracle Problem)
 
 The biggest challenge is that using a single, easily manipulable source of price data can be catastrophic for protocols. A price oracle is designed to mitigate this risk.
-The Problem with On-Chain Spot Prices
+
+
+### The Problem with On-Chain Spot Prices
+
 Smart contracts cannot simply look at the price of an asset in a single liquidity pool (the "spot price"). An attacker can use a flash loan—an uncollateralized loan taken out and repaid within a single transaction—to temporarily distort the price in that single pool. If a lending protocol relies on this momentary, false price, the attacker can exploit it to steal funds.
-The Solution: Decentralized Oracle Networks (DONs)
+
+
+### The Solution: Decentralized Oracle Networks (DONs)
+
 To solve this, reputable price oracles employ Decentralized Oracle Networks (DONs). These systems ensure data integrity and resilience:
  * Multiple Nodes: Instead of relying on one server, the data is collected by dozens of independent, geographically diverse nodes.
  * Multiple Sources: Each node sources data from many high-quality, aggregated data providers and exchanges, avoiding reliance on any single exchange.
  * Data Aggregation: The network aggregates these price points (often taking a median) to filter out outliers, manipulation attempts, and malicious data points.
  * On-Chain Broadcast: The final, aggregated price is cryptographically signed and posted to the blockchain in a dedicated contract, making it available for any dApp to consume securely.
+
+
 This decentralized structure makes manipulating the price much more difficult and prohibitively expensive, protecting billions of dollars in Total Value Locked (TVL) across the EVM ecosystem.
 
 
