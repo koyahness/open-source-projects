@@ -1,3 +1,6 @@
+https://updraft.cyfrin.io/courses/blockchain-basics/congratulations/career-tracks
+
+
 Your Guide to Cyfrin Updraft Career Tracks
 Welcome to the next step in your Web3 journey. Now that you've completed the Blockchain Basics course, you're ready to choose a specialized learning path. On Cyfrin Updraft, we've designed Career Tracks—curated collections of courses—to provide a clear, step-by-step roadmap toward your specific career goals. Whether you're an aspiring developer, a future security auditor, or a non-technical professional looking to deepen your expertise, this guide will help you select the right track.
 
