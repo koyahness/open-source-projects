@@ -1,6 +1,9 @@
 
 https://eips.ethereum.org/
 
+https://github.com/ethereum/EIPs/blob/master/eip-template.md?plain=1
+
+https://eips.ethereum.org/EIPS/eip-1
 
 https://www.cyfrin.io/blog/introduction-to-ethereum-improvement-proposals-eips
 
