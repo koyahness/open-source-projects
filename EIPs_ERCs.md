@@ -1,3 +1,11 @@
+
+https://eips.ethereum.org/
+
+
+https://www.cyfrin.io/blog/introduction-to-ethereum-improvement-proposals-eips
+
+
+
 EIPs vs. ERCs: Understanding Ethereum's Core Standards
 In the Ethereum ecosystem, you'll frequently encounter the acronyms EIP and ERC. While they sound similar, they represent two fundamental concepts that govern how the network evolves and how applications interact within it. This lesson will demystify these terms, explaining their distinct roles, the crucial relationship between them, and why they are the cornerstones of Ethereum's decentralized development.
 
