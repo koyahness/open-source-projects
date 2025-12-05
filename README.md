@@ -246,6 +246,7 @@ https://efp.app/
 - https://ethglobal.com/packs
 - [https://www.karmahq.xyz/](https://www.karmahq.xyz/my-projects)
 - https://dashboard.reown.com/
+- https://www.onchainbuilders.org/
 
 #### Dev 101
 
