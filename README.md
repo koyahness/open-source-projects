@@ -183,6 +183,8 @@ https://www.base.org/build/mini-apps
 
 https://www.base.dev/apps
 
+https://www.base.org/build/onchainkit
+
 https://hackerone.com/coinbase?type=team
 
 https://blog.base.dev/
