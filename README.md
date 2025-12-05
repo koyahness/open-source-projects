@@ -266,7 +266,11 @@ https://playground.ethidentitykit.com/?path=/docs/organisms-profile-card--compon
 
 😄 https://devfolio.co/discover
 
-### buildonbase
+### 😄 buildonbase
+
+https://taikai.network/buildonbase/hackathons
+
+
 
 
 #### Dev infra and communities
