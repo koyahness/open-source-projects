@@ -163,6 +163,27 @@ https://github.com/ethereum/ethereum-org-website
 
 https://github.com/base/chains
 
+### 😄 buildonbase
+
+https://docs.base.org/get-started/base
+
+https://taikai.network/buildonbase/hackathons
+
+https://www.basebatches.xyz/
+
+https://based-africa.devfolio.co/overview
+
+https://devfolio.co/hackathons
+
+https://www.base.org/build
+
+https://www.base.dev/apps
+
+https://hackerone.com/coinbase?type=team
+
+https://blog.base.dev/
+
+
 ## 🌱 Optimism
 
 ### 💬 Optimism docs and websites
@@ -265,24 +286,6 @@ https://hub.encode.club/ethereum
 https://playground.ethidentitykit.com/?path=/docs/organisms-profile-card--component-docs
 
 😄 https://devfolio.co/discover
-
-
-
-### 😄 buildonbase
-
-https://docs.base.org/get-started/base
-
-https://taikai.network/buildonbase/hackathons
-
-https://www.basebatches.xyz/
-
-https://based-africa.devfolio.co/overview
-
-https://devfolio.co/hackathons
-
-https://www.base.org/build
-
-
 
 
 #### Dev infra and communities
