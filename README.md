@@ -191,6 +191,12 @@ https://hackerone.com/coinbase?type=team
 
 https://blog.base.dev/
 
+### 😄 buildonbase_dev accounts
+
+https://portal.cdp.coinbase.com/
+
+https://www.base.dev/apps
+
 
 ## 🌱 Optimism
 
