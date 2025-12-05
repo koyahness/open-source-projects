@@ -179,6 +179,8 @@ https://devfolio.co/hackathons
 
 https://www.base.org/build
 
+https://www.base.org/build/mini-apps
+
 https://www.base.dev/apps
 
 https://hackerone.com/coinbase?type=team
