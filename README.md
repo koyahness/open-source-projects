@@ -242,7 +242,7 @@ https://efp.app/
 - Super account score: https://console.optimism.io/getting-started
 - Super account score: https://account.superchain.eco/
 - https://speedrunethereum.com/
-- Batch starting on Jan 7, 2026! (complete spped run): https://buidlguidl.com/batches
+- 😄 Batch starting on Jan 7, 2026! (complete spped run): https://buidlguidl.com/batches
 - https://ethglobal.com/packs
 - [https://www.karmahq.xyz/](https://www.karmahq.xyz/my-projects)
 - https://dashboard.reown.com/
