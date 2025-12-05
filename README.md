@@ -169,6 +169,8 @@ https://github.com/base/chains
 
 https://docs.base.org/get-started/base
 
+https://hackthebase.com/display
+
 https://taikai.network/buildonbase/hackathons
 
 https://www.basebatches.xyz/
