@@ -270,9 +270,17 @@ https://playground.ethidentitykit.com/?path=/docs/organisms-profile-card--compon
 
 ### 😄 buildonbase
 
+https://docs.base.org/get-started/base
+
 https://taikai.network/buildonbase/hackathons
 
 https://www.basebatches.xyz/
+
+https://based-africa.devfolio.co/overview
+
+https://devfolio.co/hackathons
+
+https://www.base.org/build
 
 
 
@@ -314,6 +322,8 @@ https://purple.construction/proposals/
 Everything you need to build dApps on Ethereum: https://scaffoldeth.io/
 
 https://scaffoldeth.io/extensions
+
+
 
 #### Other repos
 
