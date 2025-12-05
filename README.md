@@ -252,9 +252,9 @@ https://efp.app/
 
 https://www.cyfrin.io/updraft
 
-https://buidlguidl.com/
+😄 https://buidlguidl.com/
 
-https://speedrunethereum.com/
+😄 https://speedrunethereum.com/
 
 https://www.tutorialspoint.com/solidity/solidity_overview.htm
 
@@ -264,7 +264,7 @@ https://hub.encode.club/ethereum
 
 https://playground.ethidentitykit.com/?path=/docs/organisms-profile-card--component-docs
 
-https://devfolio.co/discover
+😄 https://devfolio.co/discover
 
 
 #### Dev infra and communities
