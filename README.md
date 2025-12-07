@@ -308,6 +308,8 @@ https://mint.cryptonomads.org/mint
 
 https://www.portalhq.io/
 
+https://portal.li.fi/integrations
+
 https://tenderly.co/
 
 https://thirdweb.com/
