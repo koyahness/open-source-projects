@@ -118,8 +118,12 @@ export default function Home() {
 A Mini App must be accessible via a public URL and have a valid Farcaster manifest to be recognized by the Base App.
 
 ### Code Step 3.1: Run Locally for Development
+
 Start your development server to test the calculator in your browser. You may need a tunneling tool like ngrok to test it inside the Base dev app environment.
+
+```
 pnpm run dev
+```
 
 ### Code Step 3.2: Deploy to Production (Vercel)
 
