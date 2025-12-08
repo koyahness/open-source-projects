@@ -8,7 +8,9 @@ Here is a step-by-step guide with the necessary code steps to get the project ru
 ## 🚀 Step 1: Scaffold the Base Mini App Project
 
 The fastest way to start is by using the official Base/OnchainKit Mini App template, which provides all the necessary boilerplate for Base and Farcaster integration (built on Next.js/React).
+
 Code Step 1.1: Create Project
+
 Open your terminal and run the following command to bootstrap your new Mini App:
 npx create-onchain@latest --mini
 
