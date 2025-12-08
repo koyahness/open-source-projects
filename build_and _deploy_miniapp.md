@@ -3,7 +3,7 @@
 Building a calculator mini-app on Base involves two main components: the standard frontend calculator logic (HTML/CSS/JS or React) and the Base/Farcaster integration using the MiniKit template. Since a calculator's logic is typically off-chain, the focus here is on setting up the correct Base Mini App environment.
 
 
-Here is a step-by-step guide with the necessary code steps to get the project running.
+Here is a step-by-step guide with the necessary code steps to get the project running..
 
 ## 🚀 Step 1: Scaffold the Base Mini App Project
 
