@@ -217,6 +217,7 @@ Create a file to store your contract's address and the necessary function interf
 
 File: lib/contract.ts
 
+```
 import { Address } from 'viem';
 
 // ⚠️ REPLACE this address with your deployed contract address on Base Sepolia
@@ -234,13 +235,14 @@ export const SCORE_NFT_ABI = [
     type: 'function',
   },
 ] as const;
-
+```
 4. Update the Calculator Component
    
 We replace the simple "equals" functionality with a button that triggers the onchain minting process using the TransactionButton component from OnchainKit.
 
 File: components/Calculator.tsx (Modified)
 
+```
 import React, { useState } from 'react';
 import { TransactionButton, type TransactionCall } from '@coinbase/onchainkit/transaction';
 import { SCORE_NFT_ADDRESS, SCORE_NFT_ABI } from '@/lib/contract';
@@ -323,7 +325,7 @@ export function Calculator() {
     </div>
   );
 }
-
+```
 Part 3: Final Steps and Testing
 
  * Environment Setup: Ensure your Next.js/React app is wrapped with MiniKitProvider and WagmiConfig (the starter template already handles this).
