@@ -99,7 +99,9 @@ export function Calculator() {
 ### Code Step 2.2: Integrate the Component
 
 Replace the content of your main app file (usually app/page.tsx or similar) with the new component.
+
 // app/page.tsx (simplified example)
+
 import { Calculator } from '@/components/Calculator';
 
 export default function Home() {
