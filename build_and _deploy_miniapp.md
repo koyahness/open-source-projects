@@ -49,10 +49,13 @@ contract ScoreNFT is ERC721, Ownable {
 ```
 
 2. Deployment
+   
  * Tooling: Use a development environment like Hardhat or Foundry to compile and deploy your contract.
  * Network: Deploy the ScoreNFT contract to the Base Sepolia Testnet.
  * Result: Once deployed, you will receive the Contract Address (e.g., 0xAbc...123) and the Contract ABI (a JSON file). You will need these two things for the next part.
-Part 2: Frontend Mini App Integration
+ * 
+### Part 2: Frontend Mini App Integration
+
 We will modify the Calculator.tsx component from the previous guide to use the calculated result to trigger a transaction using OnchainKit.
 3. Define Contract Details in the Frontend
 Create a file to store your contract's address and the necessary function interface (ABI snippet).
