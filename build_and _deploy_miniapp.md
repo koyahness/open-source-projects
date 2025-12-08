@@ -145,16 +145,10 @@ public/.well-known/farcaster.json
 
 You simply need to ensure your production URL is set as an environment variable (often NEXT_PUBLIC_URL) in your hosting provider's settings.
 
+### The Base App will use this manifest to verify and load your calculator Mini App.
 
 
-The Base App will use this manifest to verify and load your calculator Mini App.
-
-This video shows the quick-start process for setting up a Base Mini App using MiniKit, which is the foundational step for deploying your calculator.
-10-min MiniKit Quickstart: zero to mini app on @base
-
-YouTube video views will be stored in your YouTube History, and your data will be stored and used by YouTube according to its Terms of Service
-
-https://www.youtube.com/live/IFOSDhsEbZQ?si=qXwknON0Iqldzg3P
+This video shows the quick-start process for setting up a Base Mini App using MiniKit, which is the foundational step for deploying your calculator. 10-min MiniKit Quickstart: zero to mini app on @base. https://www.youtube.com/live/IFOSDhsEbZQ?si=qXwknON0Iqldzg3P
 
 # Integrate the onchain component into your mini-app!
 
