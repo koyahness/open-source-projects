@@ -123,6 +123,7 @@ Start your development server to test the calculator in your browser. You may ne
 
 ```
 pnpm run dev
+
 ```
 
 ### Code Step 3.2: Deploy to Production (Vercel)
@@ -131,6 +132,7 @@ For the final deployment, hosting providers like Vercel are recommended.
  * Commit your code to a GitHub repository.
  * Import the repository into Vercel and deploy it.
  * Once deployed, you will get your public URL (e.g., https://base-calculator.vercel.app).
+
    
 ### Code Step 3.3: Verify the Farcaster Manifest
 
@@ -141,6 +143,7 @@ public/.well-known/farcaster.json
 You simply need to ensure your production URL is set as an environment variable (often NEXT_PUBLIC_URL) in your hosting provider's settings.
 
 The Base App will use this manifest to verify and load your calculator Mini App.
+
 This video shows the quick-start process for setting up a Base Mini App using MiniKit, which is the foundational step for deploying your calculator.
 10-min MiniKit Quickstart: zero to mini app on @base
 
