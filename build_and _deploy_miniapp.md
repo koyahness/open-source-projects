@@ -32,11 +32,18 @@ pnpm install # or npm install or yarn install
 ```
 
 ## 💻 Step 2: Build the Calculator UI and Logic
-Since this is a simple calculator with no direct onchain transactions (like token transfers), the logic will be pure frontend/client-side JavaScript. We will replace the starter template's home page with our calculator component.
+
+Since this is a simple calculator with no direct onchain transactions (like token transfers), the logic will be pure frontend/client-side JavaScript.
+
+We will replace the starter template's home page with our calculator component.
 
 ### Code Step 2.1: Create the Calculator Component
 
-Create a new file, for example, components/Calculator.tsx, and add the basic structure and logic. This example uses a simplified state management approach common in React.
+Create a new file, for example,
+
+components/Calculator.tsx, and add the basic structure and logic. This example uses a simplified state management approach common in React.
+
+```
 // components/Calculator.tsx
 import React, { useState } from 'react';
 import { useMiniKit } from '@coinbase/onchainkit/minikit';
@@ -87,6 +94,7 @@ export function Calculator() {
     </div>
   );
 }
+```
 
 ### Code Step 2.2: Integrate the Component
 
