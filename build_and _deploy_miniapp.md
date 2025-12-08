@@ -212,8 +212,11 @@ contract ScoreNFT is ERC721, Ownable {
 We will modify the Calculator.tsx component from the previous guide to use the calculated result to trigger a transaction using OnchainKit.
 
 3. Define Contract Details in the Frontend
+   
 Create a file to store your contract's address and the necessary function interface (ABI snippet).
+
 File: lib/contract.ts
+
 import { Address } from 'viem';
 
 // ⚠️ REPLACE this address with your deployed contract address on Base Sepolia
