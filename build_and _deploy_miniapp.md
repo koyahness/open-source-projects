@@ -329,8 +329,11 @@ export function Calculator() {
 Part 3: Final Steps and Testing
 
  * Environment Setup: Ensure your Next.js/React app is wrapped with MiniKitProvider and WagmiConfig (the starter template already handles this).
+   
  * Testing:
+   
    * Run your app locally (pnpm run dev).
    * Perform a calculation (e.g., 2 * 3 = 6).
    * Click the Mint Score NFT (6) button. This will open the connected Base Wallet (or other Base-compatible wallet) and prompt the user to sign and submit the transaction to the Base Sepolia network.
+     
  * Deployment: Deploy your finished Mini App to a public hosting provider like Vercel and ensure your Farcaster Manifest is configured as described in the previous response.
