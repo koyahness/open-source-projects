@@ -136,9 +136,12 @@ For the final deployment, hosting providers like Vercel are recommended.
    
 ### Code Step 3.3: Verify the Farcaster Manifest
 
-The template you used already includes the Farcaster manifest file, usually located at 
+The template you used already includes the Farcaster manifest file, usually located at
 
+```
 public/.well-known/farcaster.json
+
+```
 
 You simply need to ensure your production URL is set as an environment variable (often NEXT_PUBLIC_URL) in your hosting provider's settings.
 
