@@ -12,6 +12,8 @@ You need a simple contract that allows anyone to mint an NFT and record the scor
    
 Create a contract that stores the score as metadata or simply as a mapping (for a true NFT implementation, you would use a metadata URI, but we'll simplify by just storing the score for this tutorial).
 File: contracts/ScoreNFT.sol
+
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
@@ -44,6 +46,7 @@ contract ScoreNFT is ERC721, Ownable {
         // emit ScoreSubmitted(msg.sender, newItemId, _score);
     }
 }
+```
 
 2. Deployment
  * Tooling: Use a development environment like Hardhat or Foundry to compile and deploy your contract.
