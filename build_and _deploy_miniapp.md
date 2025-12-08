@@ -1,3 +1,111 @@
+Building a calculator mini-app on Base involves two main components: the standard frontend calculator logic (HTML/CSS/JS or React) and the Base/Farcaster integration using the MiniKit template. Since a calculator's logic is typically off-chain, the focus here is on setting up the correct Base Mini App environment.
+Here is a step-by-step guide with the necessary code steps to get the project running.
+🚀 Step 1: Scaffold the Base Mini App Project
+The fastest way to start is by using the official Base/OnchainKit Mini App template, which provides all the necessary boilerplate for Base and Farcaster integration (built on Next.js/React).
+Code Step 1.1: Create Project
+Open your terminal and run the following command to bootstrap your new Mini App:
+npx create-onchain@latest --mini
+
+When prompted, name your project (e.g., base-calculator-mini-app) and select your preferred language/package manager (TypeScript/pnpm is common).
+Code Step 1.2: Install Dependencies
+Navigate into your new project directory and install the necessary packages.
+cd base-calculator-mini-app
+pnpm install # or npm install or yarn install
+
+💻 Step 2: Build the Calculator UI and Logic
+Since this is a simple calculator with no direct onchain transactions (like token transfers), the logic will be pure frontend/client-side JavaScript. We will replace the starter template's home page with our calculator component.
+Code Step 2.1: Create the Calculator Component
+Create a new file, for example, components/Calculator.tsx, and add the basic structure and logic. This example uses a simplified state management approach common in React.
+// components/Calculator.tsx
+import React, { useState } from 'react';
+import { useMiniKit } from '@coinbase/onchainkit/minikit';
+
+export function Calculator() {
+  const { context } = useMiniKit();
+  const [display, setDisplay] = useState('0');
+  const [operator, setOperator] = useState<string | null>(null);
+  const [firstOperand, setFirstOperand] = useState<number | null>(null);
+  const [waitingForSecondOperand, setWaitingForSecondOperand] = useState(false);
+
+  const clear = () => {
+    setDisplay('0');
+    setOperator(null);
+    setFirstOperand(null);
+    setWaitingForSecondOperand(false);
+  };
+
+  const inputDigit = (digit: string) => {
+    if (waitingForSecondOperand) {
+      setDisplay(digit);
+      setWaitingForSecondOperand(false);
+    } else {
+      setDisplay(display === '0' ? digit : display + digit);
+    }
+  };
+  
+  // (Note: The full calculation logic is omitted for brevity but would go here)
+
+  return (
+    <div className="p-4 rounded-lg bg-gray-900 shadow-xl">
+      <input
+        type="text"
+        className="w-full h-16 mb-4 text-4xl text-right bg-gray-700 text-white rounded p-2"
+        value={display}
+        readOnly
+      />
+      <div className="grid grid-cols-4 gap-2">
+        <button className="bg-red-500 hover:bg-red-600 p-4 rounded text-xl" onClick={clear}>C</button>
+        {/* ... Calculator Buttons (0-9, +, -, *, /) ... */}
+        <button className="bg-blue-500 hover:bg-blue-600 p-4 rounded text-xl" onClick={() => inputDigit('1')}>1</button>
+        <button className="bg-blue-500 hover:bg-blue-600 p-4 rounded text-xl" onClick={() => inputDigit('2')}>2</button>
+        {/* ... */}
+      </div>
+      <p className="mt-4 text-sm text-gray-400">
+        Base App Context FID: {context?.fid}
+      </p>
+    </div>
+  );
+}
+
+Code Step 2.2: Integrate the Component
+Replace the content of your main app file (usually app/page.tsx or similar) with the new component.
+// app/page.tsx (simplified example)
+import { Calculator } from '@/components/Calculator';
+
+export default function Home() {
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 bg-gray-800">
+      <h1 className="text-white text-3xl mb-6">Base Calculator Mini App</h1>
+      <Calculator />
+    </main>
+  );
+}
+
+🌐 Step 3: Deploy and Get the Farcaster Manifest
+A Mini App must be accessible via a public URL and have a valid Farcaster manifest to be recognized by the Base App.
+Code Step 3.1: Run Locally for Development
+Start your development server to test the calculator in your browser. You may need a tunneling tool like ngrok to test it inside the Base dev app environment.
+pnpm run dev
+
+Code Step 3.2: Deploy to Production (Vercel)
+For the final deployment, hosting providers like Vercel are recommended.
+ * Commit your code to a GitHub repository.
+ * Import the repository into Vercel and deploy it.
+ * Once deployed, you will get your public URL (e.g., https://base-calculator.vercel.app).
+Code Step 3.3: Verify the Farcaster Manifest
+The template you used already includes the Farcaster manifest file, usually located at public/.well-known/farcaster.json. You simply need to ensure your production URL is set as an environment variable (often NEXT_PUBLIC_URL) in your hosting provider's settings.
+The Base App will use this manifest to verify and load your calculator Mini App.
+This video shows the quick-start process for setting up a Base Mini App using MiniKit, which is the foundational step for deploying your calculator.
+10-min MiniKit Quickstart: zero to mini app on @base
+
+YouTube video views will be stored in your YouTube History, and your data will be stored and used by YouTube according to its Terms of Service
+
+
+
+
+
+
+
 # Integrate the onchain component into your mini-app!
 
 To build a calculator mini-app on Base that mints an NFT upon score submission, you need to combine the frontend logic with a backend Smart Contract and use Base's OnchainKit for transaction handling.
@@ -58,6 +166,7 @@ contract ScoreNFT is ERC721, Ownable {
 ### Part 2: Frontend Mini App Integration
 
 We will modify the Calculator.tsx component from the previous guide to use the calculated result to trigger a transaction using OnchainKit.
+
 3. Define Contract Details in the Frontend
 Create a file to store your contract's address and the necessary function interface (ABI snippet).
 File: lib/contract.ts
