@@ -18,9 +18,11 @@ Navigate into your new project directory and install the necessary packages.
 cd base-calculator-mini-app
 pnpm install # or npm install or yarn install
 
-💻 Step 2: Build the Calculator UI and Logic
+## 💻 Step 2: Build the Calculator UI and Logic
 Since this is a simple calculator with no direct onchain transactions (like token transfers), the logic will be pure frontend/client-side JavaScript. We will replace the starter template's home page with our calculator component.
-Code Step 2.1: Create the Calculator Component
+
+### Code Step 2.1: Create the Calculator Component
+
 Create a new file, for example, components/Calculator.tsx, and add the basic structure and logic. This example uses a simplified state management approach common in React.
 // components/Calculator.tsx
 import React, { useState } from 'react';
@@ -73,7 +75,8 @@ export function Calculator() {
   );
 }
 
-Code Step 2.2: Integrate the Component
+### Code Step 2.2: Integrate the Component
+
 Replace the content of your main app file (usually app/page.tsx or similar) with the new component.
 // app/page.tsx (simplified example)
 import { Calculator } from '@/components/Calculator';
@@ -87,18 +90,23 @@ export default function Home() {
   );
 }
 
-🌐 Step 3: Deploy and Get the Farcaster Manifest
+## 🌐 Step 3: Deploy and Get the Farcaster Manifest
+
 A Mini App must be accessible via a public URL and have a valid Farcaster manifest to be recognized by the Base App.
-Code Step 3.1: Run Locally for Development
+
+### Code Step 3.1: Run Locally for Development
 Start your development server to test the calculator in your browser. You may need a tunneling tool like ngrok to test it inside the Base dev app environment.
 pnpm run dev
 
-Code Step 3.2: Deploy to Production (Vercel)
+### Code Step 3.2: Deploy to Production (Vercel)
+
 For the final deployment, hosting providers like Vercel are recommended.
  * Commit your code to a GitHub repository.
  * Import the repository into Vercel and deploy it.
  * Once deployed, you will get your public URL (e.g., https://base-calculator.vercel.app).
-Code Step 3.3: Verify the Farcaster Manifest
+   
+### Code Step 3.3: Verify the Farcaster Manifest
+
 The template you used already includes the Farcaster manifest file, usually located at public/.well-known/farcaster.json. You simply need to ensure your production URL is set as an environment variable (often NEXT_PUBLIC_URL) in your hosting provider's settings.
 The Base App will use this manifest to verify and load your calculator Mini App.
 This video shows the quick-start process for setting up a Base Mini App using MiniKit, which is the foundational step for deploying your calculator.
@@ -106,11 +114,7 @@ This video shows the quick-start process for setting up a Base Mini App using Mi
 
 YouTube video views will be stored in your YouTube History, and your data will be stored and used by YouTube according to its Terms of Service
 
-
-
-
-
-
+https://www.youtube.com/live/IFOSDhsEbZQ?si=qXwknON0Iqldzg3P
 
 # Integrate the onchain component into your mini-app!
 
