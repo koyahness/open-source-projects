@@ -1,10 +1,15 @@
 # Integrate the onchain component into your mini-app!
 
 To build a calculator mini-app on Base that mints an NFT upon score submission, you need to combine the frontend logic with a backend Smart Contract and use Base's OnchainKit for transaction handling.
-Here is the step-by-step guide with the necessary code components.
-Part 1: Smart Contract Setup (Onchain)
+
+## Here is the step-by-step guide with the necessary code components.
+
+### Part 1: Smart Contract Setup (Onchain)
+
 You need a simple contract that allows anyone to mint an NFT and record the score (an integer) associated with that mint. We will use a basic ERC-721 contract structure.
+
 1. The Smart Contract (Solidity)
+   
 Create a contract that stores the score as metadata or simply as a mapping (for a true NFT implementation, you would use a metadata URI, but we'll simplify by just storing the score for this tutorial).
 File: contracts/ScoreNFT.sol
 // SPDX-License-Identifier: MIT
