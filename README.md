@@ -57,8 +57,6 @@ Please test your code and ensure that it builds locally before submitting a pull
 
 Do a PR review checklist, example: https://github.com/argotorg/solidity/blob/develop/ReviewChecklist.md
 
-
-
 # ⚡ Bitcoin blockchain
 
 ### 💬 BTC docs and websites
@@ -174,9 +172,9 @@ https://github.com/ethereum/ethereum-org-website
 - **Documentation:** https://docs.base.org/
 - https://docs.base.org/mini-apps/quickstart/create-new-miniapp
 - https://docs.base.org/get-started/base
+- https://www.miniappassets.com/
 
 ### 🔭 Base chain code review
-
 https://github.com/base/chains
 
 ### 😄 buildonbase
