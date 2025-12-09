@@ -93,6 +93,16 @@ https://github.com/spesmilo/electrum
 
 https://github.com/btcsuite/btcwallet
 
+# ⚡ Build on Stacks and BTC
+
+https://stacks.org/dev
+
+https://www.stacks.co/explore/events
+
+https://start.bitcoinprimer.dev/
+
+https://learnweb3.io/degrees/stacks-developer-degree/
+
 # ⚡ Digibyte blockchain
 
 ### 💬 DGB docs and websites
