@@ -103,6 +103,10 @@ https://start.bitcoinprimer.dev/
 
 https://learnweb3.io/degrees/stacks-developer-degree/
 
+https://www.easya.io/challenges/stacks
+
+https://learn.stacks.org/start
+
 # ⚡ Digibyte blockchain
 
 ### 💬 DGB docs and websites
