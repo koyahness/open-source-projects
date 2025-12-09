@@ -173,7 +173,6 @@ https://github.com/ethereum/ethereum-org-website
 - **Builder Resource Kit:** https://www.base.org/build
 - **Documentation:** https://docs.base.org/
 - https://docs.base.org/mini-apps/quickstart/create-new-miniapp
-- 
 - https://docs.base.org/get-started/base
 
 ### 🔭 Base chain code review
