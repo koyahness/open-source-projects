@@ -280,6 +280,8 @@ https://dashboard.tenderly.co/
 
 https://efp.app/
 
+https://www.gitpoap.io/repos
+
 #### Dev miletones and builder metrics
 
 - Top 500: https://talentprotocol.com/~/earn/base-autumn
@@ -294,6 +296,7 @@ https://efp.app/
 - [https://www.karmahq.xyz/](https://www.karmahq.xyz/my-projects)
 - https://dashboard.reown.com/
 - https://www.onchainbuilders.org/
+- https://www.gitpoap.io/repos
 
 #### Dev 101
 
