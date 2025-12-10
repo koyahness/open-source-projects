@@ -122,6 +122,8 @@ https://start.bitcoinprimer.dev/
 
 https://learnweb3.io/degrees/stacks-developer-degree/
 
+https://learnweb3.io/degrees/stacks-developer-degree/introduction-to-stacks/
+
 https://www.easya.io/challenges/stacks
 
 https://learn.stacks.org/start
