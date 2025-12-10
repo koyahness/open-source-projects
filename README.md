@@ -313,6 +313,8 @@ https://www.gitpoap.io/repos
 
 https://www.cyfrin.io/updraft
 
+https://updraft.cyfrin.io/courses/full-stack-web3-development-crash-course/welcome-to-the-course/intro
+
 😄 https://buidlguidl.com/
 
 😄 https://speedrunethereum.com/
