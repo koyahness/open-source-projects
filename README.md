@@ -102,6 +102,8 @@ https://docs.stacks.co/learn/stacks-101
 
 https://stacks.org/code-for-stx
 
+https://www.stacks.co/build/get-started
+
 
 
 # ⚡ Build on Stacks and BTC
