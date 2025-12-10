@@ -108,7 +108,7 @@ https://www.stacks.co/build/get-started
 
 https://www.hiro.so/clarinet
 
-https://www.hiro.so/clarinet
+https://replit.com/@stacks
 
 
 
