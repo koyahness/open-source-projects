@@ -96,6 +96,9 @@ https://talentprotocol.notion.site/Stacks-Builder-Challenges-FAQ-2c0fc9bb531980b
 
 https://docs.stacks.co/whats-new/clarity-4-is-now-live
 
+https://docs.stacks.co/learn
+
+https://docs.stacks.co/learn/stacks-101
 
 
 
