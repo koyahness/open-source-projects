@@ -323,6 +323,8 @@ https://www.gitpoap.io/repos
 
 #### Dev 101
 
+https://medium.com/coinmonks/github-repositories-to-learn-web3-development-f456e33e25d8
+
 https://www.alchemy.com/overviews/best-web3-github-repos
 
 https://www.alchemy.com/newsletter
