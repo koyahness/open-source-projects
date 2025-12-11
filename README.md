@@ -323,6 +323,8 @@ https://www.gitpoap.io/repos
 
 #### Dev 101
 
+https://www.alchemy.com/newsletter
+
 https://www.cyfrin.io/updraft
 
 https://updraft.cyfrin.io/courses/full-stack-web3-development-crash-course/welcome-to-the-course/intro
