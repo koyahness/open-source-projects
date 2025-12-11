@@ -323,6 +323,8 @@ https://www.gitpoap.io/repos
 
 #### Dev 101
 
+https://www.alchemy.com/overviews/best-web3-github-repos
+
 https://www.alchemy.com/newsletter
 
 https://www.cyfrin.io/updraft
