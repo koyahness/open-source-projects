@@ -116,6 +116,8 @@ https://stacks.org/code-for-stx#submit
 
 https://stacks.org/code-for-stx#meaningful
 
+https://stacks.blocksurvey.io/code-for-stacks-code-submissions-qQurBjpYSQq4N_PXr.wu1g?v=l
+
 
 
 # ⚡ Build on Stacks and BTC
@@ -133,6 +135,9 @@ https://learnweb3.io/degrees/stacks-developer-degree/introduction-to-stacks/
 https://www.easya.io/challenges/stacks
 
 https://learn.stacks.org/start
+
+<img width="912" height="823" alt="image" src="https://github.com/user-attachments/assets/c172e127-6e62-4017-aa3d-6a5cb6329fba" />
+
 
 # ⚡ Digibyte blockchain
 
