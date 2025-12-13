@@ -126,6 +126,8 @@ learn clarity: https://docs.stacks.co/
 
 build your first dapp on btc: https://www.easya.io/challenges/stacks
 
+developer advance: https://learnweb3.io/degrees/stacks-developer-degree/
+
 https://stacks.org/dev
 
 https://www.stacks.co/explore/events
