@@ -104,11 +104,17 @@ https://stacks.org/code-for-stx
 
 https://www.stacks.co/build/get-started
 
-## Dev tools
+## Dev tools and coding
 
 https://www.hiro.so/clarinet
 
 https://replit.com/@stacks
+
+https://stacks.org/code-for-stx
+
+https://stacks.org/code-for-stx#submit
+
+https://stacks.org/code-for-stx#meaningful
 
 
 
