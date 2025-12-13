@@ -122,6 +122,8 @@ https://stacks.blocksurvey.io/code-for-stacks-code-submissions-qQurBjpYSQq4N_PXr
 
 # ⚡ Build on Stacks and BTC
 
+learn clarity: https://docs.stacks.co/
+
 https://stacks.org/dev
 
 https://www.stacks.co/explore/events
