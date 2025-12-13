@@ -124,6 +124,8 @@ https://stacks.blocksurvey.io/code-for-stacks-code-submissions-qQurBjpYSQq4N_PXr
 
 learn clarity: https://docs.stacks.co/
 
+build your first dapp on btc: https://www.easya.io/challenges/stacks
+
 https://stacks.org/dev
 
 https://www.stacks.co/explore/events
