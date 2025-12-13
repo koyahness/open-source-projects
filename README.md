@@ -130,6 +130,8 @@ developer advance: https://learnweb3.io/degrees/stacks-developer-degree/
 
 fullstack btc developer: https://docs.stacks.co/tutorials/bitcoin-primer/introduction
 
+hackathons: https://www.stacks.co/explore/events
+
 https://stacks.org/dev
 
 https://www.stacks.co/explore/events
