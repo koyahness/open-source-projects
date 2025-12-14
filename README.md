@@ -92,9 +92,12 @@ https://github.com/spesmilo/electrum
 https://github.com/btcsuite/btcwallet
 
 # ⚡ Build on Stacks Bitcoin L2
+
 https://talentprotocol.notion.site/Stacks-Builder-Challenges-FAQ-2c0fc9bb531980b1b7d0d8178771fcbb
 
 https://platform.hiro.so/settings
+
+https://docs.hiro.so/en/resources/guides
 
 https://docs.stacks.co/whats-new/clarity-4-is-now-live
 
