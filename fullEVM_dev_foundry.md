@@ -60,8 +60,11 @@ cd .. # Go back to my-foundry-dapp
 
 ```
 npx create-react-app frontend
+
 cd frontend
+
 npm install ethers # Library to interact with the blockchain
+
 cd .. # Go back to my-foundry-dapp
 
 ```
@@ -70,12 +73,14 @@ cd .. # Go back to my-foundry-dapp
    
 We focus on the my-foundry-dapp/contracts/ directory, which now contains the default Foundry structure:
 
+```
 my-foundry-dapp/contracts/
 ├── src/              # Your Solidity contract files live here
 ├── script/           # Deployment scripts (Solidity/Vyper)
 ├── test/             # Test files (Solidity/Vyper)
 ├── foundry.toml      # Configuration file
 └── lib/              # Dependencies (e.g., forge-std, openzeppelin)
+```
 
 2.1 Write, Compile, and Test the Contract
 You write your contract logic inside contracts/src/MyContract.sol.
