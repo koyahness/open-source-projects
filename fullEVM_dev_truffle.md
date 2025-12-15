@@ -49,6 +49,7 @@ Initial Directory Structure
 
 After truffle init, your directory will look like this:
 
+```
 my-truffle-dapp/
 ├── contracts/        # Your Solidity files live here (.sol)
 ├── migrations/       # Deployment scripts (JavaScript)
@@ -56,6 +57,7 @@ my-truffle-dapp/
 ├── client/           # The React frontend application
 ├── truffle-config.js # Truffle configuration file
 └── package.json
+```
 
 2. 📝 Backend (Smart Contract) CLI Steps
    
