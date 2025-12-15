@@ -1,30 +1,53 @@
 # Building and deploying EVM: Truffle
 
-Building and deploying an EVM (Ethereum Virtual Machine) application using the Truffle Suite is a foundational workflow in Web3 development. Truffle handles contract compilation, linking, deployment, and binary management, while its companion tool, Drizzle (or similar libraries like Ethers/Web3.js), handles frontend integration.
+Building and deploying an EVM (Ethereum Virtual Machine) application using the Truffle Suite is a foundational workflow in Web3 development.
+
+Truffle handles contract compilation, linking, deployment, and binary management, while its companion tool, Drizzle (or similar libraries like Ethers/Web3.js), handles frontend integration.
+
 Here is a step-by-step guide showing the directory structures and CLI commands for a full Truffle DApp.
+
 1. ⚙️ Setup and Prerequisites (CLI)
+
 1.1 Global Prerequisites
+
 Ensure you have Node.js and npm/yarn installed.
+
 | CLI Command | Description |
 |---|---|
 | npm install -g truffle | Installs the Truffle CLI globally. |
 | npm install -g ganache | Installs Ganache CLI (a local EVM node for testing). |
+
 1.2 Create the Project Structure
+
 Truffle uses a specific directory layout. We will initialize the main project directory with the necessary folders.
+
 # 1. Create the root directory and initialize Truffle
+
+```
 mkdir my-truffle-dapp
+
 cd my-truffle-dapp
+
 truffle init
+```
 
 # 2. Setup the frontend (React example)
+
 # Truffle does not include a frontend, so we add a standard one.
+
+```
 npx create-react-app client
+
 cd client
-npm install web3 # Install Web3 library for interaction
+
+npm install web3 # Install Web3library for interaction
+
 cd ..
+```
 
 Initial Directory Structure
 After truffle init, your directory will look like this:
+
 my-truffle-dapp/
 ├── contracts/        # Your Solidity files live here (.sol)
 ├── migrations/       # Deployment scripts (JavaScript)
