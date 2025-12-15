@@ -62,6 +62,7 @@ my-truffle-dapp/
 2. 📝 Backend (Smart Contract) CLI Steps
    
 2.1 Write and Compile the Contract
+
 You write your contract logic inside contracts/MyContract.sol.
 
 
