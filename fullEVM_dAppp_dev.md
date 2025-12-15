@@ -199,31 +199,54 @@ Your DApp is now fully deployed:
    
  * Frontend UI: Deployed to a web server (e.g., Netlify/Vercel) and connected to the contract.
 
-That is an excellent and crucial point! Security is paramount in blockchain development. While using a standard .env file with the dotenv package is common, it's considered a minimum security measure. Hardhat now offers even better, integrated solutions.
+# Security is paramount in blockchain development.
+
+While using a standard .env file with the dotenv package is common, it's considered a minimum security measure. Hardhat now offers even better, integrated solutions.
+
+
 Here is an assessment of the security options, prioritizing the most robust CLI-driven methods:
-🔐 Secure Private Key Management for Hardhat
+
+
+## 🔐 Secure Private Key Management for Hardhat
+
 The primary risk of the basic .env setup is accidentally committing the file (which contains plain text private keys) to a public Git repository.
+
 Option 1: The Basic .env Setup (Minimum Security)
+
 This is the standard approach I used in the previous example, which relies entirely on the developer properly configuring .gitignore.
+
 Step 1: Install dotenv
+
 In your my-evm-dapp/backend/ directory:
+```
 npm install dotenv
+```
 
 Step 2: Create the .env File
+
 Create a file named .env in the root of your Hardhat project (my-evm-dapp/backend/.env).
+
+```
 # .env file
 # **CRITICAL: NEVER COMMIT THIS FILE TO GIT**
 PRIVATE_KEY="0xdeadbeef...your...actual...private...key...here"
 SEPOLIA_RPC_URL="https://eth-sepolia.g.alchemy.com/v2/YOUR_API_KEY"
+```
 
 Step 3: Configure .gitignore
+
 This is the most critical step for this method. Open my-evm-dapp/backend/.gitignore and ensure the following line is present:
+
+```
 # .gitignore file
 # ... other standard entries ...
 .env
+```
 
 Step 4: Load Variables in hardhat.config.js
 At the top of your Hardhat configuration, load the variables:
+
+```
 // hardhat.config.js
 require("@nomicfoundation/hardhat-toolbox");
 require('dotenv').config(); // This loads the variables
@@ -239,35 +262,59 @@ module.exports = {
     },
   },
 };
+```
 
-Option 2: Hardhat Keystore (Recommended/Advanced Security)
+## Option 2: Hardhat Keystore (Recommended/Advanced Security)
+
+
 For better security, Hardhat has introduced a built-in feature called Keystore that encrypts secrets using a master password and stores them in a project-specific, encrypted file. This allows you to safely commit the encrypted file to Git, though you must still protect your master password.
+
 Step 1: Use the Keystore CLI Commands
+
 Instead of writing a .env file in plain text, you use the Hardhat CLI to set encrypted secrets.
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | npx hardhat keystore set PRIVATE_KEY | backend/ | Prompts you to set a master password, then prompts you for the actual private key value. |
 | npx hardhat keystore set SEPOLIA_RPC_URL | backend/ | Prompts you for the master password, then prompts for the RPC URL value. |
+
+
 Step 2: Access Encrypted Secrets
+
 Hardhat automatically handles the decryption when you run tasks that require these variables (like deployment). You will likely be prompted for the master password when deploying.
+
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | npx hardhat run scripts/deploy.js --network sepolia | backend/ | Executes deployment and internally decrypts the PRIVATE_KEY and SEPOLIA_RPC_URL using the master password you provide. |
-Using the Hardhat Keystore significantly reduces the risk of accidentally exposing your private key compared to using a plain-text .env file.
-Would you like to try implementing Option 2 (Hardhat Keystore) for the security of your backend project?
 
-That's a smart choice. Using the Hardhat Keystore is a more secure way to manage your sensitive credentials directly from the CLI, especially since it encrypts the values, allowing the file to be committed to version control without exposing the secrets.
+
+Using the Hardhat Keystore significantly reduces the risk of accidentally exposing your private key compared to using a plain-text .env file.
+
+Using the Hardhat Keystore is a more secure way to manage your sensitive credentials directly from the CLI, especially since it encrypts the values, allowing the file to be committed to version control without exposing the secrets.
+
 Here is the step-by-step CLI guide for setting up and using the Hardhat Keystore. This assumes you are in the my-evm-dapp/backend/ directory.
-🔑 Secure Secrets Management with Hardhat Keystore (CLI)
+
+## 🔑 Secure Secrets Management with Hardhat Keystore (CLI)
+
 The Hardhat Keystore creates an encrypted file to store your secrets, protected by a master password you choose.
+
+
 Step 1: Install the Keystore Plugin
+
 While the plugin is often included in modern Hardhat installations, it's good practice to ensure it's installed.
+
+```
 # In my-evm-dapp/backend/
 npm install --save-dev @nomicfoundation/hardhat-keystore
+```
 
 Step 2: Configure the Plugin
+
 Add the plugin to your Hardhat configuration file (hardhat.config.js).
 backend/hardhat.config.js (Add plugin section):
+
+```
 // hardhat.config.js
 require("@nomicfoundation/hardhat-toolbox");
 // require("@nomicfoundation/hardhat-keystore"); // Not strictly needed if using a Hardhat Toolbox
@@ -275,18 +322,30 @@ require("@nomicfoundation/hardhat-toolbox");
 module.exports = {
   // ... other config ...
 };
+```
 
 Step 3: Set Encrypted Secrets (CLI)
-You will use the keystore set command for your private key and RPC URL. The first time you run this, you will be prompted to create your Master Password.
+
+You will use the keystore set command for your private key and RPC URL. The first time you run this, you will be prompted to create your Master Password
+
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | npx hardhat keystore set PRIVATE_KEY | backend/ | 1. Prompts for a new Master Password. 2. Prompts for the raw Private Key value. |
 | npx hardhat keystore set SEPOLIA_RPC_URL | backend/ | 1. Prompts for the Master Password (to unlock the keystore). 2. Prompts for the Sepolia RPC URL value. |
+
+
 > Note: The Keystore stores these secrets in an encrypted file in your project or home directory. You must remember the Master Password, as there is no recovery mechanism!
-> 
+
+
 Step 4: Configure Hardhat to Use Variables
+
 Instead of accessing process.env, you access these variables using a built-in Hardhat function called configVariable.
+
+
 backend/hardhat.config.js (Using configVariable):
+
+```
 // hardhat.config.js
 
 // Import the function for configuration variables
@@ -306,19 +365,28 @@ module.exports = {
     // ... other networks
   },
 };
+```
 
 Step 5: Deployment (The CLI Interaction)
+
 Now, when you run your deployment, Hardhat recognizes the configVariable usage, accesses the keystore, and asks for the master password for temporary decryption.
+
+
 | CLI Command | Directory | Interaction |
 |---|---|---|
 | npx hardhat run scripts/deploy.js --network sepolia | backend/ | The CLI will prompt: "Enter keystore password:" (You input the password you created in Step 3). |
+
+
 Once the password is provided, Hardhat decrypts the variables into memory, signs the transaction with the private key, and performs the deployment. The private key never exists on disk in plain text.
+
 Additional Keystore CLI Commands
 You can manage your secrets using these commands:
+
 | CLI Command | Purpose |
 |---|---|
 | npx hardhat keystore list | Lists all the keys (e.g., PRIVATE_KEY, SEPOLIA_RPC_URL) stored in the keystore. |
 | npx hardhat keystore get PRIVATE_KEY | Prompts for the password and temporarily displays the raw value of the secret. |
 | npx hardhat keystore change-password | Allows you to change the master password used to protect all secrets. |
+
+
 Using the Hardhat Keystore ensures that your private keys are protected, even if your entire repository (including the encrypted Keystore file) is shared publicly.
-Would you like to move on to refining the deployment script in the backend/scripts/deploy.js file next?
