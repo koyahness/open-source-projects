@@ -56,14 +56,20 @@ npm install --save-dev hardhat
 npx hardhat init # Select "Create a basic sample project"
 
 cd .. # Go back to my-evm-dapp
+
 ```
 
 # 3. Setup the frontend (React example)
 
+```
 npx create-react-app frontend
+
 cd frontend
+
 npm install ethers # Library to interact with the blockchain
+
 cd .. # Go back to my-evm-dapp
+```
 
 2. 📝 Backend (Smart Contract) CLI Steps
    
