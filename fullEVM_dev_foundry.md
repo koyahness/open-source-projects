@@ -1,22 +1,32 @@
 # Building and deploying on EVM using foundry
 
 Building and deploying an EVM (Ethereum Virtual Machine) application using the Foundry framework for smart contracts requires a slightly different CLI workflow than Hardhat, as Foundry is primarily written in Rust and prioritizes speed and low-level control.
+
 Foundry is used for the contract development, while standard Node.js/React tools are used for the frontend integration.
+
 Here is a comprehensive step-by-step guide showing the directory structures and CLI commands.
+
 1. ⚙️ Setup and Project Structure (CLI)
+   
 1.1 Global Prerequisites
+
 Install Rust (using rustup) and then install Foundry using foundryup.
+
 | CLI Command | Description |
 |---|---|
 | `curl -L https://foundry.paradigm.xyz | bash` |
 | foundryup | Installs or updates forge, cast, and anvil |
+
 1.2 Create the Monorepo Structure
+
 We will create a parent directory to hold both the backend (Foundry) and the frontend (React).
+
 | Path | Description |
 |---|---|
 | my-foundry-dapp/ | Root Project Directory |
 | my-foundry-dapp/contracts/ | Foundry project for contracts/deployment |
 | my-foundry-dapp/frontend/ | React/Next.js project for the UI |
+
 # 1. Create the root directory
 mkdir my-foundry-dapp
 cd my-foundry-dapp
