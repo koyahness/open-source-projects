@@ -57,11 +57,14 @@ my-truffle-dapp/
 └── package.json
 
 2. 📝 Backend (Smart Contract) CLI Steps
+   
 2.1 Write and Compile the Contract
 You write your contract logic inside contracts/MyContract.sol.
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | truffle compile | my-truffle-dapp/ | Compiles .sol files into Bytecode and ABI (stored in build/contracts/) |
+
 2.2 Configure Deployment Script (Migration)
 Truffle uses numbered JavaScript files in the migrations/ directory to manage deployment order.
 migrations/2_deploy_contracts.js (Snippet):
