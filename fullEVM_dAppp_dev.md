@@ -158,6 +158,8 @@ cp backend/artifacts/contracts/MyContract.sol/MyContract.json frontend/src/MyCon
 3.2 Implement Web3 Interaction
 
 In your frontend code (e.g., frontend/src/App.js), you use the Ethers.js library (installed in Step 1.2) to create a contract instance.
+
+'''
 // Example Frontend JS (e.g., App.js)
 import abi from './MyContract.json'; // The copied ABI file
 
@@ -174,6 +176,7 @@ async function updateValue(newValue) {
   const tx = await contract.setValue(newValue);
   await tx.wait(); // Wait for transaction confirmation
 }
+```
 
 3.3 Run and Build the Frontend
 
