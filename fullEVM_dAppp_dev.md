@@ -458,6 +458,7 @@ main()
 ```
 
 Step 3: Execute the Deployment (CLI)
+
 Navigate to your backend directory and run the command, providing your Master Password when prompted.
 
 
@@ -480,29 +481,50 @@ After deployment, you have two key pieces of information needed for your my-evm-
  * Contract ABI: The JSON file located at backend/artifacts/contracts/MyContract.sol/MyContract.json.
 As noted in the earlier steps, you must now copy that ABI file to your frontend project and hardcode (or use an environment variable for) the deployed Contract Address in your frontend source code to enable interaction.
 
-Absolutely. Connecting the compiled contract artifacts (especially the ABI) to the frontend is the final CLI and configuration step before writing the UI logic.
+## Connecting artefacts to front end
+
+Connecting the compiled contract artifacts (especially the ABI) to the frontend is the final CLI and configuration step before writing the UI logic.
+
 Here is the step-by-step CLI process for transferring the necessary data, followed by how it is consumed in your React frontend.
-🔗 Connecting Backend Artifacts to the Frontend
+
+
+# 🔗 Connecting Backend Artifacts to the Frontend
+
 Step 1: Examine the Artifacts Directory
+
 When you run npx hardhat compile, Hardhat creates an artifacts/ folder containing the crucial JSON file that holds the contract's ABI and Bytecode.
+
+```
 my-evm-dapp/backend/
 └── artifacts/
     └── contracts/
         └── MyContract.sol/
             └── MyContract.json  <-- This is the file we need
+```
 
 Step 2: Copy the Artifacts (CLI Command)
+
 From the root of your entire project (my-evm-dapp/), execute the copy command to move the MyContract.json file into your frontend source directory (frontend/src/).
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | cp backend/artifacts/contracts/MyContract.sol/MyContract.json frontend/src/MyContract.json | my-evm-dapp/ | Copies the compiled contract JSON (containing the ABI) to the React source folder. |
+
+
 Step 3: Define the Contract Address
+
 In a real application, you would manage the contract address using environment variables, but for simplicity, we will define it in the frontend code.
+
 Save the Address: Remember the address you logged during deployment (e.g., 0x5FbDB...).
-⚛️ Frontend Integration (frontend/src/)
+
+## ⚛️ Frontend Integration (frontend/src/)
+
 Now that the ABI file (MyContract.json) is in the frontend, you can use the Ethers.js library to create an instance of your contract and start interacting with the blockchain.
+
 Step 4: Import and Initialize Ethers.js
 In your main application file (e.g., frontend/src/App.js):
+
+```
 // frontend/src/App.js
 
 import { ethers } from 'ethers';
@@ -546,10 +568,15 @@ async function connectWalletAndGetContract() {
 }
 
 // ... Rest of your React component logic ...
+```
 
 Step 5: Interact with the Contract Functions
+
 Once you have the contract object (from Step 4), you can call its functions defined in your Solidity code.
+
 A. Reading State (Free/View Functions)
+
+```
 async function readCurrentValue(myContract) {
   try {
     // Calling a view function (no gas cost)
@@ -561,7 +588,11 @@ async function readCurrentValue(myContract) {
   }
 }
 
+'''
+
 B. Writing State (Transaction Functions)
+
+'''
 async function updateContractValue(myContract, newValue) {
   try {
     // Calling a state-changing function (requires gas and wallet signature)
@@ -576,46 +607,72 @@ async function updateContractValue(myContract, newValue) {
     console.error("Transaction failed:", error);
   }
 }
+```
 
 You now have a complete, secure, CLI-driven workflow:
  * Backend CLI: Hardhat setup and Keystore usage.
  * Deployment CLI: Running npx hardhat run to get the Contract Address.
  * Integration CLI: Using cp to transfer the ABI.
  * Frontend Logic: Using Ethers.js to connect and interact.
-Would you like to move on to a final step, such as running the development server and testing the full DApp connection?
 
-That's the final mile! To test your full DApp connection, you will need two terminal sessions running concurrently: one for your local Hardhat node (to simulate the blockchain) and one for your React development server.
-🏃 Running and Testing the Full DApp
+
+# Final step, running the development 
+
+That's the final mile! To test your full DApp connection, you will need two terminal sessions running concurrently:
+
+one for your local Hardhat node (to simulate the blockchain) and one for your React development server.
+
+## 🏃 Running and Testing the Full DApp
+
 Step 1: Start the Local Hardhat Node (Terminal 1)
+
 If you deployed to a testnet like Sepolia, you can skip this step, but for rapid local development and testing, running a local node is essential.
+
 Goal: Start a private, local EVM node that your wallet (MetaMask) can connect to, complete with pre-funded accounts.
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | npx hardhat node | backend/ | Starts the Hardhat local network on http://127.0.0.1:8545. Keep this terminal running. |
+
 > Note: The local node will log 20 sample accounts and their private keys. Copy one of these private keys to import into MetaMask for testing.
-> 
+
+
 Step 2: Configure MetaMask for Localhost
+
 Before running the frontend, ensure your browser wallet is pointed at the local node.
+
  * Open MetaMask and click the network selector.
  * Add a new network (or select "Localhost 8545" if it appears automatically).
    * Network Name: Localhost 8545 (or Hardhat Local)
    * New RPC URL: http://127.0.0.1:8545
    * Chain ID: 31337
  * Import Account: Use the private key of one of the 20 accounts logged in Terminal 1 to import a test account. This account will have funds to pay for gas on your local chain.
+
+
 Step 3: Start the Frontend Development Server (Terminal 2)
+
+
 Open a second terminal window, navigate to your frontend directory, and start the React server.
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | npm start | frontend/ | Starts the React development server, usually opening the DApp in your browser at http://localhost:3000. |
+
+
 Step 4: Test the Connection and Interaction
+
 With both the backend node and the frontend server running:
+
  * In your browser, ensure MetaMask is connected to the Localhost 8545 network.
  * Your frontend code (e.g., the connectWalletAndGetContract function from Step 4 in the previous response) will now attempt to connect to the wallet via window.ethereum.
  * Test your contract interactions:
    * View functions: Call a read function (e.g., readCurrentValue) to ensure data is fetched from the local Hardhat node.
    * Transaction functions: Call a write function (e.g., updateContractValue). MetaMask should pop up, prompting you to confirm and sign the transaction, using gas from your imported test account.
-This completes the full CLI-driven development and deployment cycle for your EVM DApp!
-If you're having trouble running npm start on your React app, this video provides common troubleshooting steps. npm start error in React (SOLVED) will give you solutions if you encounter common issues when trying to launch your React development server.
 
-YouTube video views will be stored in your YouTube History, and your data will be stored and used by YouTube according to its Terms of Service
+   
+This completes the full CLI-driven development and deployment cycle for your EVM DApp!
+
+If you're having trouble running npm start on your React app,
+
+npm start error in React (SOLVED) will give you solutions if you encounter common issues when trying to launch your React development server.
 
