@@ -211,22 +211,34 @@ You can now connect your wallet (configured for Ganache) to the DApp and test th
 # Security consideration
 
 That is a critical security consideration. Never hardcode your private keys or mnemonics directly into configuration files or deployment scripts.
+
 In the Truffle ecosystem, secure key management for deployment to live networks (like Sepolia or Mainnet) is handled by the HDWalletProvider. This provider retrieves your credentials from a secure source (usually environment variables) and uses them to sign transactions without exposing them in your codebase.
+
 Here is the step-by-step guide on how to implement this securely in the Truffle CLI workflow.
+
 🔑 Secure Key Management with Truffle and HDWalletProvider
+
 Step 1: Install the HDWalletProvider
 You need to install the provider that allows Truffle to use a seed phrase (mnemonic) or a private key to sign transactions.
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | npm install @truffle/hdwallet-provider | my-truffle-dapp/ | Installs the dependency required for secure key usage. |
+
 Step 2: Implement Environment Variable Management
+
 We will use the popular dotenv package to load environment variables from a local .env file, which is a standard industry practice.
+
  * Install dotenv:
+ * 
    | CLI Command | Directory | Purpose |
    | :--- | :--- | :--- |
    | npm install dotenv | my-truffle-dapp/ | Installs the package to load environment variables. |
+   
  * Create .env File: Create a file named .env in the root of your project (my-truffle-dapp/). This file is where you store your secrets.
+ * 
    .env File Content:
+   
    # NEVER commit this file to Git!
 MNEMONIC="word1 word2 word3 word4 word5 word6 word7 word8 word9 word10 word11 word12"
 # OR use a Private Key:
@@ -239,8 +251,12 @@ INFURA_KEY="your-infura-project-id-or-RPC-API-key"
 .env
 
 Step 3: Configure truffle-config.js to Use the Secrets
+
 You must modify your configuration file to use the dotenv package to access the variables and pass them to the HDWalletProvider.
+
 truffle-config.js (Required Modifications):
+
+```
 // Load environment variables from .env file
 require('dotenv').config();
 const HDWalletProvider = require('@truffle/hdwallet-provider');
@@ -275,15 +291,20 @@ module.exports = {
   },
   // ... (existing compilers configuration) ...
 };
+```
 
 Step 4: Deployment Execution
+
 When you run the deployment command, the following steps occur behind the scenes:
+
  * Truffle Loads: Truffle starts and executes the configuration file.
  * dotenv Loads: The require('dotenv').config(); line reads the .env file and makes MNEMONIC and INFURA_KEY available to Node.js via process.env.
  * Provider Creates: The HDWalletProvider is instantiated, taking the mnemonic and RPC URL.
  * Transaction Signs: When you run truffle migrate --network sepolia, the provider uses the mnemonic to derive the corresponding private key, signs the transaction locally, and then sends the signed transaction (not the private key) through the Infura RPC endpoint to the Sepolia network.
+
+   
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | truffle migrate --network sepolia | my-truffle-dapp/ | Deploys using the secure configuration. |
+
 This process ensures that your sensitive credentials are never written into code, committed to version control, or transmitted over the network unencrypted.
-Is there anything else you would like to know about Truffle, or shall we explore another topic?
