@@ -295,6 +295,8 @@ https://github.com/ethereum-optimism
 
 https://github.com/ethereum-optimism/superchain-ops
 
+https://atlas.optimism.io/round/results?rounds=7,8
+
 ## 🌱 Celo
 
 ### 💬 Celo docs and websites
