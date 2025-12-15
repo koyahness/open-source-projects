@@ -100,12 +100,17 @@ You write your Solidity logic inside the contracts/ directory (e.g., MyContract.
 2.2 Configure Networks
 
 
-Open hardhat.config.js and add a network configuration. You will need an RPC URL (e.g., from Alchemy or Infura) and your wallet's private key (stored securely in a .env file).
+Open hardhat.config.js and add a network configuration.
+
+You will need an RPC URL (e.g., from Alchemy or Infura) and your wallet's private key (stored securely in a .env file).
+
 backend/.env (Securely store keys):
 PRIVATE_KEY="YOUR_WALLET_PRIVATE_KEY"
 SEPOLIA_RPC_URL="YOUR_SEPOLIA_API_URL"
 
 backend/hardhat.config.js (Snippet):
+
+```
 require("@nomicfoundation/hardhat-toolbox");
 
 require('dotenv').config();
@@ -119,6 +124,7 @@ module.exports = {
     },
   },
 };
+```
 
 2.3 Deployment
 
