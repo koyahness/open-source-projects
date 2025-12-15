@@ -67,7 +67,9 @@ cd .. # Go back to my-foundry-dapp
 ```
 
 2. 📝 Backend (Smart Contract) CLI Steps
+   
 We focus on the my-foundry-dapp/contracts/ directory, which now contains the default Foundry structure:
+
 my-foundry-dapp/contracts/
 ├── src/              # Your Solidity contract files live here
 ├── script/           # Deployment scripts (Solidity/Vyper)
