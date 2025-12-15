@@ -35,21 +35,24 @@ We will create a parent directory to hold both the backend (contracts) and the f
 
 # 1. Create the root directory
 
-
+'''
 mkdir my-evm-dapp
 
 cd my-evm-dapp
+'''
 
 # 2. Setup the backend (Hardhat)
 
-
+'''
 mkdir backend
+
 cd backend
 npm init -y
 npm install --save-dev hardhat
 npx hardhat init # Select "Create a basic sample project"
 
 cd .. # Go back to my-evm-dapp
+'''
 
 # 3. Setup the frontend (React example)
 
