@@ -182,7 +182,10 @@ For rapid local testing before deploying to a public testnet, use Anvil, Foundry
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | anvil | contracts/ | Starts a local EVM on http://127.0.0.1:8545 (default). Keep this terminal running. |
+
+
 Once Anvil is running, follow these steps:
+
  * Configure MetaMask to point to Localhost:8545 (Chain ID: 31337).
  * Import one of the test private keys logged by the anvil command.
  * Deploy your contract to the local Anvil chain (Terminal 2):
