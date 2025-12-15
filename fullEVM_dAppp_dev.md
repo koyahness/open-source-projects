@@ -88,6 +88,7 @@ my-evm-dapp/backend/
 ```
 
 2.1 Write and Compile the Contract
+
 You write your Solidity logic inside the contracts/ directory (e.g., MyContract.sol).
 
 
