@@ -21,6 +21,8 @@ Make sure you have Node.js (with npm) and Git installed.
 
 
 1.2 Create the Monorepo Structure
+
+
 We will create a parent directory to hold both the backend (contracts) and the frontend.
 
 
