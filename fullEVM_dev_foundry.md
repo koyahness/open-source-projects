@@ -28,8 +28,11 @@ We will create a parent directory to hold both the backend (Foundry) and the fro
 | my-foundry-dapp/frontend/ | React/Next.js project for the UI |
 
 # 1. Create the root directory
+
+```
 mkdir my-foundry-dapp
 cd my-foundry-dapp
+```
 
 # 2. Setup the backend (Foundry)
 # This creates a standard Foundry layout (src, test, script dirs)
