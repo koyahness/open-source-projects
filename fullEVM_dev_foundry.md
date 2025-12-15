@@ -31,6 +31,7 @@ We will create a parent directory to hold both the backend (Foundry) and the fro
 
 ```
 mkdir my-foundry-dapp
+
 cd my-foundry-dapp
 ```
 
@@ -46,9 +47,14 @@ cd contracts
 ```
 
 # Remove the default Counter contract for a fresh start
+
+```
 rm src/Counter.sol
+
 rm test/Counter.t.sol
+
 cd .. # Go back to my-foundry-dapp
+'''
 
 # 3. Setup the frontend (React example)
 npx create-react-app frontend
