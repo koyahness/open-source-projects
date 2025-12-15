@@ -117,26 +117,42 @@ contract DeployScript is Script {
 ```
 
 2.3 Secure Key Management and Execution (CLI)
+
 Foundry typically relies on standard environment variables or explicit file paths for private keys. We will use environment variables, setting them temporarily in the command line for security.
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | export PRIVATE_KEY="0x..." | my-foundry-dapp/ | CRITICAL: Set the private key securely (use a different key than your main wallet). |
 | export SEPOLIA_RPC="https://..." | my-foundry-dapp/ | Set the RPC URL for the target network (e.g., Sepolia). |
 | source .env (if using a file) | my-foundry-dapp/ | Loads environment variables. |
+
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | forge script script/Deploy.s.sol --rpc-url $SEPOLIA_RPC --private-key $PRIVATE_KEY --broadcast -vvvv | contracts/ | Deploys the contract to Sepolia. Logs the Contract Address and transaction hash. |
+
 > Key Output: The CLI output (under [Deployment] section) will provide the Contract Address, which is required for the frontend.
-> 
+
 3. 🌐 Frontend Integration
+   
 The frontend needs the Contract Address and the ABI to interact with the deployed contract.
+
 3.1 Copy Artifacts (ABI)
+
 The contract ABI is located in the out/ folder created by forge build.
+
+```
 # From the root directory: my-foundry-dapp/
+
 cp contracts/out/MyContract.sol/MyContract.json frontend/src/MyContract.json
 
+```
+
 3.2 Implement Web3 Interaction
+
 Use the Ethers.js library (installed in Step 1.2) to create a contract instance using the ABI and the deployed address.
+
+```
 // Example Frontend JS (e.g., App.js)
 import abiJson from './MyContract.json'; // The copied ABI file
 import { ethers } from 'ethers';
@@ -150,14 +166,18 @@ const contractABI = abiJson.abi;
 const contract = new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer); 
 
 // ... Interaction logic (contract.callFunction()) ...
+```
 
 3.3 Run and Deploy Frontend
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | npm start | frontend/ | Starts the local development server to test the DApp |
 | npm run build | frontend/ | Creates the production-ready static assets |
 | netlify deploy --prod --dir=build | frontend/ | Deploys static assets to a hosting service (e.g., Netlify CLI) |
+
 4. 🧪 Local Testing with Anvil (Foundry CLI)
+
 For rapid local testing before deploying to a public testnet, use Anvil, Foundry's fast local EVM node.
 | CLI Command | Directory | Purpose |
 |---|---|---|
