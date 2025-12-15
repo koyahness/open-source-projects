@@ -63,3 +63,65 @@ The npx hardhat run Flow:
  * Synchronization: The script then waits for the network to confirm the transaction using myContract.waitForDeployment().
 The main difference is that Hardhat relies on the reliability of the Ethers.js library to correctly format and send the transaction, while Foundry uses a Solidity environment for deterministic, pre-broadcast verification.
 Would you like a side-by-side visual of the code structure for both the Foundry and Hardhat deployment scripts?
+
+That's a great idea for visualizing the core difference in the CLI deployment process. Seeing the file content side-by-side highlights how Foundry is native to the EVM language (Solidity), while Hardhat is native to the web ecosystem (JavaScript).
+Here is a side-by-side comparison of the file structure and the key code required for deployment in both frameworks:
+📐 Deployment Script Code Comparison
+| Aspect | Foundry Workflow (Solidity) | Hardhat Workflow (JavaScript) |
+|---|---|---|
+| Project Directory | my-foundry-dapp/contracts/ | my-hardhat-dapp/backend/ |
+| File Location | script/Deploy.s.sol | scripts/deploy.js |
+| Core Dependency | forge-std/Script.sol (Solidity Library) | hardhat/ethers (JavaScript Library) |
+| Execution Command | forge script script/Deploy.s.sol --broadcast | npx hardhat run scripts/deploy.js |
+| Execution Language | Solidity | JavaScript (Node.js) |
+Foundry: script/Deploy.s.sol
+This script uses Foundry's built-in EVM Cheat Codes (vm.*) to tell the EVM when to record and broadcast transactions.
+// contracts/script/Deploy.s.sol
+
+pragma solidity ^0.8.18;
+import {Script} from "forge-std/Script.sol";
+import {MyContract} from "../src/MyContract.sol";
+
+contract DeployScript is Script {
+    function run() public returns (address) {
+        // --- EVM TRANSACTION RECORDING START ---
+        vm.startBroadcast();
+        
+        // This is a direct EVM op: CREATE2 (contract deployment)
+        MyContract myContract = new MyContract(); 
+        
+        vm.stopBroadcast();
+        // --- EVM TRANSACTION RECORDING END ---
+
+        return address(myContract); // Return the deployed address
+    }
+}
+
+Hardhat: scripts/deploy.js
+This script uses the ethers.js library to interact with the blockchain via RPC calls.
+// backend/scripts/deploy.js
+
+// Hardhat runtime environment (HRE) provides 'ethers'
+async function main() {
+    // 1. Get the Factory object from Ethers
+    const MyContract = await hre.ethers.getContractFactory("MyContract");
+
+    // 2. Deployment Call (Ethers handles ABI encoding and signing)
+    const myContract = await MyContract.deploy();
+    
+    // 3. Wait for the transaction to be mined
+    await myContract.waitForDeployment(); 
+
+    // 4. Log the address for the frontend
+    const contractAddress = await myContract.getAddress();
+    console.log(`Contract deployed to: ${contractAddress}`);
+}
+
+main().catch((error) => {
+    console.error(error);
+    process.exit(1);
+});
+
+This comparison visually captures how Foundry minimizes the technological stack by keeping the deployment logic within the Solidity ecosystem, while Hardhat utilizes the vast JavaScript/Node.js ecosystem for its tooling.
+Do you have any further questions about using Foundry, or would you like to move on to a new Web3 development topic?
+
