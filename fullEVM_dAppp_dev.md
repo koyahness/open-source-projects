@@ -48,8 +48,11 @@ cd my-evm-dapp
 mkdir backend
 
 cd backend
+
 npm init -y
+
 npm install --save-dev hardhat
+
 npx hardhat init # Select "Create a basic sample project"
 
 cd .. # Go back to my-evm-dapp
