@@ -35,9 +35,16 @@ cd my-foundry-dapp
 ```
 
 # 2. Setup the backend (Foundry)
-# This creates a standard Foundry layout (src, test, script dirs)
+
+## This creates a standard Foundry layout (src, test, script dirs)
+
+```
+
 forge init contracts
+
 cd contracts
+```
+
 # Remove the default Counter contract for a fresh start
 rm src/Counter.sol
 rm test/Counter.t.sol
