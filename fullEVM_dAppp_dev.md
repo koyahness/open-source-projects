@@ -558,3 +558,39 @@ You now have a complete, secure, CLI-driven workflow:
  * Integration CLI: Using cp to transfer the ABI.
  * Frontend Logic: Using Ethers.js to connect and interact.
 Would you like to move on to a final step, such as running the development server and testing the full DApp connection?
+
+That's the final mile! To test your full DApp connection, you will need two terminal sessions running concurrently: one for your local Hardhat node (to simulate the blockchain) and one for your React development server.
+🏃 Running and Testing the Full DApp
+Step 1: Start the Local Hardhat Node (Terminal 1)
+If you deployed to a testnet like Sepolia, you can skip this step, but for rapid local development and testing, running a local node is essential.
+Goal: Start a private, local EVM node that your wallet (MetaMask) can connect to, complete with pre-funded accounts.
+| CLI Command | Directory | Purpose |
+|---|---|---|
+| npx hardhat node | backend/ | Starts the Hardhat local network on http://127.0.0.1:8545. Keep this terminal running. |
+> Note: The local node will log 20 sample accounts and their private keys. Copy one of these private keys to import into MetaMask for testing.
+> 
+Step 2: Configure MetaMask for Localhost
+Before running the frontend, ensure your browser wallet is pointed at the local node.
+ * Open MetaMask and click the network selector.
+ * Add a new network (or select "Localhost 8545" if it appears automatically).
+   * Network Name: Localhost 8545 (or Hardhat Local)
+   * New RPC URL: http://127.0.0.1:8545
+   * Chain ID: 31337
+ * Import Account: Use the private key of one of the 20 accounts logged in Terminal 1 to import a test account. This account will have funds to pay for gas on your local chain.
+Step 3: Start the Frontend Development Server (Terminal 2)
+Open a second terminal window, navigate to your frontend directory, and start the React server.
+| CLI Command | Directory | Purpose |
+|---|---|---|
+| npm start | frontend/ | Starts the React development server, usually opening the DApp in your browser at http://localhost:3000. |
+Step 4: Test the Connection and Interaction
+With both the backend node and the frontend server running:
+ * In your browser, ensure MetaMask is connected to the Localhost 8545 network.
+ * Your frontend code (e.g., the connectWalletAndGetContract function from Step 4 in the previous response) will now attempt to connect to the wallet via window.ethereum.
+ * Test your contract interactions:
+   * View functions: Call a read function (e.g., readCurrentValue) to ensure data is fetched from the local Hardhat node.
+   * Transaction functions: Call a write function (e.g., updateContractValue). MetaMask should pop up, prompting you to confirm and sign the transaction, using gas from your imported test account.
+This completes the full CLI-driven development and deployment cycle for your EVM DApp!
+If you're having trouble running npm start on your React app, this video provides common troubleshooting steps. npm start error in React (SOLVED) will give you solutions if you encounter common issues when trying to launch your React development server.
+
+YouTube video views will be stored in your YouTube History, and your data will be stored and used by YouTube according to its Terms of Service
+
