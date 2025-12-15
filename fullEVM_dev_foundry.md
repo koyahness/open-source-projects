@@ -54,7 +54,7 @@ rm src/Counter.sol
 rm test/Counter.t.sol
 
 cd .. # Go back to my-foundry-dapp
-'''
+```
 
 # 3. Setup the frontend (React example)
 npx create-react-app frontend
