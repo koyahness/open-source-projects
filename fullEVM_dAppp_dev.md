@@ -256,3 +256,69 @@ Hardhat automatically handles the decryption when you run tasks that require the
 Using the Hardhat Keystore significantly reduces the risk of accidentally exposing your private key compared to using a plain-text .env file.
 Would you like to try implementing Option 2 (Hardhat Keystore) for the security of your backend project?
 
+That's a smart choice. Using the Hardhat Keystore is a more secure way to manage your sensitive credentials directly from the CLI, especially since it encrypts the values, allowing the file to be committed to version control without exposing the secrets.
+Here is the step-by-step CLI guide for setting up and using the Hardhat Keystore. This assumes you are in the my-evm-dapp/backend/ directory.
+🔑 Secure Secrets Management with Hardhat Keystore (CLI)
+The Hardhat Keystore creates an encrypted file to store your secrets, protected by a master password you choose.
+Step 1: Install the Keystore Plugin
+While the plugin is often included in modern Hardhat installations, it's good practice to ensure it's installed.
+# In my-evm-dapp/backend/
+npm install --save-dev @nomicfoundation/hardhat-keystore
+
+Step 2: Configure the Plugin
+Add the plugin to your Hardhat configuration file (hardhat.config.js).
+backend/hardhat.config.js (Add plugin section):
+// hardhat.config.js
+require("@nomicfoundation/hardhat-toolbox");
+// require("@nomicfoundation/hardhat-keystore"); // Not strictly needed if using a Hardhat Toolbox
+
+module.exports = {
+  // ... other config ...
+};
+
+Step 3: Set Encrypted Secrets (CLI)
+You will use the keystore set command for your private key and RPC URL. The first time you run this, you will be prompted to create your Master Password.
+| CLI Command | Directory | Purpose |
+|---|---|---|
+| npx hardhat keystore set PRIVATE_KEY | backend/ | 1. Prompts for a new Master Password. 2. Prompts for the raw Private Key value. |
+| npx hardhat keystore set SEPOLIA_RPC_URL | backend/ | 1. Prompts for the Master Password (to unlock the keystore). 2. Prompts for the Sepolia RPC URL value. |
+> Note: The Keystore stores these secrets in an encrypted file in your project or home directory. You must remember the Master Password, as there is no recovery mechanism!
+> 
+Step 4: Configure Hardhat to Use Variables
+Instead of accessing process.env, you access these variables using a built-in Hardhat function called configVariable.
+backend/hardhat.config.js (Using configVariable):
+// hardhat.config.js
+
+// Import the function for configuration variables
+const { configVariable } = require("hardhat/config");
+
+// Retrieve the secure variables (they are decrypted internally when needed)
+const PRIVATE_KEY = configVariable("PRIVATE_KEY");
+const SEPOLIA_RPC_URL = configVariable("SEPOLIA_RPC_URL");
+
+module.exports = {
+  solidity: "0.8.24",
+  networks: {
+    sepolia: {
+      url: SEPOLIA_RPC_URL,
+      accounts: [PRIVATE_KEY],
+    },
+    // ... other networks
+  },
+};
+
+Step 5: Deployment (The CLI Interaction)
+Now, when you run your deployment, Hardhat recognizes the configVariable usage, accesses the keystore, and asks for the master password for temporary decryption.
+| CLI Command | Directory | Interaction |
+|---|---|---|
+| npx hardhat run scripts/deploy.js --network sepolia | backend/ | The CLI will prompt: "Enter keystore password:" (You input the password you created in Step 3). |
+Once the password is provided, Hardhat decrypts the variables into memory, signs the transaction with the private key, and performs the deployment. The private key never exists on disk in plain text.
+Additional Keystore CLI Commands
+You can manage your secrets using these commands:
+| CLI Command | Purpose |
+|---|---|
+| npx hardhat keystore list | Lists all the keys (e.g., PRIVATE_KEY, SEPOLIA_RPC_URL) stored in the keystore. |
+| npx hardhat keystore get PRIVATE_KEY | Prompts for the password and temporarily displays the raw value of the secret. |
+| npx hardhat keystore change-password | Allows you to change the master password used to protect all secrets. |
+Using the Hardhat Keystore ensures that your private keys are protected, even if your entire repository (including the encrypted Keystore file) is shared publicly.
+Would you like to move on to refining the deployment script in the backend/scripts/deploy.js file next?
