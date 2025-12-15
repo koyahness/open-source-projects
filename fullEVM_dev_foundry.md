@@ -2,7 +2,7 @@
 
 Building and deploying an EVM (Ethereum Virtual Machine) application using the Foundry framework for smart contracts requires a slightly different CLI workflow than Hardhat, as Foundry is primarily written in Rust and prioritizes speed and low-level control.
 
-Foundry is used for the contract development, while standard Node.js/React tools are used for the frontend integration.
+Foundry is used for the contract development, while standard 9Node.js/React tools are used for the frontend integration.
 
 Here is a comprehensive step-by-step guide showing the directory structures and CLI commands.
 
@@ -191,4 +191,3 @@ Once Anvil is running, follow these steps:
  * Deploy your contract to the local Anvil chain (Terminal 2):
    * forge script script/Deploy.s.sol --rpc-url http://127.0.0.1:8545 --private-key YOUR_ANVIL_PRIVATE_KEY --broadcast -vvvv
  * Run the frontend (npm start in Terminal 3) and connect the wallet to the Localhost network to test the full flow.
-Would you like a more detailed explanation of how the Solidity deployment script (Deploy.s.sol) works compared to the JavaScript deployment script used in Hardhat?
