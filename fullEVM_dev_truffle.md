@@ -64,13 +64,19 @@ my-truffle-dapp/
 2.1 Write and Compile the Contract
 You write your contract logic inside contracts/MyContract.sol.
 
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | truffle compile | my-truffle-dapp/ | Compiles .sol files into Bytecode and ABI (stored in build/contracts/) |
 
+
 2.2 Configure Deployment Script (Migration)
+
 Truffle uses numbered JavaScript files in the migrations/ directory to manage deployment order.
+
 migrations/2_deploy_contracts.js (Snippet):
+
+```
 // migrations/2_deploy_contracts.js
 const MyContract = artifacts.require("MyContract");
 
@@ -81,6 +87,8 @@ module.exports = function (deployer) {
   // If your contract takes arguments:
   // deployer.deploy(MyContract, arg1, arg2);
 };
+
+```
 
 2.3 Configure Network (Local and Testnet)
 Open truffle-config.js and configure the networks you plan to use (e.g., local Ganache, Sepolia testnet).
