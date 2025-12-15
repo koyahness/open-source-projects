@@ -83,14 +83,21 @@ my-foundry-dapp/contracts/
 ```
 
 2.1 Write, Compile, and Test the Contract
+
 You write your contract logic inside contracts/src/MyContract.sol.
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | forge build | contracts/ | Compiles .sol files into Bytecode and ABI (stored in out/) |
 | forge test | contracts/ | Runs all tests in test/ (written in Solidity) |
+
+
 2.2 Configure and Write Deployment Script
+
 Unlike Hardhat, Foundry deployment scripts are usually written in Solidity in the script/ folder.
 contracts/script/Deploy.s.sol (Simplified Snippet):
+
+```
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 import {Script} from "forge-std/Script.sol";
@@ -106,6 +113,8 @@ contract DeployScript is Script {
         return address(myContract);
     }
 }
+
+```
 
 2.3 Secure Key Management and Execution (CLI)
 Foundry typically relies on standard environment variables or explicit file paths for private keys. We will use environment variables, setting them temporarily in the command line for security.
