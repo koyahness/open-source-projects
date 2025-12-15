@@ -198,5 +198,3 @@ Your DApp is now fully deployed:
  * Smart Contract: Deployed on the EVM-compatible chain (e.g., Sepolia).
    
  * Frontend UI: Deployed to a web server (e.g., Netlify/Vercel) and connected to the contract.
- * 
-Would you like me to elaborate on setting up the private key securely using the dotenv package?
