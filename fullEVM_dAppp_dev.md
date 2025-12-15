@@ -75,8 +75,8 @@ cd .. # Go back to my-evm-dapp
    
 We focus on the my-evm-dapp/backend/ directory, which now contains the default Hardhat structure:
 
+```
 my-evm-dapp/backend/
-
 ├── contracts/        # Your Solidity files live here
 │   └── Lock.sol      # (Example contract from Hardhat init)
 ├── scripts/          # Deployment scripts (Node.js)
@@ -84,6 +84,8 @@ my-evm-dapp/backend/
 ├── test/             # Test files (JavaScript/TypeScript)
 ├── hardhat.config.js # Configuration file
 └── package.json
+
+```
 
 2.1 Write and Compile the Contract
 You write your Solidity logic inside the contracts/ directory (e.g., MyContract.sol).
