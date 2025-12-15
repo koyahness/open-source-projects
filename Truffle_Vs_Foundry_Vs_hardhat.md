@@ -1,6 +1,12 @@
-That's an excellent comparison to make, as these three frameworks—Truffle, Hardhat, and Foundry—represent the dominant, but distinct, approaches to professional EVM (Ethereum Virtual Machine) development today.
+# EVM development frameworks
+
+These three frameworks—Truffle, Hardhat, and Foundry—represent the dominant, but distinct, approaches to professional EVM (Ethereum Virtual Machine) development today.
+
+
 Here is a comprehensive comparison focusing on their core philosophies, key features, language focus, and deployment workflows.
-⚔️ Truffle vs. Hardhat vs. Foundry: The EVM Framework Showdown
+
+## ⚔️ Truffle vs. Hardhat vs. Foundry: The EVM Framework Showdown
+
 | Feature | Truffle Suite | Hardhat | Foundry |
 |---|---|---|---|
 | Core Philosophy | Full-stack DApp development: focuses on migrations, testing, and UI integration. | Flexible, extensible environment: focuses on local development and debugging. | EVM-native development: focuses on speed, low-level control, and writing logic in Solidity. |
