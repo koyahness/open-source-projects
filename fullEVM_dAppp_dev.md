@@ -5,8 +5,8 @@ Building and deploying a full EVM (Ethereum Virtual Machine) application (DApp) 
 We will use the popular Hardhat framework for the contract side and a standard React setup for the frontend, demonstrating a typical integrated project structure.
 
 
-1. ⚙️ Initial Setup and Project Structure
-
+1. ⚙️ [Initial Setup and Project Structure:]
+(https://github.com/koyahness/open-source-projects/blob/main/Web3-dev-%20directory-%20structure.md)
 
 1.1 Global Prerequisites
 
