@@ -57,10 +57,14 @@ cd .. # Go back to my-foundry-dapp
 ```
 
 # 3. Setup the frontend (React example)
+
+```
 npx create-react-app frontend
 cd frontend
 npm install ethers # Library to interact with the blockchain
 cd .. # Go back to my-foundry-dapp
+
+```
 
 2. 📝 Backend (Smart Contract) CLI Steps
 We focus on the my-foundry-dapp/contracts/ directory, which now contains the default Foundry structure:
