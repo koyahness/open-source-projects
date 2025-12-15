@@ -146,7 +146,11 @@ The frontend, located in my-evm-dapp/frontend/, needs the Contract ABI and Addre
 The contract ABI is located in the artifacts/ folder created by Hardhat. You need to copy the JSON file containing the ABI to your frontend project.
 
 # From the root directory: my-evm-dapp/
+
+```
 cp backend/artifacts/contracts/MyContract.sol/MyContract.json frontend/src/MyContract.json
+
+```
 
 3.2 Implement Web3 Interaction
 
