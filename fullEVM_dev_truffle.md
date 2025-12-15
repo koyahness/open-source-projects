@@ -46,6 +46,7 @@ cd ..
 ```
 
 Initial Directory Structure
+
 After truffle init, your directory will look like this:
 
 my-truffle-dapp/
