@@ -408,11 +408,13 @@ Step 1: Examine the Directory Structure
 
 Ensure you are familiar with the path to the script and the contract:
 
+```
 my-evm-dapp/backend/
 ├── contracts/
 │   └── MyContract.sol # Your main contract
 └── scripts/
     └── deploy.js      # The script we are modifying
+```
 
 Step 2: Modify deploy.js
 
