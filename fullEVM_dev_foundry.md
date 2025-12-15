@@ -6,7 +6,7 @@ Foundry is used for the contract development, while standard Node.js/React tools
 
 Here is a comprehensive step-by-step guide showing the directory structures and CLI commands.
 
-1. ⚙️ Setup and Project Structure (CLI)
+1. ⚙️ [Setup and Project Structure (CLI)](https://github.com/koyahness/open-source-projects/blob/main/Web3-dev-%20directory-%20structure.md)
    
 1.1 Global Prerequisites
 
