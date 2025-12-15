@@ -63,7 +63,9 @@ my-truffle-dapp/
    
 2.1 Write and Compile the Contract
 
-You write your contract logic inside contracts/MyContract.sol.
+You write your contract logic inside
+
+contracts/MyContract.sol.
 
 
 | CLI Command | Directory | Purpose |
@@ -94,6 +96,7 @@ module.exports = function (deployer) {
 2.3 Configure Network (Local and Testnet)
 
 Open truffle-config.js and configure the networks you plan to use (e.g., local Ganache, Sepolia testnet).
+
 truffle-config.js (Snippet):
 
 ```
@@ -130,29 +133,43 @@ module.exports = {
  * Note: For testnet deployment, you must install truffle-hdwallet-provider (now often simplified to @truffle/hdwallet-provider) and use secure environment variables (.env file) for your private key.
 
 3. 🚀 Deployment (CLI)
+   
 3.1 Start Local Node (For Local Testing)
+
 Open a separate terminal to run the local blockchain node.
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | ganache --chain.chainId 5777 | Any | Starts Ganache CLI on the default port 8545 (Truffle's default). Keep running. |
+
 3.2 Execute Deployment
+
 Run the migration command, specifying the target network.
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | truffle migrate --network development | my-truffle-dapp/ | Deploys contracts to the local Ganache node. |
 | truffle migrate --network sepolia | my-truffle-dapp/ | Deploys contracts to the Sepolia testnet. |
+
 > Key Output: The CLI output will log the Contract Address for your deployed contract.
-> 
+
 4. 🌐 Frontend Integration
+   
 The frontend (client/) needs the Contract Address and the ABI to interact with the deployed contract.
+
 4.1 Access Artifacts (ABI and Address)
 Truffle conveniently outputs a JSON file for each deployed contract in build/contracts/. This file contains both the ABI and the addresses for every network it has been deployed to.
+
 We will manually copy this file to the frontend source directory:
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | cp build/contracts/MyContract.json client/src/MyContract.json | my-truffle-dapp/ | Copies the contract artifacts to the React source folder. |
 4.2 Implement Web3 Interaction
+
 In your frontend code (e.g., client/src/App.js), you use the Web3 library (web3) to load the contract.
+
+```
 // client/src/App.js (Snippet)
 import Web3 from 'web3';
 import MyContract from './MyContract.json'; // The copied artifact
@@ -179,10 +196,16 @@ async function loadWeb3AndContract() {
 
 // ... Use the 'instance' to call functions ...
 
+```
+
 4.3 Run and Test the DApp
+
 With the Ganache node running and the artifact copied:
+
 | CLI Command | Directory | Purpose |
 |---|---|---|
 | npm start | client/ | Starts the React development server. |
+
 You can now connect your wallet (configured for Ganache) to the DApp and test the contract interactions.
+
 Would you like a more detailed guide on how to securely handle private keys within the Truffle environment using the HDWalletProvider?
