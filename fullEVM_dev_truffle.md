@@ -1,3 +1,5 @@
+Building and deploying EVM: Truffle
+
 Building and deploying an EVM (Ethereum Virtual Machine) application using the Truffle Suite is a foundational workflow in Web3 development. Truffle handles contract compilation, linking, deployment, and binary management, while its companion tool, Drizzle (or similar libraries like Ethers/Web3.js), handles frontend integration.
 Here is a step-by-step guide showing the directory structures and CLI commands for a full Truffle DApp.
 1. ⚙️ Setup and Prerequisites (CLI)
