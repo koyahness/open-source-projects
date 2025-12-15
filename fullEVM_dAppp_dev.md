@@ -105,8 +105,11 @@ Open hardhat.config.js and add a network configuration.
 You will need an RPC URL (e.g., from Alchemy or Infura) and your wallet's private key (stored securely in a .env file).
 
 backend/.env (Securely store keys):
+
+```
 PRIVATE_KEY="YOUR_WALLET_PRIVATE_KEY"
 SEPOLIA_RPC_URL="YOUR_SEPOLIA_API_URL"
+```
 
 backend/hardhat.config.js (Snippet):
 
