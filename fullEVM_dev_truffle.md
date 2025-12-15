@@ -208,6 +208,8 @@ With the Ganache node running and the artifact copied:
 
 You can now connect your wallet (configured for Ganache) to the DApp and test the contract interactions.
 
+# Security consideration
+
 That is a critical security consideration. Never hardcode your private keys or mnemonics directly into configuration files or deployment scripts.
 In the Truffle ecosystem, secure key management for deployment to live networks (like Sepolia or Mainnet) is handled by the HDWalletProvider. This provider retrieves your credentials from a secure source (usually environment variables) and uses them to sign transactions without exposing them in your codebase.
 Here is the step-by-step guide on how to implement this securely in the Truffle CLI workflow.
