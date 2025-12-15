@@ -91,8 +91,11 @@ module.exports = function (deployer) {
 ```
 
 2.3 Configure Network (Local and Testnet)
+
 Open truffle-config.js and configure the networks you plan to use (e.g., local Ganache, Sepolia testnet).
 truffle-config.js (Snippet):
+
+```
 module.exports = {
   // ... other config ...
   networks: {
@@ -121,7 +124,10 @@ module.exports = {
   }
 };
 
+```
+
  * Note: For testnet deployment, you must install truffle-hdwallet-provider (now often simplified to @truffle/hdwallet-provider) and use secure environment variables (.env file) for your private key.
+
 3. 🚀 Deployment (CLI)
 3.1 Start Local Node (For Local Testing)
 Open a separate terminal to run the local blockchain node.
