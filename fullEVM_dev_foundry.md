@@ -1,4 +1,4 @@
-#Building and deploying on EVM using foundry
+# Building and deploying on EVM using foundry
 
 Building and deploying an EVM (Ethereum Virtual Machine) application using the Foundry framework for smart contracts requires a slightly different CLI workflow than Hardhat, as Foundry is primarily written in Rust and prioritizes speed and low-level control.
 Foundry is used for the contract development, while standard Node.js/React tools are used for the frontend integration.
