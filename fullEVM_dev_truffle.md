@@ -33,7 +33,7 @@ truffle init
 
 # 2. Setup the frontend (React example)
 
-# Truffle does not include a frontend, so we add a standard one.
+## Truffle does not include a frontend, so we add a standard one.
 
 ```
 npx create-react-app client
