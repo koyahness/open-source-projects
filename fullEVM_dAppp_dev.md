@@ -1,3 +1,5 @@
+# Full EVM dApp: Build and deploy
+
 Building and deploying a full EVM (Ethereum Virtual Machine) application (DApp) from the Command Line Interface (CLI) is a multi-step process. We will use the popular Hardhat framework for the contract side and a standard React setup for the frontend, demonstrating a typical integrated project structure.
 1. ⚙️ Initial Setup and Project Structure
 1.1 Global Prerequisites
