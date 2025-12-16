@@ -18,7 +18,9 @@ Here is a comparison of web3.js, ethers.js, and viem:
 | Core Abstraction | Node connection and key management often bundled. | Explicit separation of Provider (node) and Wallet (signer). | Separation of Client (Public, Wallet, Test) and other utilities. |
 | Contract Factory | Requires more manual setup for deployment. | Simplified with built-in ContractFactory. | Highly simplified and explicit contract interaction. |
 | Ecosystem | Large, but sometimes considered legacy/complex. | Large, robust, and well-documented. | Smaller but rapidly growing, often paired with Wagmi hooks. |
-💡 Detailed Breakdown
+
+## 💡 Detailed Breakdown
+
 1. web3.js
 web3.js is the original JavaScript library for Ethereum.
  * Pros:
