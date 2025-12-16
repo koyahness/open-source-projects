@@ -5,7 +5,9 @@ Building a full-stack Web3 dApp using Next.js (with the App Router) and an EVM c
 The most effective structure often involves a monorepo-like setup where your Next.js frontend and your Hardhat/Foundry smart contract project reside side-by-side.
 
 1. 📂 Monorepo-Style Directory Structure
+
 A recommended structure separates the blockchain logic from the application logic.
+
 my-fullstack-dapp/
 ├── **contracts/** <-- Smart Contract Project (Hardhat/Foundry)
 │   ├── contracts/             # Your Solidity files (*.sol)
@@ -36,7 +38,7 @@ my-fullstack-dapp/
 │   └── package.json
 └── package.json               # Root package.json (optional, for yarn/npm workspaces)
 
-2. 📝 Step-by-Step Guide
+3. 📝 Step-by-Step Guide
 A. Smart Contract Development (contracts/)
  * Initialize Contracts Project: Use Hardhat or Foundry inside the contracts/ directory.
    npx hardhat
