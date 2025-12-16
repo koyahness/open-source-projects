@@ -58,31 +58,40 @@ Would you like to see a code example comparing how they might perform a common t
 
 # Practial differences
 
-That's a great way to see the practical differences!
 Here is a comparison of how you would perform the very common task of getting the ETH balance of an address using all three libraries.
-We will use the same public test address, for example: 0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (Vitalik Buterin's ENS address).
+
+We will use the same public test address, for example:
+
+0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045 (Vitalik Buterin's ENS address).
+
 💻 Code Example: Getting an Account Balance
+
 The key differences to look for are:
+
  * Instantiation: How you connect to the node (RPC Provider).
  * API Naming: The function names and argument format.
  * Result Type: What kind of value the function returns for the balance.
+
 | Library | Code Snippet (Connecting to a Public Node) | Result Type |
 |---|---|---|
 | web3.js | javascript<br>const Web3 = require('web3');<br>const provider = 'https://eth-mainnet.public.blastapi.io';<br>const web3 = new Web3(provider);<br><br>web3.eth.getBalance('<ADDRESS>').then(balance => {<br>  // 'balance' is a string in **wei**<br>  console.log(web3.utils.fromWei(balance, 'ether'));<br>});<br> | String (in wei) |
 | ethers.js | javascript<br>const { ethers } = require('ethers');<br>const provider = new ethers.JsonRpcProvider('https://eth-mainnet.public.blastapi.io');<br><br>provider.getBalance('<ADDRESS>').then(balance => {<br>  // 'balance' is a **BigNumber** object<br>  console.log(ethers.formatEther(balance));<br>});<br> | BigNumber object (in wei) |
 | viem | javascript<br>import { createPublicClient, http } from 'viem';<br>import { mainnet } from 'viem/chains';<br><br>const client = createPublicClient({<br>  chain: mainnet,<br>  transport: http('https://eth-mainnet.public.blastapi.io'),<br>});<br><br>client.getBalance({<br>  address: '<ADDRESS>',<br>}).then(balance => {<br>  // 'balance' is a native **BigInt** (in **wei**)<br>  console.log(balance); // Need utility to format to ETH<br>});<br> | Native BigInt (in wei) |
+
 🚀 Key Takeaways from the Example
+
 1. Instantiation
  * web3.js: Very simple, just passes the URL directly to the Web3 constructor.
  * ethers.js: Explicitly uses JsonRpcProvider for connection.
  * viem: Uses a more structured, functional approach: createPublicClient with an explicit chain (for types) and transport (for the connection). This is common in modern JavaScript utility libraries.
+   
 2. API Design
  * web3.js: Uses nested properties (web3.eth.getBalance).
  * ethers.js: Uses a direct method on the Provider object (provider.getBalance).
  * viem: Uses a functional/object-based argument style (client.getBalance({ address: ... })), which is highly type-safe and easier to work with in TypeScript.
+
 3. Handling Large Numbers (The Most Important Difference)
 This is where the distinction is clearest:
  * web3.js: Returns the balance as a string in wei (the smallest unit, 10^{-18} ETH). You must use a utility (web3.utils.fromWei) to format it for display.
  * ethers.js: Returns its custom BigNumber object. This is safer than a native JavaScript number but requires its own formatting utility (ethers.formatEther).
  * viem: Returns the modern, native JavaScript BigInt. While you still need a utility to format it to a human-readable ETH value, the underlying data type is the official JavaScript standard for integers larger than 2^{53}-1.
-Do you have any specific task or project in mind (e.g., deploying a contract, interacting with an ERC-20 token) where you'd like to see another comparison?
