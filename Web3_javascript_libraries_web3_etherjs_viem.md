@@ -110,6 +110,7 @@ To understand where Wagmi fits in, you need to think of these libraries in terms
 | State/Hooks Layer | Wagmi | Manages the React state of wallet connections, balances, and transactions. It provides the hooks. | Frontend/React only. |
 | JSON-RPC Client Layer | Viem or Ethers.js | The low-level JavaScript client that actually speaks to the Ethereum node. It provides the raw functions. | Can be used in frontend or backend. |
 | Node Connection | Alchemy, Infura, etc. | The RPC endpoint that processes the request. | The Blockchain Network. |
+
 Where Wagmi Fits In
 Wagmi is a collection of React Hooks that sits on top of a low-level client like Viem (its current preferred peer) or Ethers.js.
  * Role: Wagmi handles all the complexities of frontend state management related to the blockchain.
@@ -130,6 +131,7 @@ The Wagmi team created Viem because they needed a low-level, unopinionated, full
 | Viem | Low-Level Client (Engine) | When building non-React apps, backend services, or other libraries. It's the modern replacement for Ethers.js. |
 | Ethers.js | Low-Level Client (Engine) | For established projects, backends, or when you prefer a mature, single-class Provider/Signer architecture. |
 | Wagmi | React Hooks (Dashboard) | Almost always when building a React frontend DApp, as it drastically simplifies all UI-related blockchain logic. |
+
 In short, if you are a React developer, you will likely use Wagmi and it will use Viem underneath. You may never need to write a line of pure Viem code, but understanding that it's the underlying RPC client is crucial.
 
 
