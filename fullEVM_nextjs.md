@@ -41,7 +41,9 @@ my-fullstack-dapp/
 ```
 
 3. 📝 Step-by-Step Guide
+   
 A. Smart Contract Development (contracts/)
+
  * Initialize Contracts Project: Use Hardhat or Foundry inside the contracts/ directory.
    npx hardhat
 
@@ -84,6 +86,4 @@ C. Component Interaction
  * Wallet Connect: Place the <ConnectButton /> from RainbowKit in a Client Component (e.g., dapp/src/components/ConnectWallet.tsx).
  * Read Contract Data: Use the useReadContract Wagmi hook in any Client Component to fetch contract data.
  * Write Transactions: Use useWriteContract and useWaitForTransactionReceipt to handle sending transactions (e.g., minting, swapping).
-This video provides a step-by-step tutorial for building a complete Ethereum dApp with Next.js, Wagmi, and RainbowKit, offering a practical demonstration of this directory structure and workflow. Build an Ethereum DApp with Next.js, Wagmi, RainbowKit, and Pinata to Mint NFTs on IPFS
-
-YouTube video views will be stored in your YouTube History, and your data will be stored and used by YouTube according to its Terms of Service
+This video provides a step-by-step tutorial for building a complete Ethereum dApp with Next.js, Wagmi, and RainbowKit, offering a practical demonstration of this directory structure and workflow. Build an Ethereum DApp with Next.js, Wagmi, RainbowKit, and Pinata to Mint NFTs on IPFS.
