@@ -56,7 +56,7 @@ The "best" choice depends on your project:
  * For Performance-Critical, New, or React Projects: viem is the top-tier modern choice. It's the lightest, uses the newest standards (like BigInt), and pairs perfectly with the Wagmi ecosystem. It is often recommended as the new go-to for modern frontend development.
 Would you like to see a code example comparing how they might perform a common task, like getting an account's balance?
 
-#Practial differences
+# Practial differences
 
 That's a great way to see the practical differences!
 Here is a comparison of how you would perform the very common task of getting the ETH balance of an address using all three libraries.
