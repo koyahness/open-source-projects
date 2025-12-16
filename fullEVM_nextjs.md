@@ -8,6 +8,7 @@ The most effective structure often involves a monorepo-like setup where your Nex
 
 A recommended structure separates the blockchain logic from the application logic.
 
+```
 my-fullstack-dapp/
 ├── **contracts/** <-- Smart Contract Project (Hardhat/Foundry)
 │   ├── contracts/             # Your Solidity files (*.sol)
@@ -37,6 +38,7 @@ my-fullstack-dapp/
 │   ├── .env.local             # WalletConnect Project ID, Alchemy/Infura RPC keys
 │   └── package.json
 └── package.json               # Root package.json (optional, for yarn/npm workspaces)
+```
 
 3. 📝 Step-by-Step Guide
 A. Smart Contract Development (contracts/)
