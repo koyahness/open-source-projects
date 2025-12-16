@@ -40,6 +40,5 @@ Here is the typical flow of data and control when a user clicks a button to exec
  * Node/Broadcast (Viem/Ethers.js): The signed transaction is sent back to the client and then broadcast to the Ethereum node via JSON-RPC.
  * On-Chain Execution (Solidity): The network includes the transaction in a block, and the Solidity Smart Contract executes the logic and updates the decentralized state.
 This whole process relies on the distinct roles of each component to separate the decentralized logic (Solidity) from the presentation logic (React/Wagmi).
-This video gives a good overview of the stack and how to start building a DApp using Next.js, React, and Wagmi. Build an Ethereum DApp with Next.js, Wagmi, RainbowKit, and Pinata to Mint NFTs on IPFS
 
-YouTube video views will be stored in your YouTube History, and your data will be stored and used by YouTube according to its Terms of Service
+ Check tutorials on how to start building a DApp using Next.js, React, and Wagmi. Build an Ethereum DApp with Next.js, Wagmi, RainbowKit, and Pinata to Mint NFTs on IPFS
