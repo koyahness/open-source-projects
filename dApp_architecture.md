@@ -1,8 +1,13 @@
 # The dApp architecture
 
-This is an excellent way to map out the entire Web3 development stack. These five components represent the necessary layers of a modern Decentralized Application (DApp) architecture.
+This is an excellent way to map out the entire Web3 development stack. These five components represent the necessary layers of a modern
+
+Decentralized Application (DApp) architecture.
+
 Here is how each component fits into the overall system, from the back-end/on-chain logic to the front-end user interface.
-🛠️ The DApp Architecture Stack
+
+# 🛠️ The DApp Architecture Stack
+
 1. Solidity (The Back-End/On-Chain Layer)
  * Role: The Smart Contract Language and the Decentralized Back-End Logic.
  * Function: Solidity is used to write the Smart Contracts—the immutable code that lives on the Ethereum Virtual Machine (EVM). It defines the rules, stores the data (e.g., token balances, NFT ownership), and executes the state changes (e.g., transferring tokens).
