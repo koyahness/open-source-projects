@@ -1,3 +1,5 @@
+# The dApp architecture
+
 This is an excellent way to map out the entire Web3 development stack. These five components represent the necessary layers of a modern Decentralized Application (DApp) architecture.
 Here is how each component fits into the overall system, from the back-end/on-chain logic to the front-end user interface.
 🛠️ The DApp Architecture Stack
