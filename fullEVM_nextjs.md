@@ -1,5 +1,9 @@
+# Next.js App
+
 Building a full-stack Web3 dApp using Next.js (with the App Router) and an EVM chain requires a clean separation between the smart contract logic and the Next.js application.
+
 The most effective structure often involves a monorepo-like setup where your Next.js frontend and your Hardhat/Foundry smart contract project reside side-by-side.
+
 1. 📂 Monorepo-Style Directory Structure
 A recommended structure separates the blockchain logic from the application logic.
 my-fullstack-dapp/
