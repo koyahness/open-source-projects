@@ -187,6 +187,8 @@ https://github.com/argotorg/solidity/tree/develop/docs
 
 https://docs.soliditylang.org/en/v0.8.30/contributing.html
 
+https://docs.soliditylang.org/en/v0.8.20/types.html#types
+
 https://github.com/argotorg/solidity
 
 https://github.com/orgs/ethereum/projects/17
