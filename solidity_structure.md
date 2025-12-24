@@ -1,3 +1,5 @@
+# Solidity structure
+
 Solidity files follow a specific, rigid hierarchy. Understanding this structure is essential because the compiler reads the file in a specific order to manage inheritance, libraries, and global settings.
 1. The Global Header
 Every Solidity file must start with two specific lines that tell the compiler how to treat the code.
