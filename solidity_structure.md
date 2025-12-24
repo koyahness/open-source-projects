@@ -1,33 +1,56 @@
 # Solidity structure
 
 Solidity files follow a specific, rigid hierarchy. Understanding this structure is essential because the compiler reads the file in a specific order to manage inheritance, libraries, and global settings.
+
 1. The Global Header
+   
 Every Solidity file must start with two specific lines that tell the compiler how to treat the code.
+
  * SPDX License Identifier: Machine-readable code that specifies the legal licensing (e.g., MIT, Apache-2.0).
+   
  * Pragma Directive: Tells the compiler which version of Solidity to use. Using ^0.8.0 means "any version from 0.8.0 up to (but not including) 0.9.0."
+   
 <!-- end list -->
 // SPDX-License-Identifier: MIT
+
 pragma solidity ^0.8.20;
 
 2. External Dependencies (Imports)
+   
 After the header, you import other files or libraries. This keeps your main contract clean and allows you to reuse verified code (like OpenZeppelin).
+
 import "@openzeppelin/contracts/access/Ownable.sol";
+
 import "./MyLibrary.sol";
 
-3. The Contract Body
+4. The Contract Body
+   
 A contract is similar to a "Class" in object-oriented programming. Inside the contract curly braces, the components should ideally follow this order for readability:
+
 A. State Variables
+
 These are stored on-chain in Storage.
+
  * Constants: uint256 public constant MAX_SUPPLY = 1000;
+   
  * Immutables: address public immutable owner;
+
  * State Variables: uint256 public count;
+   
 B. Type Definitions & Data Structures
+
  * Events: For off-chain logging.
- * Errors: For gas-efficient reverts (preferred over require strings in 0.8.4+).
+   
+ * Errors: For gas-efficient reverts (preferred over require strings in 0.8.4+)
+   
  * Structs: Custom data groupings.
+   
  * Enums: Custom discrete types (e.g., Status { Pending, Shipped, Delivered }).
+
 4. Function Order (The "Style Guide")
+   
 To make code easier for auditors to read, functions should be grouped by their "visibility" and "nature":
+
  * Constructor: Runs only once during deployment.
  * Receive/Fallback: Special functions for handling plain Ether transfers.
  * External: Functions called only from outside the contract.
