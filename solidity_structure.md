@@ -21,9 +21,11 @@ pragma solidity ^0.8.20;
    
 After the header, you import other files or libraries. This keeps your main contract clean and allows you to reuse verified code (like OpenZeppelin).
 
+```
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 import "./MyLibrary.sol";
+```
 
 ## 3. The Contract Body
    
