@@ -1,3 +1,5 @@
+# Solidity: EVM
+
 Solidity is a unique language because it is designed for the Ethereum Virtual Machine (EVM), where every operation has a financial cost (Gas) and every line of code is immutable once deployed.
 To master Solidity, you must move beyond general programming logic and focus on these four foundational pillars:
 1. Security-First Mindset
