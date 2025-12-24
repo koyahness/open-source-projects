@@ -66,9 +66,10 @@ To make code easier for auditors to read, functions should be grouped by their "
  * Internal: Only available to this contract and those inheriting from it.
    
  * Private: Only available to this specific contract.
- * 
-  ''' 
+
 <!-- end list -->
+
+```
 contract StructureExample {
     // 1. State Variables
     uint256 private _value;
@@ -92,7 +93,8 @@ contract StructureExample {
         return _value;
     }
 }
-'''
+```
+
 ## 4. Inheritance Structure
    
 Solidity supports multiple inheritance. When a contract inherits from others, the order matters because of the C3 Linearization (the order in which the compiler resolves which function to use if multiple parents have the same function name).
