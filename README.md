@@ -58,7 +58,7 @@ Please test your code and ensure that it builds locally before submitting a pull
 Do a PR review checklist, example: https://github.com/argotorg/solidity/blob/develop/ReviewChecklist.md
 
 
-## Blockchain concepts & development
+# ⚡⚡ Blockchain concepts & development
 
 The Genesis and Evolution of Bitcoin and Ethereum: [Two fundamental phases of blockchain technology](https://github.com/koyahness/open-source-projects/blob/main/evolution_genesis_of_Btc_and_ethereum.md)
 
