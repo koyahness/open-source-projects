@@ -57,6 +57,27 @@ Please test your code and ensure that it builds locally before submitting a pull
 
 Do a PR review checklist, example: https://github.com/argotorg/solidity/blob/develop/ReviewChecklist.md
 
+
+## Blockchain concepts & development
+
+The Genesis and Evolution of Bitcoin and Ethereum: [Two fundamental phases of blockchain technology](https://github.com/koyahness/open-source-projects/blob/main/evolution_genesis_of_Btc_and_ethereum.md)
+
+ Isolated smart contracts cannot access real-world data: [Understanding The Oracle Problem in blockchain](https://github.com/koyahness/open-source-projects/blob/main/the_oracle_problem.md)
+
+Ethereum's Rollup-Centric Roadmap and Key Upgrades: [Layer-2 rollups](https://github.com/koyahness/open-source-projects/blob/main/Ethereum's_Rollup-Centric_Roamap.md)
+
+
+Build and deploy EVM dApp: [Hardhat and React](https://github.com/koyahness/open-source-projects/blob/main/fullEVM_dAppp_dev.md)
+ 
+Build and deploy EVM dApp: [Foundry and React](https://github.com/koyahness/open-source-projects/blob/main/fullEVM_dev_foundry.md)
+
+
+Build and deploy EVM dApp: [Truffle and React](https://github.com/koyahness/open-source-projects/blob/main/fullEVM_dev_truffle.md)
+
+<!--
+Build and deploy EVM dApp: next.js
+-->
+
 # ⚡ Bitcoin blockchain
 
 ### 💬 BTC docs and websites
