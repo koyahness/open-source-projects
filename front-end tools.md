@@ -4,7 +4,8 @@ To build frontends and apps in the Base EVM ecosystem, developers typically use 
 
 ---
 
-🔑 Key Tools for Frontend Development on Base
+## 🔑 Key Tools for Frontend Development on Base
+
 Here’s a breakdown of the most relevant options:
 
 | Tool / Framework | Purpose | Why It Matters for Base |
@@ -18,7 +19,8 @@ Here’s a breakdown of the most relevant options:
 
 ---
 
-🚀 How to Get Started
+## 🚀 How to Get Started
+
 1. Set up Viem with Base chain:
    `typescript
    import { createPublicClient, http } from 'viem';
@@ -44,7 +46,8 @@ Here’s a breakdown of the most relevant options:
 
 ---
 
-⚠️ Challenges & Considerations
+## ⚠️ Challenges & Considerations
+
 - Testnet vs Mainnet: Viem currently supports Base Sepolia testnet; ensure you configure correctly.  
 - Wallet diversity: RainbowKit covers major wallets, but you may need custom integrations for niche ones.  
 - Scalability: Use RPC providers with rate limits in mind; consider caching or indexing solutions.  
@@ -52,9 +55,6 @@ Here’s a breakdown of the most relevant options:
 
 ---
 
-🎯 Recommendation
+## 🎯 Recommendation
+
 If you’re starting fresh, combine Next.js + Wagmi + RainbowKit + Viem for a modern Base dApp stack. Then, plug into Base’s ecosystem resources for funding and distribution. This setup balances developer productivity with user-friendly onboarding.
-
-Would you like me to sketch a meme-style infographic showing the Base frontend stack (Viem + Wagmi + RainbowKit + Next.js) so you can use it in your creator economy content?  
-
-Sources:
