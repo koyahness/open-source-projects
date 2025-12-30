@@ -1,10 +1,12 @@
 # Monolithic vs Modular Ethereum Stack
 
-A monolithic Ethereum stack bundles execution, consensus, data availability, and settlement into one tightly integrated chain, while a modular Ethereum stack separates these functions across specialized layers (execution rollups, consensus layer, DA layer, settlement layer). Monolithic designs are simpler and secure but less scalable, whereas modular designs maximize flexibility, scalability, and innovation.
+A monolithic Ethereum stack bundles execution, consensus, data availability, and settlement into one tightly integrated chain, while a modular Ethereum stack separates these functions across specialized layers (execution rollups, consensus layer, DA layer, settlement layer).
+
+Monolithic designs are simpler and secure but less scalable, whereas modular designs maximize flexibility, scalability, and innovation.
 
 ---
 
-🧩 Comparison of Monolithic vs Modular Ethereum Stack
+## 🧩 Comparison of Monolithic vs Modular Ethereum Stack
 
 | Aspect | Monolithic Stack | Modular Stack |
 |--------|-----------------|---------------|
@@ -17,11 +19,9 @@ A monolithic Ethereum stack bundles execution, consensus, data availability, and
 | Interoperability | Limited cross-chain communication; siloed ecosystems. | Enhanced interoperability between rollups and modular layers. |
 | Developer Experience | Simpler to build on but constrained by scalability. | Richer design space; developers can choose execution environments and DA layers. |
 
-Sources: 
-
 ---
 
-🔍 Key Insights for Ethereum
+## 🔍 Key Insights for Ethereum
 
 - Monolithic Ethereum (early era):  
   - Execution, consensus, and DA were all handled by Ethereum L1.  
@@ -35,7 +35,7 @@ Sources:
 
 ---
 
-⚖️ Trade-offs & Risks
+## ⚖️ Trade-offs & Risks
 
 - Monolithic Risks:  
   - Scalability bottlenecks.  
@@ -49,7 +49,7 @@ Sources:
 
 ---
 
-🚀 Why Modular Wins for Ethereum
+## 🚀 Why Modular Wins for Ethereum
 
 Ethereum’s roadmap (Danksharding, rollups, Proto-Danksharding via EIP-4844) is explicitly modular. This design preserves Ethereum’s role as a secure settlement layer while enabling massive scalability through rollups. It shifts Ethereum from a monolithic chain to a modular ecosystem, empowering creators and users with lower costs, faster transactions, and more flexibility.
 
@@ -60,7 +60,7 @@ Here’s a clear breakdown of each layer in the Monolithic vs Modular Ethereum S
 
 ---
 
-🧱 Monolithic Ethereum Stack
+## 🧱 Monolithic Ethereum Stack
 
 All layers are tightly coupled in one chain.
 
@@ -73,7 +73,7 @@ All layers are tightly coupled in one chain.
 
 ---
 
-🧩 Modular Ethereum Stack
+## 🧩 Modular Ethereum Stack
 
 Each layer is specialized and decoupled.
 
