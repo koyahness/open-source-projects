@@ -1,4 +1,5 @@
-Quick Answer:  
+# Monolithic vs Modular Stack
+
 A monolithic Ethereum stack bundles execution, consensus, data availability, and settlement into one tightly integrated chain, while a modular Ethereum stack separates these functions across specialized layers (execution rollups, consensus layer, DA layer, settlement layer). Monolithic designs are simpler and secure but less scalable, whereas modular designs maximize flexibility, scalability, and innovation.
 
 ---
