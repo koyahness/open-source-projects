@@ -1,3 +1,5 @@
+Blockchain: web3
+
 In the world of blockchain, EVM (Ethereum Virtual Machine) development frameworks are essential toolkits that streamline the process of writing, testing, and deploying smart contracts.
 
 They handle the "heavy lifting"—like compiling code, managing local blockchains, and running automated tests.
