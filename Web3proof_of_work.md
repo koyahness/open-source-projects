@@ -1,4 +1,7 @@
+# Web3 proof of work
+
 In the Web3 world, your wallet address is your identity, but your on-chain and off-chain activity is your reputation. Unlike a traditional CV where you "tell" people what you can do, Web3 allows you to "show" it through a verifiable trail of Proof of Work (PoW).
+
 Here is a breakdown of how to build and categorize your Web3 résumé.
 1. The Technical Layer: GitHub & Repositories
 For developers, your code is your greatest advocate. It’s not just about the final product, but the consistency of your contributions.
