@@ -35,7 +35,6 @@ npm install -g @anthropic-ai/claude-code
 ```
 
 2. Usage
-3. 
 Navigate to your project directory and initialize a session:
 
 ```
@@ -44,15 +43,18 @@ claude
 ```
 
 The first time you run it, you will be prompted to log in to your Anthropic account.
+
 3. Common Commands
+
  * /init: Sets up context for a new project (creates a CLAUDE.md file).
  * /login / /logout: Manages your session.
  * /bug: Reports an issue with the tool directly to Anthropic.
  * @filename: Mention specific files to focus Claude's attention.
+ * 
 Comparison: Claude Code vs. Cursor vs. Copilot
+
 | Feature | Claude Code | Cursor | GitHub Copilot |
 |---|---|---|---|
 | Interface | Terminal (CLI) | Standalone IDE (Fork of VS Code) | IDE Extension |
 | Strength | Autonomous tasks & CLI tools | Full-repo context & GUI edits | Inline autocompletion |
 | Philosophy | Unix-style, scriptable | Integrated, visual | Passive assistant |
-Would you like me to help you write a specific command for a task you're working on, or perhaps guide you through setting up a CLAUDE.md file for your project?
