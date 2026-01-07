@@ -3,7 +3,7 @@
 
 2025 was defined by fewer—but far larger—incidents, shifting the dominant risk from classic code bugs to governance, access control, business logic, and AI-enabled attack surface expansion.
 
-The year’s losses clustered around mega-hacks, with a widening gap between the median event and outliers, reframing security as black-swan defense rather than bug whack-a-mole.
+The year’s losses clustered around mega-hacks, with a widening gap between the median event and outliers, reframing security as black-swan defense rather than bug w8hack-a-mole.
 
 ---
 
@@ -280,6 +280,4 @@ Visual storytelling ideas for your audience
   - Label: LLM with magnifying glass scanning a forest of contracts; “Edge cases aren’t edges to AI.”
 
 - The 1000x Gap Cliff:  
-  - Label: Tiny fence for small bugs, canyon for mega-hacks; “Design for black swans.”
-
-If you want, I can turn one of these into a meme-ready storyboard with captions, iconography, and panel flow tailored to Base/EVM audiences.
+  - Label: Tiny fence for small bugs, canyon for mega-hacks; “Design for black swans.
