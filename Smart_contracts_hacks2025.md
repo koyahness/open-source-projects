@@ -1,7 +1,9 @@
 
-2025 crypto security overview
+# 2025 crypto security overview
 
-2025 was defined by fewer—but far larger—incidents, shifting the dominant risk from classic code bugs to governance, access control, business logic, and AI-enabled attack surface expansion. The year’s losses clustered around mega-hacks, with a widening gap between the median event and outliers, reframing security as black-swan defense rather than bug whack-a-mole.
+2025 was defined by fewer—but far larger—incidents, shifting the dominant risk from classic code bugs to governance, access control, business logic, and AI-enabled attack surface expansion.
+
+The year’s losses clustered around mega-hacks, with a widening gap between the median event and outliers, reframing security as black-swan defense rather than bug whack-a-mole.
 
 ---
 
