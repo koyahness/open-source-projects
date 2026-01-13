@@ -1,4 +1,7 @@
+# Decentralized dApp
+
 Building a Decentralized Application (DApp) to mint Non-Fungible Tokens (NFTs) involves several distinct steps, ranging from preparing the digital assets to deploying the front-end interface.
+
 Here is a step-by-step guide on how to build a full-stack NFT minting DApp, focusing on best practices like using IPFS for metadata storage and modern tooling like Wagmi for the frontend.
 🛠️ Phase 1: Assets and Metadata (IPFS Storage)
 The goal of this phase is to make your NFT asset and its descriptive data permanently accessible and decentralized using the InterPlanetary File System (IPFS).
