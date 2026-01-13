@@ -1,14 +1,22 @@
 To get you started, let's focus on setting up a CLAUDE.md file.
+
 This file acts as the "brain" or memory for Claude Code within your project. It’s where you define your project's coding standards, preferred libraries, and architectural rules so that Claude doesn't have to guess how you like things done.
+
 Step 1: Initialize the Project
 If you haven't already, run the initialization command in your terminal:
+
+```
 claude /init
+```
 
 Step 2: Customize your CLAUDE.md
+
 A good CLAUDE.md should be concise but specific. Here is a high-quality template you can adapt. You can ask Claude Code to "Update CLAUDE.md with these rules" and paste this in:
+
 # Project: [Your Project Name]
 
 ## Build & Test Commands
+
 - Build: `npm run build`
 - Test: `npm test`
 - Lint: `npm run lint`
@@ -33,4 +41,3 @@ Pro-Tip: Using "Flags"
 When you run a command, you can use flags to control how Claude behaves:
  * claude --readonly: Lets Claude analyze code without the permission to edit files.
  * claude "your prompt": Run a single command and exit immediately.
-Would you like me to generate a specific set of project rules (a CLAUDE.md content) tailored to a specific framework like Next.js, Django, or Flutter?
