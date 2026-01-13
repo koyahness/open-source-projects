@@ -21,9 +21,12 @@ Included Courses:
 
 Blockchain Basics: The course you have just completed.
 
-Chainlink Fundamentals: This is a comprehensive, text-based course that provides a deep understanding of Chainlink's technology and services. While it is designed for a non-technical audience, please note that it contains an optional programming section that you can skip. This course is essential for anyone aiming to become an expert on Chainlink.
+## Chainlink Fundamentals:
 
-Fundamentals of Zero-Knowledge Proofs (ZKPs)
+This is a comprehensive, text-based course that provides a deep understanding of Chainlink's technology and services. While it is designed for a non-technical audience, please note that it contains an optional programming section that you can skip. This course is essential for anyone aiming to become an expert on Chainlink.
+
+## Fundamentals of Zero-Knowledge Proofs (ZKPs)
+
 We highly recommend this standalone course for everyone, regardless of their technical background. Zero-Knowledge technology is a significant and rapidly growing trend, and understanding its fundamentals is invaluable.
 
 Course: Fundamentals of Zero--Knowledge Proofs (ZKPs)
