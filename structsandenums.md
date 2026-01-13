@@ -86,5 +86,3 @@ struct Order {
     uint256 amount;
     Status status; // Using the Enum defined earlier
 }
-
-Would you like to see how to iterate through an Array of Structs and the gas implications of doing so on-chain?
