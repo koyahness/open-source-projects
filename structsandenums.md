@@ -1,3 +1,5 @@
+# Solidity
+
 In Solidity, Structs and Enums are user-defined types that help you organize complex data and state logic. They are essential for making your code readable and, more importantly, for optimizing how data is stored in the EVM's 32-byte slots.
 1. Enums (Enumerations)
 Enums are used to create custom types with a finite set of constant values. They are internally treated as integers (starting at 0), which makes them extremely gas-efficient.
