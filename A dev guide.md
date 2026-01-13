@@ -9,10 +9,12 @@ Welcome to the next step in your Web3 journey. Now that you've completed the Blo
 
 You can explore all available options by visiting the "Career Tracks" section in the top navigation bar of the Updraft platform.
 
-Learning Paths for Non-Technical Professionals
+## Learning Paths for Non-Technical Professionals
+
 If your goal isn't to become a programmer but to excel in a role like sales, marketing, education, or management within the Web3 space, we have two excellent paths for you.
 
-The Blockchain Foundations Track
+## The Blockchain Foundations Track
+
 This is the most direct and logical next step after completing Blockchain Basics. This track solidifies your foundational knowledge and introduces you to one of the most critical technologies in the ecosystem: Chainlink.
 
 Included Courses:
