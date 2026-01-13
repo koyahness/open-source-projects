@@ -8,7 +8,7 @@ Here is a comprehensive step-by-step guide showing the directory structures and 
 
 1. ⚙️ [Setup and Project Structure (CLI)](https://github.com/koyahness/open-source-projects/blob/main/Web3-dev-%20directory-%20structure.md)
    
-1.1 Global Prerequisites
+## 1.1 Global Prerequisites
 
 Install Rust (using rustup) and then install Foundry using foundryup.
 
@@ -17,7 +17,7 @@ Install Rust (using rustup) and then install Foundry using foundryup.
 | `curl -L https://foundry.paradigm.xyz | bash` |
 | foundryup | Installs or updates forge, cast, and anvil |
 
-1.2 Create the Monorepo Structure
+## 1.2 Create the Monorepo Structure
 
 We will create a parent directory to hold both the backend (Foundry) and the frontend (React).
 
@@ -69,7 +69,7 @@ cd .. # Go back to my-foundry-dapp
 
 ```
 
-2. 📝 Backend (Smart Contract) CLI Steps
+# 2. 📝 Backend (Smart Contract) CLI Steps
    
 We focus on the my-foundry-dapp/contracts/ directory, which now contains the default Foundry structure:
 
@@ -82,17 +82,17 @@ my-foundry-dapp/contracts/
 └── lib/              # Dependencies (e.g., forge-std, openzeppelin)
 ```
 
-2.1 Write, Compile, and Test the Contract
+# 2.1 Write, Compile, and Test the Contract
 
 You write your contract logic inside contracts/src/MyContract.sol.
 
 | CLI Command | Directory | Purpose |
 |---|---|---|
-| forge build | contracts/ | Compiles .sol files into Bytecode and ABI (stored in out/) |
+| forge build | contracts/ | Compiles .sol files into Bytecode and ABI (stored in out/) |o
 | forge test | contracts/ | Runs all tests in test/ (written in Solidity) |
 
 
-2.2 Configure and Write Deployment Script
+# 2.2 Configure and Write Deployment Script
 
 Unlike Hardhat, Foundry deployment scripts are usually written in Solidity in the script/ folder.
 contracts/script/Deploy.s.sol (Simplified Snippet):
@@ -116,11 +116,11 @@ contract DeployScript is Script {
 
 ```
 
-2.3 Secure Key Management and Execution (CLI)
+# 2.3 Secure Key Management and Execution (CLI)
 
 Foundry typically relies on standard environment variables or explicit file paths for private keys. We will use environment variables, setting them temporarily in the command line for security.
 
-| CLI Command | Directory | Purpose |
+| CLI Command | Directory | Puropose |
 |---|---|---|
 | export PRIVATE_KEY="0x..." | my-foundry-dapp/ | CRITICAL: Set the private key securely (use a different key than your main wallet). |
 | export SEPOLIA_RPC="https://..." | my-foundry-dapp/ | Set the RPC URL for the target network (e.g., Sepolia). |
@@ -133,7 +133,7 @@ Foundry typically relies on standard environment variables or explicit file path
 
 > Key Output: The CLI output (under [Deployment] section) will provide the Contract Address, which is required for the frontend.
 
-3. 🌐 Frontend Integration
+# 3. 🌐 Frontend Integration
    
 The frontend needs the Contract Address and the ABI to interact with the deployed contract.
 
@@ -148,7 +148,7 @@ cp contracts/out/MyContract.sol/MyContract.json frontend/src/MyContract.json
 
 ```
 
-3.2 Implement Web3 Interaction
+# 3.2 Implement Web3 Interaction
 
 Use the Ethers.js library (installed in Step 1.2) to create a contract instance using the ABI and the deployed address.
 
@@ -168,7 +168,7 @@ const contract = new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 // ... Interaction logic (contract.callFunction()) ...
 ```
 
-3.3 Run and Deploy Frontend
+# 3.3 Run and Deploy Frontend
 
 | CLI Command | Directory | Purpose |
 |---|---|---|
@@ -176,7 +176,7 @@ const contract = new ethers.Contract(CONTRACT_ADDRESS, contractABI, signer);
 | npm run build | frontend/ | Creates the production-ready static assets |
 | netlify deploy --prod --dir=build | frontend/ | Deploys static assets to a hosting service (e.g., Netlify CLI) |
 
-4. 🧪 Local Testing with Anvil (Foundry CLI)
+# 4. 🧪 Local Testing with Anvil (Foundry CLI)
 
 For rapid local testing before deploying to a public testnet, use Anvil, Foundry's fast local EVM node.
 | CLI Command | Directory | Purpose |
@@ -184,7 +184,7 @@ For rapid local testing before deploying to a public testnet, use Anvil, Foundry
 | anvil | contracts/ | Starts a local EVM on http://127.0.0.1:8545 (default). Keep this terminal running. |
 
 
-Once Anvil is running, follow these steps:
+# Once Anvil is running, follow these steps:
 
  * Configure MetaMask to point to Localhost:8545 (Chain ID: 31337).
  * Import one of the test private keys logged by the anvil command.
