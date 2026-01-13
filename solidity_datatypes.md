@@ -51,7 +51,8 @@ These are provided by the EVM and give information about the blockchain:
  * block.timestamp: Current block's Unix timestamp.
  * block.number: Current block height.
  * tx.origin: The original wallet that started the transaction (use with caution for security).
-4. Visibility Modifiers
+
+## 4. Visibility Modifiers
 These define who can "see" or call a variable/function.
  * public: Accessible internally and externally. For state variables, Solidity automatically generates a "getter" function.
  * private: Only accessible within the current contract.
