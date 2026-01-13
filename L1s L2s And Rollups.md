@@ -7,7 +7,7 @@ The Ethereum network, like many foundational blockchains, faces a core challenge
 
 This concept posits that a blockchain can only optimize for two of three critical properties:
 
-#### decentralization, security, and scalability.
+**Decentralization, security, and scalability**
 
 Ethereum was designed to prioritize decentralization and security, which has made it the most robust and trusted smart contract platform.
 
