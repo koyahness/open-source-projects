@@ -64,15 +64,20 @@ Use these to save massive amounts of gas for variables that don't change.
  * constant: Value must be hardcoded at compile time. It is replaced in the bytecode and uses zero storage slots.
  * immutable: Value can be set once inside the constructor, then it never changes. Also uses zero storage slots.
 <!-- end list -->
+
+```
 uint256 public constant TAX_RATE = 5; // Set at compile time
 address public immutable owner;       // Set at deployment
 
 constructor() {
     owner = msg.sender;
 }
+```
 
  To master Solidity, we need to look under the hood at how the EVM (Ethereum Virtual Machine) actually treats these types. Here is an exhaustive breakdown of the technical details for each section.
-1. Value Types (Deep Dive)
+ 
+## 1. Value Types (Deep Dive)
+
 Value types are stored directly in the stack (a 1024-deep list of 32-byte words) during execution.
 Integers: Precision and Overflow
  * Step Sizes: You can use uint8 up to uint256 in increments of 8.
@@ -86,7 +91,9 @@ Addresses: The Power of call
 Fixed Bytes (bytes1 to bytes32)
  * If you know the length of your data, always use fixed bytes over string or dynamic bytes.
  * bytes32 is the most gas-efficient because it perfectly fills one EVM word/slot.
-2. Reference Types (Memory & Storage)
+
+## 2. Reference Types (Memory & Storage)
+
 Reference types are too large to fit in the 32-byte stack, so they are stored in Memory or Storage.
 Mappings: The "Virtual" Hash Table
  * No Iteration: You cannot do map.length or loop through a mapping. If you need to track keys, you must store them in a separate address[] array.
@@ -95,13 +102,17 @@ Mappings: The "Virtual" Hash Table
 Arrays: Fixed vs. Dynamic
  * delete behavior: Calling delete on an array element (e.g., delete arr[1]) does not change the array length. It simply resets that specific element to its default value (0).
  * Member .push(): Only available for dynamic arrays in storage. It returns a reference to the new element.
-3. Global Variables & The Environment
+
+## 3. Global Variables & The Environment
+
 Global variables provide a window into the state of the blockchain at the moment the transaction is mined.
  * msg.data (bytes): The complete "calldata" (the raw input sent to the contract).
  * msg.sig (bytes4): The first four bytes of the calldata (the function selector).
  * tx.gasprice: The gas price of the current transaction.
  * block.chainid: A unique ID for the specific network (e.g., 1 for Ethereum Mainnet, 137 for Polygon). This is vital for preventing "Replay Attacks" across different chains.
-4. Visibility & Access (Technical Details)
+
+## 4. Visibility & Access (Technical Details)
+
 | Modifier | Contract Itself | Derived Contracts | Outside World |
 |---|---|---|---|
 | Private | Yes | No | No |
@@ -109,11 +120,16 @@ Global variables provide a window into the state of the blockchain at the moment
 | Public | Yes | Yes | Yes (via Getter) |
 | External | No* | No | Yes |
 | *External functions can be called internally using this.functionName(), but this triggers a real message call, which is very expensive. |  |  |  |
-5. Constant vs. Immutable (The Bytecode Difference)
+
+## 5. Constant vs. Immutable (The Bytecode Difference)
+
 Both prevent the variable from being changed, but they are stored differently:
  * constant: The value is evaluated at compile time. The compiler literally finds every instance of MY_VAR in your code and replaces it with the actual number.
  * immutable: The value is evaluated at deployment time (in the constructor). The constructor code modifies the contract's "runtime bytecode" to hardcode the value before it is saved to the blockchain.
-6. The "Default" Values
+
+
+## 6. The "Default" Values
+
 In Solidity, there is no null or undefined. Every variable has a default "Zero State":
  * uint / int: 0
  * bool: false
