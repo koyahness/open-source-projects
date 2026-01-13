@@ -1,6 +1,10 @@
+# Solidity
 
-Solidity is a statically typed language, meaning the type of each variable must be specified. These types are broadly categorized into Value Types (passed by value) and Reference Types (passed by reference/location).
-1. Value Types
+Solidity is a statically typed language, meaning the type of each variable must be specified.
+
+These types are broadly categorized into Value Types (passed by value) and Reference Types (passed by reference/location).
+
+## 1. Value Types
 Value types are simple data pieces. When you pass them to a function or assign them to a new variable, a copy of the data is created.
 Integers
  * uint / int: Unsigned (positive only) and Signed integers.
@@ -19,7 +23,8 @@ Fixed-Size Byte Arrays
  * Efficiency: Much cheaper than the dynamic bytes type because the size is known.
 Enums
  * User-defined labels for integers (as discussed previously).
-2. Reference Types
+
+## 2. Reference Types
 Reference types do not store the value directly. Instead, they store a "pointer" to the location of the data. You must explicitly state the Data Location (storage, memory, or calldata) for these types.
 Arrays
  * Fixed-size: uint[5] myFixedArray;
@@ -30,8 +35,10 @@ Structs
 Mappings
  * Syntax: mapping(KeyType => ValueType)
  * Behavior: Think of it as a hash table. You cannot iterate over a mapping or get a list of its keys; you must know the key to get the value.
-3. Variable Scopes
+
+## 3. Variable Scopes
 Where a variable is declared determines its lifetime, cost, and visibility.
+
 | Scope | Location | Persistence | Gas Cost |
 |---|---|---|---|
 | State Variables | Storage | Permanent (on-chain) | Highest |
@@ -50,7 +57,8 @@ These define who can "see" or call a variable/function.
  * private: Only accessible within the current contract.
  * internal: Like private, but also accessible by contracts that inherit from this one.
  * external: (Functions only) Can only be called from outside the contract.
-5. Constant & Immutable
+
+## 5. Constant & Immutable
 Use these to save massive amounts of gas for variables that don't change.
  * constant: Value must be hardcoded at compile time. It is replaced in the bytecode and uses zero storage slots.
  * immutable: Value can be set once inside the constructor, then it never changes. Also uses zero storage slots.
