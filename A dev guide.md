@@ -33,37 +33,48 @@ Course: Fundamentals of Zero--Knowledge Proofs (ZKPs)
 
 Key Features: This course is completely non-technical and contains no coding. It provides a clear introduction to what ZKPs are, why they are essential for privacy and scalability, and how they function in practice. Taking this course will help you stay current with industry conversations and understand the hype surrounding ZK technology.
 
-Learning Paths for Developers
+## Learning Paths for Developers
 If you are ready to start building on the blockchain, we have several technical tracks designed to make you a production-ready developer.
 
-Recommended Path: Solidity Smart Contract Developer
+## Recommended Path: Solidity Smart Contract Developer
+
 This is our primary and most recommended track for anyone who wants to become a blockchain developer. It provides the essential skills to build, test, and deploy smart contracts on the Ethereum Virtual Machine (EVM).
 
 Prerequisite: Completion of the Blockchain Basics course.
 
 Track Curriculum (in order):
 
-Solidity Smart Contract Development (Beginner): Your foundational programming course for learning the Solidity language from the ground up.
+## Solidity Smart Contract Development (Beginner):
 
-Foundry Fundamentals (Intermediate): Learn to use Foundry, the industry-standard toolkit for efficient and robust smart contract development and testing.
+Your foundational programming course for learning the Solidity language from the ground up.
 
-Advanced Foundry (Advanced): Deepen your expertise by mastering complex concepts and advanced techniques within the Foundry framework.
+## Foundry Fundamentals (Intermediate): Learn to use Foundry, the industry-standard toolkit for efficient and robust smart contract development and testing.
+
+## Advanced Foundry (Advanced): Deepen your expertise by mastering complex concepts and advanced techniques within the Foundry framework.
 
 Upon completion, you will have the skills and confidence of a professional Solidity developer.
 
-Alternative Path: Vyper Smart Contract Developer
+## Alternative Path: Vyper Smart Contract Developer
 If you have a background in Python, this track is an excellent alternative. Vyper is a Pythonic smart contract language that compiles to EVM bytecode, offering a familiar syntax for Python developers.
 
-Advanced Specializations
+## Advanced Specializations
 After mastering the core Solidity Smart Contract Developer track, you can specialize further to target high-demand roles within the industry. Consider these advanced tracks as your next step:
 
-Smart Contract Security Auditor: Learn to think like a hacker to find and mitigate vulnerabilities in smart contracts. This track is for those who want to specialize in Web3 security.
+## Smart Contract Security Auditor:
 
-DeFi Developer: Dive into the world of decentralized finance. This track covers the protocols and patterns needed to build DeFi applications like those on Uniswap and Curve.
+Learn to think like a hacker to find and mitigate vulnerabilities in smart contracts. This track is for those who want to specialize in Web3 security.
 
-Zero Knowledge (ZK) Developer: For those ready for a challenge, this advanced track builds on your Solidity knowledge. It includes the technical course Noir Programming and ZK Circuits, preparing you to work with cutting-edge privacy and scaling solutions.
+## DeFi Developer:
 
-Rust Programming Basics: If you're interested in ecosystems beyond the EVM, such as Solana, this standalone course provides a solid foundation in the Rust programming language.
+Dive into the world of decentralized finance. This track covers the protocols and patterns needed to build DeFi applications like those on Uniswap and Curve.
+
+## Zero Knowledge (ZK) Developer:
+
+For those ready for a challenge, this advanced track builds on your Solidity knowledge. It includes the technical course Noir Programming and ZK Circuits, preparing you to work with cutting-edge privacy and scaling solutions.
+
+## Rust Programming Basics:
+
+If you're interested in ecosystems beyond the EVM, such as Solana, this standalone course provides a solid foundation in the Rust programming language.
 
 Your Recommended Roadmap Summarized
 To make your choice simple, follow this guide:
@@ -79,5 +90,3 @@ If you are NON-TECHNICAL:
 Enroll in the Blockchain Foundations track and take the Chainlink Fundamentals course (you can skip the optional coding section).
 
 Complete the Fundamentals of Zero-Knowledge Proofs course to round out your knowledge.
-
-If you still have questions about which path is right for you, please don't hesitate to ask for guidance in the Cyfrin Discord server or by starting a discussion on the Updraft platform. We are here to support your learning journey.
