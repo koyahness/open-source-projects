@@ -54,7 +54,10 @@ This phase connects the user interface to the smart contract.
  * ABI Integration: Import the Smart Contract Address and ABI (from Step 4) into your front-end code.
  * Wagmi Hook: Use the useWriteContract hook from Wagmi to prepare and send the transaction. This hook abstracts all the complex wallet and client logic.
  * User Interface: Create a "Mint" button that, when clicked, calls the Wagmi hook, triggering the user's wallet to pop up for transaction approval.
+
 <!-- end list -->
+
+```
 // Example using Wagmi in a React component
 import { useWriteContract, useWaitForTransactionReceipt } from 'wagmi';
 import { contractAddress, contractAbi } from './constants';
@@ -81,6 +84,7 @@ function MintButton() {
     </button>
   );
 }
+```
 
 ### Step 7: Final Deployment
  * Testing: Test the entire flow on a testnet (e.g., Sepolia) to ensure the minting transaction is confirmed and the NFT correctly appears in a wallet/marketplace (which uses the stored tokenURI).
