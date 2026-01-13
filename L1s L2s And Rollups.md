@@ -1,6 +1,6 @@
-Understanding Layer 1, Layer 2, and Rollup Scaling Solutions
+# Understanding Layer 1, Layer 2, and Rollup Scaling Solutions
 
-https://updraft.cyfrin.io/courses/blockchain-basics/scalability/centralized-sequencers
+[Sequencers](https://updraft.cyfrin.io/courses/blockchain-basics/scalability/centralized-sequencers)
 
 
 The Ethereum network, like many foundational blockchains, faces a core challenge known as the Blockchain Trilemma. This concept posits that a blockchain can only optimize for two of three critical properties: decentralization, security, and scalability. Ethereum was designed to prioritize decentralization and security, which has made it the most robust and trusted smart contract platform. However, this focus comes at the cost of scalability, limiting the network to approximately 15 transactions per second. When demand is high, this limitation leads to network congestion and prohibitively expensive transaction fees, or "gas."
