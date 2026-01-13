@@ -27,32 +27,28 @@ All transactions, including those processed on auxiliary layers, must ultimately
 
 Examples of Layer 1 Blockchains:
 
-Ethereum Mainnet
-
-Bitcoin
-
-Solana
-
-BNB Chain
+* Ethereum Mainnet
+* Bitcoin
+* Solana
+* BNB Chain
 
 Ethereum testnets, like Sepolia, also function as L1s in their respective environments.
 
-What is a Layer 2 (L2) Blockchain?
+## What is a Layer 2 (L2) Blockchain?
+
 A Layer 2, or L2, is a separate blockchain protocol built on top of a Layer 1. Its primary purpose is to extend the capabilities of the L1, most notably to improve scalability. An L2 processes transactions on its own chain but "hooks back into" the L1, inheriting the robust security and decentralization of its parent layer.
 
 It is crucial to distinguish an L2 from a decentralized application (dApp). A dApp like Uniswap is a program that is deployed on an L1 blockchain. In contrast, an L2 is an entire, separate blockchain network designed to augment the L1 it is built upon.
 
 Examples of Layer 2 Blockchains:
 
-ZKsync
-
-Optimism (OP)
-
-Arbitrum
-
-Polygon
+* ZKsync
+* Optimism (OP)
+* Arbitrum
+* Polygon
 
 Rollups: The Primary L2 Scaling Solution
+
 Rollups are the most widely adopted type of L2 scaling solution. They work by executing transactions on the L2 chain (off-chain from the L1 perspective) and then bundling, or "rolling up," hundreds of them into a single, compressed transaction batch. This single batch is then posted to the Layer 1 network.
 
 This process dramatically increases transaction throughput and reduces costs for end-users. The gas fee required to post the single batch to the L1 is shared across all the individual transactions contained within it, making each one significantly cheaper than if it were processed directly on the L1.
