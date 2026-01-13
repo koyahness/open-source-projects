@@ -4,6 +4,7 @@ Enums are used to create custom types with a finite set of constant values. They
  * Gas Impact: An enum with fewer than 256 options fits into a uint8 (1 byte).
  * Readability: They replace "magic numbers" (like using 0 for Pending and 1 for Shipped) with human-readable names.
 <!-- end list -->
+```
 contract Shipping {
     // Define the Enum
     enum Status { 
@@ -24,7 +25,7 @@ contract Shipping {
         delete status; // Resets to Status.Pending (Index 0)
     }
 }
-
+```
 2. Structs
 Structs allow you to create custom data containers that group different types together. This is the foundation of building complex systems like NFT metadata or user profiles.
 Example: Storage-Packed Struct
