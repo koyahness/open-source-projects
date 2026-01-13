@@ -12,7 +12,7 @@ The goal of this phase is to make your NFT asset and its descriptive data perman
  * The Asset: This is the image, video, or 3D model that your NFT represents.
  * Action: Use a pinning service like Pinata or Infura to upload your asset file (e.g., dog.png) to IPFS. This service helps ensure the data remains available ("pinned") on the network.
  * Result: You receive a unique Content Identifier (CID), which is a hash of the file, structured as an IPFS URI (e.g., ipfs://<ASSET_CID>/dog.png).
- * 
+
 ### Step 2: Create and Upload the NFT Metadata
  * The Metadata: This is a JSON file that conforms to a standard (like EIP-721 or EIP-1155). It includes the NFT's name, description, attributes (traits), and, critically, the image field pointing to the IPFS URI from Step 1.
    {
