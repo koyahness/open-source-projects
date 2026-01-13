@@ -4,7 +4,7 @@ Building a full-stack Web3 dApp using Next.js (with the App Router) and an EVM c
 
 The most effective structure often involves a monorepo-like setup where your Next.js frontend and your Hardhat/Foundry smart contract project reside side-by-side.
 
-1. 📂 Monorepo-Style Directory Structure
+## 1. 📂 Monorepo-Style Directory Structure
 
 A recommended structure separates the blockchain logic from the application logic.
 
@@ -40,7 +40,7 @@ my-fullstack-dapp/
 └── package.json               # Root package.json (optional, for yarn/npm workspaces)
 ```
 
-3. 📝 Step-by-Step Guide
+## 3. 📝 Step-by-Step Guide
    
 A. Smart Contract Development (contracts/)
 
@@ -82,6 +82,7 @@ export function Providers({ children }) {
 }
 
  * Integrate Providers: Include providers.tsx in your root dapp/app/layout.tsx.
+ * 
 C. Component Interaction
  * Wallet Connect: Place the <ConnectButton /> from RainbowKit in a Client Component (e.g., dapp/src/components/ConnectWallet.tsx).
  * Read Contract Data: Use the useReadContract Wagmi hook in any Client Component to fetch contract data.
