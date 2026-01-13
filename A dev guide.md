@@ -1,6 +1,6 @@
 # Dev Guides
 
-https://updraft.cyfrin.io/courses/blockchain-basics/congratulations/career-tracks
+(Cyfrin)[https://updraft.cyfrin.io/courses/blockchain-basics/congratulations/career-tracks]
 
 
 Your Guide to Cyfrin Updraft Career Tracks
