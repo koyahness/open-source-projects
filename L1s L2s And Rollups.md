@@ -3,14 +3,27 @@
 [Sequencers](https://updraft.cyfrin.io/courses/blockchain-basics/scalability/centralized-sequencers)
 
 
-The Ethereum network, like many foundational blockchains, faces a core challenge known as the Blockchain Trilemma. This concept posits that a blockchain can only optimize for two of three critical properties: decentralization, security, and scalability. Ethereum was designed to prioritize decentralization and security, which has made it the most robust and trusted smart contract platform. However, this focus comes at the cost of scalability, limiting the network to approximately 15 transactions per second. When demand is high, this limitation leads to network congestion and prohibitively expensive transaction fees, or "gas."
+The Ethereum network, like many foundational blockchains, faces a core challenge known as the Blockchain Trilemma.
 
-To solve this, developers created scaling solutions that can increase transaction throughput without sacrificing the security and decentralization of the main network. The most prominent of these are Layer 2 solutions, particularly Rollups. This lesson breaks down these foundational concepts.
+This concept posits that a blockchain can only optimize for two of three critical properties:
 
-What is a Layer 1 (L1) Blockchain?
+#### decentralization, security, and scalability.
+
+Ethereum was designed to prioritize decentralization and security, which has made it the most robust and trusted smart contract platform.
+
+However, this focus comes at the cost of scalability, limiting the network to approximately 15 transactions per second. When demand is high, this limitation leads to network congestion and prohibitively expensive transaction fees, or "gas."
+
+To solve this, developers created scaling solutions that can increase transaction throughput without sacrificing the security and decentralization of the main network.
+
+The most prominent of these are Layer 2 solutions, particularly Rollups. This lesson breaks down these foundational concepts.
+
+# What is a Layer 1 (L1) Blockchain?
+
 A Layer 1, or L1, is the base protocol of a blockchain ecosystem. It is the fundamental network responsible for maintaining its own security and reaching a consensus on the state of the ledger. An L1 operates independently and does not rely on any other network for finality or security.
 
-Because it serves as the ultimate source of truth where all transactions are eventually finalized, a Layer 1 is often referred to as the Settlement Layer. All transactions, including those processed on auxiliary layers, must ultimately settle on the L1 to be considered complete and irreversible.
+Because it serves as the ultimate source of truth where all transactions are eventually finalized, a Layer 1 is often referred to as the **Settlement Layer**.
+
+All transactions, including those processed on auxiliary layers, must ultimately settle on the L1 to be considered complete and irreversible.
 
 Examples of Layer 1 Blockchains:
 
