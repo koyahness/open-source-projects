@@ -47,7 +47,7 @@ Examples of Layer 2 Blockchains:
 * Arbitrum
 * Polygon
 
-Rollups: The Primary L2 Scaling Solution
+## Rollups: The Primary L2 Scaling Solution
 
 Rollups are the most widely adopted type of L2 scaling solution. They work by executing transactions on the L2 chain (off-chain from the L1 perspective) and then bundling, or "rolling up," hundreds of them into a single, compressed transaction batch. This single batch is then posted to the Layer 1 network.
 
@@ -55,7 +55,8 @@ This process dramatically increases transaction throughput and reduces costs for
 
 There are two primary types of rollups, distinguished by how they prove the validity of their transaction batches to the L1: Optimistic Rollups and Zero-Knowledge Rollups.
 
-Optimistic Rollups
+## Optimistic Rollups
+
 Optimistic Rollups operate on the principle that all transactions in a batch are valid by default—an "optimistic" assumption. After an L2 operator posts a batch to the L1, a Challenge Period begins, which typically lasts about a week.
 
 During this window, any other network participant can scrutinize the batch. If they identify an invalid transaction, they can submit a Fraud Proof to the L1. This triggers a dispute resolution process on the L1 to verify the claim.
@@ -66,7 +67,8 @@ If the challenge period ends without a successful challenge: The batch is consid
 
 The primary trade-off of this model is the long waiting period for transaction finality. Users must wait for the challenge period to conclude before they can withdraw their funds from the L2 back to the L1.
 
-Zero-Knowledge (ZK) Rollups
+## Zero-Knowledge (ZK) Rollups
+
 Zero-Knowledge (ZK) Rollups take a different approach. Instead of assuming validity and waiting for challenges, they proactively prove the validity of every transaction batch using advanced cryptography.
 
 When a ZK-Rollup operator submits a batch to the L1, they also generate and submit a cryptographic Validity Proof, specifically a Zero-Knowledge Proof (ZKP). This proof mathematically guarantees that all the state changes within the batch are correct and follow the network's rules.
@@ -77,7 +79,8 @@ A key feature of the ZKPs used in most rollups is succinctness, meaning the proo
 
 While most ZK-Rollups use this technology for scaling, some also leverage the "zero-knowledge" property to provide privacy, enabling secret balances and confidential transactions. These are often called ZK-ZK Rollups, with Aztec being a prominent example.
 
-Conclusion
+## Conclusion
+
 Layer 1 blockchains like Ethereum provide unmatched security and decentralization but struggle with scalability. Layer 2 solutions, and specifically Rollups, solve this problem by processing transactions on a separate, faster layer while inheriting the security of the L1. Optimistic Rollups achieve this through a fraud-proof system with a time delay, while ZK-Rollups use cryptographic validity proofs for instant finality. Together, these technologies enable the Ethereum ecosystem to scale, paving the way for mainstream adoption.
 
 Centralized Sequencers: The Single Point of Failure in Blockchain Rollups
@@ -85,7 +88,7 @@ In the world of blockchain rollups, the sequencer is a critical component respon
 
 A sequencer is a specialized operator whose primary job is to order transactions submitted by users. In some cases, it also performs the secondary role of bundling these ordered transactions together before they are submitted to the main blockchain. When this powerful role is controlled by a single entity, we call it a centralized sequencer. This concentration of power introduces two fundamental problems that strike at the core principles of blockchain technology: censorship and reliability.
 
-The Risk of Censorship
+## The Risk of Censorship
 A centralized sequencer controlled by a single party has the ultimate power to decide which transactions are included in a block and in what order. This opens the door for malicious behavior and censorship.
 
 A dishonest sequencer could simply refuse to include transactions from specific users, effectively blocking them from using the network. Imagine trying to withdraw your funds from a rollup, only to have a malicious sequencer repeatedly ignore your transaction request. In this scenario, your assets are trapped, held hostage by a single entity.
@@ -99,19 +102,19 @@ When the sequencer is down, no new transactions can be processed. This means no 
 
 Consider the implications. What happens if you can't access your funds for a day? What if the outage lasts a week? A year? What if the sequencer never comes back online? If you cannot access or move your assets, their value is effectively zero. This existential threat undermines the very promise of user-owned assets that blockchain technology is supposed to guarantee.
 
-The Solution: The Path to Decentralization
+## The Solution: The Path to Decentralization
 The clear and necessary solution to the risks of centralization is to decentralize the sequencer role. The end goal for any mature rollup is to have a system with multiple, independent sequencers who work together to order and process transactions.
 
 In a decentralized model, if one sequencer goes offline or acts maliciously, others can step in to ensure the network remains live, operational, and fair. This redundancy eliminates the single point of failure and drastically reduces the risk of censorship, as no single party has ultimate control.
 
 Projects in the space, such as zkSync, are actively working on this transition. Many rollups launch with a centralized sequencer for reasons of simplicity and rapid development in their early stages. However, the long-term roadmap for any reputable project involves a strategy of progressive decentralization. The state of a rollup's sequencer—whether it is centralized or has moved to a decentralized model—is one of the most important indicators of its maturity, security, and commitment to the core principles of web3.
 
-Understanding Rollup Stages: A Framework for L2 Maturity
+## Understanding Rollup Stages: A Framework for L2 Maturity
 Layer 2 scaling solutions, commonly known as rollups, are critical to Ethereum's future. To help users and developers navigate this complex ecosystem, a framework known as "Rollup Stages" was developed. Proposed by Ethereum co-founder Vitalik Buterin and implemented by the analysis platform L2BEAT, this system categorizes rollups based on their level of maturity and decentralization.
 
 It is crucial to understand that these stages are not a direct measure of a rollup's security. Instead, they serve as a roadmap, tracking a project's progress from a centrally managed system with "training wheels" to a fully trustless, decentralized protocol governed entirely by on-chain smart contracts. You can track the stages of various projects on the L2BEAT scaling summary page.
 
-Stage 0: Full Training Wheels
+## Stage 0: Full Training Wheels
 Stage 0 represents the earliest and most centralized phase of a rollup's lifecycle. At this stage, the project relies heavily on a trusted team of operators and a Security Council—a committee of trusted individuals who can intervene to fix bugs, resolve issues, and push upgrades.
 
 To qualify for Stage 0, a project must meet two key criteria:
@@ -142,20 +145,20 @@ Limited Security Council: If a Security Council still exists, its powers are str
 
 Ample Exit Window: Users are provided with a substantial amount of time to exit the system before any proposed upgrade is executed, ensuring they can safely withdraw their assets if they disagree with a change.
 
-A Practical Analysis: zkSync Era's Stage 0 Risks
+## A Practical Analysis: zkSync Era's Stage 0 Risks
 To see how this framework applies in practice, we can analyze zkSync Era, a prominent rollup currently at Stage 0, using the detailed risk analysis on L2BEAT. The site uses a color-coded pie chart to visualize five key risk vectors: green (low risk), yellow (medium risk), and red (high risk).
 
-Data Availability (Green):
+## Data Availability (Green):
 The state of zkSync Era can be fully reconstructed from data published on L1. The rollup posts state differences ("state diffs") to Ethereum, which contains all the necessary information for anyone to construct proofs and verify the chain's state.
 
-State Validation (Green):
+## State Validation (Green):
 zkSync Era uses a ZK (Zero-Knowledge) proof system to ensure the integrity of its state transitions. Specifically, it employs the PLONK proof system with KZG commitments to cryptographically prove the validity of every transaction batch submitted to L1.
 
-Sequencer Failure (Yellow):
+## Sequencer Failure (Yellow):
 The Sequencer is the entity responsible for ordering transactions. If the zkSync Era Sequencer goes offline or censors users, the entire system halts. While users can submit transactions to an L1 queue, they cannot force the Sequencer to process them, effectively freezing all activity and withdrawals. This is a medium risk because while it freezes funds, it does not allow for theft and affects all users equally.
 
-Proposer Failure (Red):
+## Proposer Failure (Red):
 The Proposer is responsible for submitting new state roots to the L1. On zkSync Era, this role is permissioned and managed by a whitelist. If these whitelisted Proposers fail or go offline, no new state roots can be published, and user withdrawals become frozen. This is considered a high risk because it directly prevents users from accessing their funds.
 
-Exit Window (Red):
+## Exit Window (Red):
 zkSync Era's smart contracts are instantly upgradable by its governing entity. This means there is no delay or "exit window" for users to react to an unwanted or malicious upgrade. Since users have no time to withdraw their funds before a change takes effect, this presents a high risk.
