@@ -39,7 +39,7 @@ Solidity enforces strict rules on how functions interact with the blockchain sta
 | payable | Can receive Ether | Standard + Transfer costs |
 | external | Can only be called from outside | Cheaper for large inputs |
 
-5. Event Logging
+## 5. Event Logging
    
 Events are the primary way for your smart contract to communicate with the "outside world" (front-end applications).
 
