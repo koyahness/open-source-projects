@@ -18,8 +18,8 @@ Foundry is a modular toolkit written in Rust. It has quickly become the preferre
    
 ## 2. Hardhat (The Flexible Standard)
 Hardhat is a development environment for professionals based on JavaScript/TypeScript. It is known for its extensive plugin ecosystem and its "Hardhat Network," which provides excellent debugging features.
- * Stack: Node.js, Ethers.js, and Waffle.
- * Key Feature: The console.log() functionality within Solidity, which makes debugging smart contracts much easier.
+ * ***Stack***: Node.js, Ethers.js, and Waffle.
+ * ***Key Feature***: The console.log() functionality within Solidity, which makes debugging smart contracts much easier.
  * Why use it? It has the largest library of plugins (e.g., for gas reporting, Etherscan verification, and contract sizing).
 
 
