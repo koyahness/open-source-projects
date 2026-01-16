@@ -45,7 +45,7 @@ my-fullstack-dapp/
 A. Smart Contract Development (contracts/)
 
  * ***Initialize Contracts Project***: Use Hardhat or Foundry inside the contracts/ directory.
-   ```commandline
+   ```bash
    npx hardhat
    ```
 
