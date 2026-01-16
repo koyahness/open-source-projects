@@ -82,7 +82,8 @@ import { mainnet, sepolia } from 'wagmi/chains';
 ```
 
  * Create Web3 Provider Wrapper (dapp/app/providers.tsx): This is a Client Component that wraps your application with the necessary context for Wagmi and RainbowKit.
-   ```
+
+```
    // dapp/app/providers.tsx - MUST include 'use client'
 'use client'; 
 import { WagmiProvider } from 'wagmi';
@@ -95,7 +96,7 @@ export function Providers({ children }) {
 }
 ```
  * Integrate Providers: Include providers.tsx in your root dapp/app/layout.tsx.
- * 
+
 C. Component Interaction
  * Wallet Connect: Place the <ConnectButton /> from RainbowKit in a Client Component (e.g., dapp/src/components/ConnectWallet.tsx).
  * Read Contract Data: Use the useReadContract Wagmi hook in any Client Component to fetch contract data.
