@@ -5,9 +5,9 @@ Building and deploying a full EVM (Ethereum Virtual Machine) application (DApp) 
 We will use the popular Hardhat framework for the contract side and a standard React setup for the frontend, demonstrating a typical integrated project structure.
 
 
-1. ⚙️ [Initial Setup and Project Structure:](https://github.com/koyahness/open-source-projects/blob/main/Web3-dev-%20directory-%20structure.md)
+# 1. ⚙️ [Initial Setup and Project Structure:](https://github.com/koyahness/open-source-projects/blob/main/Web3-dev-%20directory-%20structure.md)
 
-1.1 Global Prerequisites
+## 1.1 Global Prerequisites
 
 
 Make sure you have Node.js (with npm) and Git installed.
@@ -112,7 +112,7 @@ SEPOLIA_RPC_URL="YOUR_SEPOLIA_API_URL"
 
 backend/hardhat.config.js (Snippet):
 
-```
+```js
 require("@nomicfoundation/hardhat-toolbox");
 
 require('dotenv').config();
@@ -158,7 +158,7 @@ cp backend/artifacts/contracts/MyContract.sol/MyContract.json frontend/src/MyCon
 
 In your frontend code (e.g., frontend/src/App.js), you use the Ethers.js library (installed in Step 1.2) to create a contract instance.
 
-```
+```js
 // Example Frontend JS (e.g., App.js)
 import abi from './MyContract.json'; // The copied ABI file
 
@@ -245,7 +245,7 @@ This is the most critical step for this method. Open my-evm-dapp/backend/.gitign
 Step 4: Load Variables in hardhat.config.js
 At the top of your Hardhat configuration, load the variables:
 
-```
+```js
 // hardhat.config.js
 require("@nomicfoundation/hardhat-toolbox");
 require('dotenv').config(); // This loads the variables
@@ -313,7 +313,7 @@ Step 2: Configure the Plugin
 Add the plugin to your Hardhat configuration file (hardhat.config.js).
 backend/hardhat.config.js (Add plugin section):
 
-```
+```js
 // hardhat.config.js
 require("@nomicfoundation/hardhat-toolbox");
 // require("@nomicfoundation/hardhat-keystore"); // Not strictly needed if using a Hardhat Toolbox
@@ -344,7 +344,7 @@ Instead of accessing process.env, you access these variables using a built-in Ha
 
 backend/hardhat.config.js (Using configVariable):
 
-```
+```js
 // hardhat.config.js
 
 // Import the function for configuration variables
@@ -420,7 +420,7 @@ Step 2: Modify deploy.js
 We use the Hardhat Runtime Environment (HRE), which gives us access to ethers and hre.ethers.getContractFactory.
 backend/scripts/deploy.js:
 
-```
+```js
 // A standard async function to handle the deployment
 async function main() {
   // 1. Get the Contract Factory
@@ -523,7 +523,7 @@ Now that the ABI file (MyContract.json) is in the frontend, you can use the Ethe
 Step 4: Import and Initialize Ethers.js
 In your main application file (e.g., frontend/src/App.js):
 
-```
+```js
 // frontend/src/App.js
 
 import { ethers } from 'ethers';
@@ -575,7 +575,7 @@ Once you have the contract object (from Step 4), you can call its functions defi
 
 A. Reading State (Free/View Functions)
 
-```
+```js
 async function readCurrentValue(myContract) {
   try {
     // Calling a view function (no gas cost)
@@ -591,7 +591,7 @@ async function readCurrentValue(myContract) {
 
 B. Writing State (Transaction Functions)
 
-'''
+'''js
 async function updateContractValue(myContract, newValue) {
   try {
     // Calling a state-changing function (requires gas and wallet signature)
