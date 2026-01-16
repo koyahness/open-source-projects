@@ -46,11 +46,11 @@ Where a variable is declared determines its lifetime, cost, and visibility.
 | Global Variables | Blockchain | N/A (Blockchain Info) | Very Low / Free |
 Common Global Variables
 These are provided by the EVM and give information about the blockchain:
- * msg.sender: The address currently calling the function.
- * msg.value: Amount of Wei sent with the call.
- * block.timestamp: Current block's Unix timestamp.
- * block.number: Current block height.
- * tx.origin: The original wallet that started the transaction (use with caution for security).
+ * ***msg.sender***: The address currently calling the function.
+ * ***msg.value***: Amount of Wei sent with the call.
+ * ***block.timestamp***: Current block's Unix timestamp.
+ * ***block.number***: Current block height.
+ * ***tx.origin***: The original wallet that started the transaction (use with caution for security).
 
 ## 4. Visibility Modifiers
 These define who can "see" or call a variable/function.
