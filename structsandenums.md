@@ -4,7 +4,8 @@ In Solidity, Structs and Enums are user-defined types that help you organize com
 
 They are essential for making your code readable and, more importantly, for optimizing how data is stored in the EVM's 32-byte slots.
 
-1. Enums (Enumerations)
+## 1. Enums (Enumerations)
+   
 Enums are used to create custom types with a finite set of constant values. They are internally treated as integers (starting at 0), which makes them extremely gas-efficient.
 
  * Gas Impact: An enum with fewer than 256 options fits into a uint8 (1 byte).
@@ -33,7 +34,7 @@ contract Shipping {
     }
 }
 ```
-2. Structs
+## 2. Structs
 
 Structs allow you to create custom data containers that group different types together. This is the foundation of building complex systems like NFT metadata or user profiles.
 
@@ -63,7 +64,7 @@ function addUser(uint256 _id) public {
     users[msg.sender] = newUser; // Copying from memory to storage
 }
 ```
-3. Comparing Structs and Enums
+## 3. Comparing Structs and Enums
 
 | Feature | Enum | Struct |
 |---|---|---|
@@ -72,14 +73,20 @@ function addUser(uint256 _id) public {
 | Default Value | First element (index 0) | All members set to their defaults |
 | Gas Cost | Very low (1 byte) | Variable (based on members) |
 
-4. Key Considerations
-Structs in Mappings and Arrays
+## 4. Key Considerations
+
+## Structs in Mappings and Arrays
+
 You will often see structs used inside mappings. Note that you cannot return a whole mapping of structs at once; you must return a single struct by its key or use a loop (which is gas-expensive).
-Memory vs. Storage Structs
+
+## Memory vs. Storage Structs
+
 When you interact with a struct in a function, you must specify the location:
  * User storage user = users[msg.sender]; — Any changes made to user will directly update the blockchain state.
  * User memory user = users[msg.sender]; — Creates a temporary copy. Changes will disappear when the function ends unless you save them back to storage.
-Combining Structs and Enums
+
+## Combining Structs and Enums
+
 The most common pattern is to include an Enum inside a Struct to track the status of a specific object.
 struct Order {
     address buyer;
