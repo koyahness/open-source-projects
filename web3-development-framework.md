@@ -25,8 +25,8 @@ Hardhat is a development environment for professionals based on JavaScript/TypeS
 
 ## 3. Brownie (The Python Choice)
 For developers who prefer Python over JavaScript, Brownie is the go-to framework. It is heavily used by the Curve Finance team and other DeFi protocols.
- * Stack: Built on top of web3.py.
- * Key Feature: A powerful built-in console for quick experimentation and a robust testing suite using pytest.
+ * ***Stack***: Built on top of web3.py.
+ * ***Key Feature***: A powerful built-in console for quick experimentation and a robust testing suite using pytest.
  * Why use it? If you are already comfortable with Python's data science or backend ecosystem, Brownie feels very natural.
 
 
