@@ -10,12 +10,12 @@ Here’s a breakdown of the most relevant options:
 
 | Tool / Framework | Purpose | Why It Matters for Base |
 |------------------|---------|--------------------------|
-| Viem | TypeScript interface for EVM chains | Officially supported by Base; lets you read/write blockchain data |
-| Wagmi | React hooks library | Simplifies wallet connections and contract interactions |
-| RainbowKit | Wallet UI toolkit | Easy wallet onboarding with polished UI |
-| Next.js | React framework | Popular for dApp frontends; integrates well with Wagmi/RainbowKit |
-| Alchemy / RPC Providers | Node + API services | Reliable infra for querying Base chain |
-| Base Resources | Grants, builder network, docs | Helps you fund, grow, and distribute your project |
+| ***Viem*** | TypeScript interface for EVM chains | Officially supported by Base; lets you read/write blockchain data |
+| ***Wagmi*** | React hooks library | Simplifies wallet connections and contract interactions |
+| ***RainbowKit*** | Wallet UI toolkit | Easy wallet onboarding with polished UI |
+| ***Next.js*** | React framework | Popular for dApp frontends; integrates well with Wagmi/RainbowKit |
+| ***Alchemy / RPC Providers*** | Node + API services | Reliable infra for querying Base chain |
+| ***Base Resources*** | Grants, builder network, docs | Helps you fund, grow, and distribute your project |
 
 ---
 
