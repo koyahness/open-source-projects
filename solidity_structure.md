@@ -99,8 +99,8 @@ contract StructureExample {
    
 Solidity supports multiple inheritance. When a contract inherits from others, the order matters because of the C3 Linearization (the order in which the compiler resolves which function to use if multiple parents have the same function name).
 
- * Rule: List parents from "most base-like" to "most derived."
- * Keyword: Use is to inherit.
+ * ***Rule***: List parents from "most base-like" to "most derived."
+ * ***Keyword***: Use is to inherit.
 <!-- end list -->
 
 contract MyContract is Context, Ownable, ERC20 {
