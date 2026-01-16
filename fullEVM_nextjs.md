@@ -44,21 +44,24 @@ my-fullstack-dapp/
    
 A. Smart Contract Development (contracts/)
 
- * Initialize Contracts Project: Use Hardhat or Foundry inside the contracts/ directory.
+ * ***Initialize Contracts Project***: Use Hardhat or Foundry inside the contracts/ directory.
    npx hardhat
 
- * Write and Test: Develop your Solidity code (e.g., an ERC-20 or NFT contract) and write comprehensive tests.
- * Compile & Deploy: Compile the contracts and write deployment scripts.
+ * ***Write and Test***: Develop your Solidity code (e.g., an ERC-20 or NFT contract) and write comprehensive tests.
+ * ***Compile & Deploy***: Compile the contracts and write deployment scripts.
    npx hardhat compile
 npx hardhat run scripts/deploy.js --network sepolia
 
- * Copy Artifacts: After deployment, copy the contract's ABI and Address to your Next.js project so the frontend can interact with it.
-   * ABI: Copy the generated JSON ABI file into dapp/src/web3/abi/.
-   * Address: Store the deployed address in a configuration file like dapp/src/web3/config.ts or an environment variable.
+ * ***Copy Artifacts***: After deployment, copy the contract's ABI and Address to your Next.js project so the frontend can interact with it.
+   * ***ABI***: Copy the generated JSON ABI file into dapp/src/web3/abi/.
+   * ***Address***: Store the deployed address in a configuration file like dapp/src/web3/config.ts or an environment variable.
+   
 B. Next.js Frontend Setup (dapp/)
- * Initialize Next.js: Create the Next.js app inside the dapp/ directory.
+ * ***Initialize Next.js***: Create the Next.js app inside the dapp/ directory.
+```unix
    npx create-next-app@latest dapp --ts --app
 cd dapp
+```
 
  * Install Web3 Dependencies:
    npm install wagmi viem @rainbow-me/rainbowkit @tanstack/react-query
