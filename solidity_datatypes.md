@@ -106,34 +106,33 @@ Arrays: Fixed vs. Dynamic
 ## 3. Global Variables & The Environment
 
 Global variables provide a window into the state of the blockchain at the moment the transaction is mined.
- * msg.data (bytes): The complete "calldata" (the raw input sent to the contract).
- * msg.sig (bytes4): The first four bytes of the calldata (the function selector).
- * tx.gasprice: The gas price of the current transaction.
- * block.chainid: A unique ID for the specific network (e.g., 1 for Ethereum Mainnet, 137 for Polygon). This is vital for preventing "Replay Attacks" across different chains.
+ * ***msg.data (bytes)***: The complete "calldata" (the raw input sent to the contract).
+ * ***msg.sig (bytes4)***: The first four bytes of the calldata (the function selector).
+ * ***tx.gasprice***: The gas price of the current transaction.
+ * ***block.chainid***: A unique ID for the specific network (e.g., 1 for Ethereum Mainnet, 137 for Polygon). This is vital for preventing "Replay Attacks" across different chains.
 
 ## 4. Visibility & Access (Technical Details)
 
 | Modifier | Contract Itself | Derived Contracts | Outside World |
 |---|---|---|---|
-| Private | Yes | No | No |
-| Internal | Yes | Yes | No |
-| Public | Yes | Yes | Yes (via Getter) |
-| External | No* | No | Yes |
+| ***Private*** | Yes | No | No |
+| ***Internal*** | Yes | Yes | No |
+| ***Public*** | Yes | Yes | Yes (via Getter) |
+| ***External*** | No* | No | Yes |
 | *External functions can be called internally using this.functionName(), but this triggers a real message call, which is very expensive. |  |  |  |
 
 ## 5. Constant vs. Immutable (The Bytecode Difference)
 
 Both prevent the variable from being changed, but they are stored differently:
- * constant: The value is evaluated at compile time. The compiler literally finds every instance of MY_VAR in your code and replaces it with the actual number.
- * immutable: The value is evaluated at deployment time (in the constructor). The constructor code modifies the contract's "runtime bytecode" to hardcode the value before it is saved to the blockchain.
+ * ***constant***: The value is evaluated at compile time. The compiler literally finds every instance of MY_VAR in your code and replaces it with the actual number.
+ * ***immutable***: The value is evaluated at deployment time (in the constructor). The constructor code modifies the contract's "runtime bytecode" to hardcode the value before it is saved to the blockchain.
 
 
 ## 6. The "Default" Values
 
 In Solidity, there is no null or undefined. Every variable has a default "Zero State":
- * uint / int: 0
- * bool: false
- * address: 0x0000000000000000000000000000000000000000
- * enum: The first element defined in the list.
- * bytes: 0x00...
-Would you like to see a practical example of how to convert between these types, such as convert
+ * ***uint / int***: 0
+ * ***bool***: false
+ * ***address***: 0x0000000000000000000000000000000000000000
+ * ***enum***: The first element defined in the list.
+ * ***bytes***: 0x00...
