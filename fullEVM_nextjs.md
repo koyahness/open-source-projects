@@ -45,12 +45,16 @@ my-fullstack-dapp/
 A. Smart Contract Development (contracts/)
 
  * ***Initialize Contracts Project***: Use Hardhat or Foundry inside the contracts/ directory.
+   ```
    npx hardhat
+   ```
 
  * ***Write and Test***: Develop your Solidity code (e.g., an ERC-20 or NFT contract) and write comprehensive tests.
  * ***Compile & Deploy***: Compile the contracts and write deployment scripts.
+   ```
    npx hardhat compile
-npx hardhat run scripts/deploy.js --network sepolia
+   npx hardhat run scripts/deploy.js --network sepolia
+   ```
 
  * ***Copy Artifacts***: After deployment, copy the contract's ABI and Address to your Next.js project so the frontend can interact with it.
    * ***ABI***: Copy the generated JSON ABI file into dapp/src/web3/abi/.
@@ -59,20 +63,26 @@ npx hardhat run scripts/deploy.js --network sepolia
 B. Next.js Frontend Setup (dapp/)
  * ***Initialize Next.js***: Create the Next.js app inside the dapp/ directory.
 ```unix
-   npx create-next-app@latest dapp --ts --app
+npx create-next-app@latest dapp --ts --app
 cd dapp
 ```
 
  * Install Web3 Dependencies:
+   ```
    npm install wagmi viem @rainbow-me/rainbowkit @tanstack/react-query
+   ```
 
  * Configure Wagmi/Viem (dapp/src/web3/config.ts): Define the chains and providers for your dApp. You must obtain a WalletConnect Project ID and set it in your .env.local file.
+
+```
    // dapp/src/web3/config.ts
 import { createConfig, http } from 'wagmi';
 import { mainnet, sepolia } from 'wagmi/chains';
 // ... define connectors and transports
+```
 
  * Create Web3 Provider Wrapper (dapp/app/providers.tsx): This is a Client Component that wraps your application with the necessary context for Wagmi and RainbowKit.
+   ```
    // dapp/app/providers.tsx - MUST include 'use client'
 'use client'; 
 import { WagmiProvider } from 'wagmi';
@@ -83,7 +93,7 @@ export function Providers({ children }) {
   // ... return providers (WagmiProvider, QueryClientProvider, RainbowKitProvider)
   return (/* ... */)
 }
-
+```
  * Integrate Providers: Include providers.tsx in your root dapp/app/layout.tsx.
  * 
 C. Component Interaction
