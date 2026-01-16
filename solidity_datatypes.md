@@ -7,20 +7,20 @@ These types are broadly categorized into Value Types (passed by value) and Refer
 ## 1. Value Types
 Value types are simple data pieces. When you pass them to a function or assign them to a new variable, a copy of the data is created.
 Integers
- * uint / int: Unsigned (positive only) and Signed integers.
- * Sizes: Available from 8 bits to 256 bits (e.g., uint8, uint16 ... uint256).
- * Default: uint is an alias for uint256.
+ * ***uint / int***: Unsigned (positive only) and Signed integers.
+ * ***Sizes***: Available from 8 bits to 256 bits (e.g., uint8, uint16 ... uint256).
+ * ***Default***: uint is an alias for uint256.
 Booleans
- * bool: Can only be true or false.
- * Operators: !, &&, ||, ==, !=.
+ * ***bool***: Can only be true or false.
+ * ***Operators***: !, &&, ||, ==, !=.
 Addresses
 This is unique to Solidity and represents an Ethereum account or contract address (20 bytes).
- * address: Holds a 20-byte value.
- * address payable: Same as address but includes transfer and send methods for moving Ether.
- * Members: .balance (returns Wei), .code (returns bytecode).
+ * ***address***: Holds a 20-byte value.
+ * ***address payable***: Same as address but includes transfer and send methods for moving Ether.
+ * ***Members***: .balance (returns Wei), .code (returns bytecode).
 Fixed-Size Byte Arrays
- * bytes1 to bytes32: Fixed-length sequences of bytes.
- * Efficiency: Much cheaper than the dynamic bytes type because the size is known.
+ * ***bytes1 to bytes32***: Fixed-length sequences of bytes.
+ * ***Efficiency***: Much cheaper than the dynamic bytes type because the size is known.
 Enums
  * User-defined labels for integers (as discussed previously).
 
