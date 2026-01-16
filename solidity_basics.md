@@ -4,7 +4,7 @@ Solidity is a unique language because it is designed for the Ethereum Virtual Ma
 
 To master Solidity, you must move beyond general programming logic and focus on these four foundational pillars:
 
-1. Security-First Mindset
+## 1. Security-First Mindset
    
 In traditional web dev, a bug is a patch; in Solidity, a bug is a heist.
 
@@ -12,7 +12,7 @@ In traditional web dev, a bug is a patch; in Solidity, a bug is a heist.
  * Integer Overflow/Underflow: While Solidity 0.8.x handles this automatically by reverting, understanding how math wraps is vital for older codebases.
  * Access Control: Implementing robust onlyOwner or Role-Based Access Control (RBAC) ensures only authorized addresses can trigger sensitive functions.
    
-2. Gas Optimization
+## 2. Gas Optimization
    
 Writing "clean code" in Solidity often takes a backseat to "gas-efficient code."
 
@@ -20,7 +20,7 @@ Writing "clean code" in Solidity often takes a backseat to "gas-efficient code."
  * Short-Circuiting: Place the cheaper condition first in an OR or AND statement to save gas if the second condition doesn't need to be evaluated.
  * Variable Packing: Order your variables by size to fit as many as possible into a single 32-byte slot.
    
-3. The Proxy Pattern & Upgradeability
+## 3. The Proxy Pattern & Upgradeability
    
 Because smart contracts are immutable, you cannot "fix" a deployed contract. Developers use Proxy Patterns to get around this:
 
@@ -28,7 +28,7 @@ Because smart contracts are immutable, you cannot "fix" a deployed contract. Dev
  * Implementation Contract: Holds the logic.
  * By pointing the Proxy to a new Implementation contract, you effectively "upgrade" the logic while keeping the user data (Storage) intact.
    
-4. Visibility and State Mutability
+## 4. Visibility and State Mutability
    
 Solidity enforces strict rules on how functions interact with the blockchain state.
 
