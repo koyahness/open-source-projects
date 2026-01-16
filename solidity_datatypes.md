@@ -54,15 +54,15 @@ These are provided by the EVM and give information about the blockchain:
 
 ## 4. Visibility Modifiers
 These define who can "see" or call a variable/function.
- * public: Accessible internally and externally. For state variables, Solidity automatically generates a "getter" function.
- * private: Only accessible within the current contract.
- * internal: Like private, but also accessible by contracts that inherit from this one.
- * external: (Functions only) Can only be called from outside the contract.
+ * ***public***: Accessible internally and externally. For state variables, Solidity automatically generates a "getter" function.
+ * ***private***: Only accessible within the current contract.
+ * ***internal***: Like private, but also accessible by contracts that inherit from this one.
+ * ***external***: (Functions only) Can only be called from outside the contract.
 
 ## 5. Constant & Immutable
 Use these to save massive amounts of gas for variables that don't change.
- * constant: Value must be hardcoded at compile time. It is replaced in the bytecode and uses zero storage slots.
- * immutable: Value can be set once inside the constructor, then it never changes. Also uses zero storage slots.
+ * ***constant***: Value must be hardcoded at compile time. It is replaced in the bytecode and uses zero storage slots.
+ * ***immutable***: Value can be set once inside the constructor, then it never changes. Also uses zero storage slots.
 <!-- end list -->
 
 ```
@@ -80,14 +80,14 @@ constructor() {
 
 Value types are stored directly in the stack (a 1024-deep list of 32-byte words) during execution.
 Integers: Precision and Overflow
- * Step Sizes: You can use uint8 up to uint256 in increments of 8.
- * Gas Trap: Using uint8 instead of uint256 for a single state variable actually costs more gas. The EVM operates on 32-byte words; to process a uint8, it must first mask the other 24 bytes with zeros. Only use smaller types when packing them into a struct or array.
- * Unsigned (uint) vs Signed (int): int uses "Two’s Complement" representation, meaning the first bit indicates the sign.
+ * ***Step Sizes***: You can use uint8 up to uint256 in increments of 8.
+ * ***Gas Trap***: Using uint8 instead of uint256 for a single state variable actually costs more gas. The EVM operates on 32-byte words; to process a uint8, it must first mask the other 24 bytes with zeros. Only use smaller types when packing them into a struct or array.
+ * ***Unsigned (uint)*** vs ***Signed (int)***: int uses "Two’s Complement" representation, meaning the first bit indicates the sign.
 Addresses: The Power of call
- * Address vs. Address Payable: address is a 20-byte hex value. address payable is the same but allows access to .transfer(amount) and .send(amount).
- * Conversion: You can convert an address to payable using payable(addr).
- * Members: * <address>.balance: Returns the balance in Wei (10^{18} Wei = 1 ETH).
-   * <address>.code: Returns the smart contract bytecode at that address (empty for wallets/EOAs).
+ * ***Address*** vs. ***Address Payable***: address is a 20-byte hex value. address payable is the same but allows access to .transfer(amount) and .send(amount).
+ * ***Conversion***: You can convert an address to payable using payable(addr).
+ * ***Members***: * <address>.balance: Returns the balance in Wei (10^{18} Wei = 1 ETH).
+ * * ***<address>.code***: Returns the smart contract bytecode at that address (empty for wallets/EOAs).
 Fixed Bytes (bytes1 to bytes32)
  * If you know the length of your data, always use fixed bytes over string or dynamic bytes.
  * bytes32 is the most gas-efficient because it perfectly fills one EVM word/slot.
@@ -96,12 +96,12 @@ Fixed Bytes (bytes1 to bytes32)
 
 Reference types are too large to fit in the 32-byte stack, so they are stored in Memory or Storage.
 Mappings: The "Virtual" Hash Table
- * No Iteration: You cannot do map.length or loop through a mapping. If you need to track keys, you must store them in a separate address[] array.
- * Infinite Initialization: Technically, every possible key in a mapping "exists" and is initialized to the default value (0, false, etc.).
- * Storage Only: Mappings can only exist in storage. You cannot create a mapping inside a function (in memory).
+ * ***No Iteration***: You cannot do map.length or loop through a mapping. If you need to track keys, you must store them in a separate address[] array.
+ * ***Infinite Initialization***: Technically, every possible key in a mapping "exists" and is initialized to the default value (0, false, etc.).
+ * ***Storage Only***: Mappings can only exist in storage. You cannot create a mapping inside a function (in memory).
 Arrays: Fixed vs. Dynamic
- * delete behavior: Calling delete on an array element (e.g., delete arr[1]) does not change the array length. It simply resets that specific element to its default value (0).
- * Member .push(): Only available for dynamic arrays in storage. It returns a reference to the new element.
+ * ***delete behavior***: Calling delete on an array element (e.g., delete arr[1]) does not change the array length. It simply resets that specific element to its default value (0).
+ * ***Member .push()***: Only available for dynamic arrays in storage. It returns a reference to the new element.
 
 ## 3. Global Variables & The Environment
 
