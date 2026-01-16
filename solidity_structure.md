@@ -35,11 +35,11 @@ A contract is similar to a "Class" in object-oriented programming. Inside the co
 
 These are stored on-chain in Storage.
 
- * ###Constants###: uint256 public constant MAX_SUPPLY = 1000;
+ * ***Constants***: uint256 public constant MAX_SUPPLY = 1000;
    
- * ###Immutables###: address public immutable owner;
+ * ***Immutables***: address public immutable owner;
 
- * ###State Variables###: uint256 public count;
+ * ***State Variables***: uint256 public count;
    
 ### B. Type Definitions & Data Structures
 
