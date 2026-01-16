@@ -55,17 +55,17 @@ These are stored on-chain in Storage.
    
 To make code easier for auditors to read, functions should be grouped by their "visibility" and "nature":
 
- * Constructor: Runs only once during deployment.
+ * ***Constructor***: Runs only once during deployment.
    
- * Receive/Fallback: Special functions for handling plain Ether transfers.
+ * ***Receive/Fallback***: Special functions for handling plain Ether transfers.
    
- * External: Functions called only from outside the contract.
+ * ***External***: Functions called only from outside the contract.
    
- * Public: Can be called internally and externally.
+ * ***Public***: Can be called internally and externally.
    
- * Internal: Only available to this contract and those inheriting from it.
+ * ***Internal***: Only available to this contract and those inheriting from it.
    
- * Private: Only available to this specific contract.
+ * ***Private***: Only available to this specific contract.
 
 <!-- end list -->
 
