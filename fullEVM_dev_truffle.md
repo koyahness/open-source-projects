@@ -6,9 +6,9 @@ Truffle handles contract compilation, linking, deployment, and binary management
 
 Here is a step-by-step guide showing the directory structures and CLI commands for a full Truffle DApp.
 
-1. ⚙️ Setup and Prerequisites (CLI)
+## 1. ⚙️ Setup and Prerequisites (CLI)
 
-1.1 Global Prerequisites
+### 1.1 Global Prerequisites
 
 Ensure you have Node.js and npm/yarn installed.
 
@@ -17,7 +17,7 @@ Ensure you have Node.js and npm/yarn installed.
 | npm install -g truffle | Installs the Truffle CLI globally. |
 | npm install -g ganache | Installs Ganache CLI (a local EVM node for testing). |
 
-1.2 Create the Project Structure
+### 1.2 Create the Project Structure
 
 Truffle uses a specific directory layout. We will initialize the main project directory with the necessary folders.
 
@@ -99,7 +99,7 @@ Open truffle-config.js and configure the networks you plan to use (e.g., local G
 
 truffle-config.js (Snippet):
 
-```
+```js
 module.exports = {
   // ... other config ...
   networks: {
@@ -169,7 +169,7 @@ We will manually copy this file to the frontend source directory:
 
 In your frontend code (e.g., client/src/App.js), you use the Web3 library (web3) to load the contract.
 
-```
+```js
 // client/src/App.js (Snippet)
 import Web3 from 'web3';
 import MyContract from './MyContract.json'; // The copied artifact
@@ -256,7 +256,7 @@ You must modify your configuration file to use the dotenv package to access the 
 
 truffle-config.js (Required Modifications):
 
-```
+```js
 // Load environment variables from .env file
 require('dotenv').config();
 const HDWalletProvider = require('@truffle/hdwallet-provider');
