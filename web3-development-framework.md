@@ -32,8 +32,8 @@ For developers who prefer Python over JavaScript, Brownie is the go-to framework
 
 ## 4. Truffle (The Original)
 Truffle was the first major development framework for Ethereum. While many developers have migrated to Foundry or Hardhat, Truffle remains a significant part of blockchain history and is still used in many legacy projects.
- * Stack: JavaScript/TypeScript.
- * Suite: Often paired with Ganache (a personal blockchain for testing) and Drizzle (frontend libraries).
+ * ***Stack***: JavaScript/TypeScript.
+ * ***Suite***: Often paired with Ganache (a personal blockchain for testing) and Drizzle (frontend libraries).
  * Why use it? Deep integration with ConsenSys products and a long-standing reputation for enterprise-level support.
 Framework Comparison at a Glance
 
@@ -41,10 +41,10 @@ Framework Comparison at a Glance
 
 | Feature | Foundry | Hardhat | Brownie |
 |---|---|---|---|
-| Language | Rust / Solidity | JavaScript / TS | Python |
-| Testing Lang | Solidity | JS / TS | Python |
-| Speed | Extremely Fast | Moderate | Moderate |
-| Debugging | High (Traces) | High (Console.log) | Moderate |
+| ***Language*** | Rust / Solidity | JavaScript / TS | Python |
+| ***Testing Lang*** | Solidity | JS / TS | Python |
+| ***Speed*** | Extremely Fast | Moderate | Moderate |
+| ***Debugging*** | High (Traces) | High (Console.log) | Moderate |
 
 
 Which one should you choose?
