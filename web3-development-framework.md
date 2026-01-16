@@ -10,9 +10,9 @@ Here are the most prominent EVM development frameworks used by developers today:
 
 ## 1. Foundry (Current Industry Favorite)
 Foundry is a modular toolkit written in Rust. It has quickly become the preferred choice for professional developers because it allows you to write your tests in Solidity rather than JavaScript or TypeScript.
- * Forge: The core component used for building, testing, and deploying.
- * Cast: A command-line tool for interacting with smart contracts and sending transactions.
- * Anvil: A local Ethereum node (similar to Ganache).
+ * ***Forge***: The core component used for building, testing, and deploying.
+ * ***Cast***: A command-line tool for interacting with smart contracts and sending transactions.
+ * ***Anvil***: A local Ethereum node (similar to Ganache).
  * Why use it? It is incredibly fast, and since your tests are in Solidity, you don't have to switch languages between writing and testing.
 
    
