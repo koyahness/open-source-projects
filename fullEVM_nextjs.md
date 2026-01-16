@@ -8,7 +8,7 @@ The most effective structure often involves a monorepo-like setup where your Nex
 
 A recommended structure separates the blockchain logic from the application logic.
 
-```
+```directory
 my-fullstack-dapp/
 ├── **contracts/** <-- Smart Contract Project (Hardhat/Foundry)
 │   ├── contracts/             # Your Solidity files (*.sol)
@@ -45,13 +45,13 @@ my-fullstack-dapp/
 A. Smart Contract Development (contracts/)
 
  * ***Initialize Contracts Project***: Use Hardhat or Foundry inside the contracts/ directory.
-   ```
+   ```commandline
    npx hardhat
    ```
 
  * ***Write and Test***: Develop your Solidity code (e.g., an ERC-20 or NFT contract) and write comprehensive tests.
  * ***Compile & Deploy***: Compile the contracts and write deployment scripts.
-   ```
+   ```commandline
    npx hardhat compile
    npx hardhat run scripts/deploy.js --network sepolia
    ```
@@ -62,19 +62,19 @@ A. Smart Contract Development (contracts/)
    
 B. Next.js Frontend Setup (dapp/)
  * ***Initialize Next.js***: Create the Next.js app inside the dapp/ directory.
-```unix
+```commandline
 npx create-next-app@latest dapp --ts --app
 cd dapp
 ```
 
  * Install Web3 Dependencies:
-   ```
+   ```javascript
    npm install wagmi viem @rainbow-me/rainbowkit @tanstack/react-query
    ```
 
  * Configure Wagmi/Viem (dapp/src/web3/config.ts): Define the chains and providers for your dApp. You must obtain a WalletConnect Project ID and set it in your .env.local file.
 
-```
+```javascript
    // dapp/src/web3/config.ts
 import { createConfig, http } from 'wagmi';
 import { mainnet, sepolia } from 'wagmi/chains';
