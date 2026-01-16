@@ -79,7 +79,7 @@ Truffle uses numbered JavaScript files in the migrations/ directory to manage de
 
 migrations/2_deploy_contracts.js (Snippet):
 
-```
+```js
 // migrations/2_deploy_contracts.js
 const MyContract = artifacts.require("MyContract");
 
