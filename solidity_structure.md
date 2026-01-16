@@ -43,13 +43,13 @@ These are stored on-chain in Storage.
    
 ### B. Type Definitions & Data Structures
 
- * ###Events###: For off-chain logging.
+ * ***Events***: For off-chain logging.
    
- * Errors: For gas-efficient reverts (preferred over require strings in 0.8.4+)
+ * ***Errors***: For gas-efficient reverts (preferred over require strings in 0.8.4+)
    
- * Structs: Custom data groupings.
+ * ***Structs***: Custom data groupings.
    
- * Enums: Custom discrete types (e.g., Status { Pending, Shipped, Delivered }).
+ * ***Enums***: Custom discrete types (e.g., Status { Pending, Shipped, Delivered }).
 
 ## 4. Function Order (The "Style Guide")
    
