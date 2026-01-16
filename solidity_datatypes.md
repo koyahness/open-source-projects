@@ -27,14 +27,14 @@ Enums
 ## 2. Reference Types
 Reference types do not store the value directly. Instead, they store a "pointer" to the location of the data. You must explicitly state the Data Location (storage, memory, or calldata) for these types.
 Arrays
- * Fixed-size: uint[5] myFixedArray;
- * Dynamic: uint[] myDynamicArray;
- * Members: .length, .push(), .pop().
+ * ***Fixed-size***: uint[5] myFixedArray;
+ * ***Dynamic***: uint[] myDynamicArray;
+ * ***Members***: .length, .push(), .pop().
 Structs
  * Custom defined groupings of different types.
 Mappings
- * Syntax: mapping(KeyType => ValueType)
- * Behavior: Think of it as a hash table. You cannot iterate over a mapping or get a list of its keys; you must know the key to get the value.
+ * ***Syntax***: mapping(KeyType => ValueType)
+ * ***Behavior***: Think of it as a hash table. You cannot iterate over a mapping or get a list of its keys; you must know the key to get the value.
 
 ## 3. Variable Scopes
 Where a variable is declared determines its lifetime, cost, and visibility.
