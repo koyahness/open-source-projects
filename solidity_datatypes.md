@@ -87,7 +87,7 @@ Addresses: The Power of call
  * ***Address*** vs. ***Address Payable***: address is a 20-byte hex value. address payable is the same but allows access to .transfer(amount) and .send(amount).
  * ***Conversion***: You can convert an address to payable using payable(addr).
  * ***Members***: * <address>.balance: Returns the balance in Wei (10^{18} Wei = 1 ETH).
- * ***<address>.code***: Returns the smart contract bytecode at that address (empty for wallets/EOAs).
+ * ***address.code***: Returns the smart contract bytecode at that address (empty for wallets/EOAs).
 Fixed Bytes (bytes1 to bytes32)
  * If you know the length of your data, always use fixed bytes over string or dynamic bytes.
  * bytes32 is the most gas-efficient because it perfectly fills one EVM word/slot.
@@ -101,7 +101,7 @@ Mappings: The "Virtual" Hash Table
  * ***Storage Only***: Mappings can only exist in storage. You cannot create a mapping inside a function (in memory).
 Arrays: Fixed vs. Dynamic
  * ***delete behavior***: Calling delete on an array element (e.g., delete arr[1]) does not change the array length. It simply resets that specific element to its default value (0).
- * ***Member .push()***: Only available for dynamic arrays in storage. It returns a reference to the new element.
+ * ***Member.push()***: Only available for dynamic arrays in storage. It returns a reference to the new element.
 
 ## 3. Global Variables & The Environment
 
