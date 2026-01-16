@@ -97,7 +97,7 @@ You write your contract logic inside contracts/src/MyContract.sol.
 Unlike Hardhat, Foundry deployment scripts are usually written in Solidity in the script/ folder.
 contracts/script/Deploy.s.sol (Simplified Snippet):
 
-```
+```solidity
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.18;
 import {Script} from "forge-std/Script.sol";
@@ -152,7 +152,7 @@ cp contracts/out/MyContract.sol/MyContract.json frontend/src/MyContract.json
 
 Use the Ethers.js library (installed in Step 1.2) to create a contract instance using the ABI and the deployed address.
 
-```
+```js
 // Example Frontend JS (e.g., App.js)
 import abiJson from './MyContract.json'; // The copied ABI file
 import { ethers } from 'ethers';
