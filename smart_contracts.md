@@ -74,4 +74,6 @@ Examples include:
 *   **DeFi:** Protocols for lending, borrowing, and saving are all smart contracts that manage user funds according to coded rules.
 *   **Decentralized Exchanges (DEXs):** These trading platforms are smart contracts that allow users to swap digital assets directly without a central intermediary.
 
-To truly appreciate these use cases, we must first understand the environment where these contracts live. The next lesson will explore the mechanics of the blockchain itself—the transparent, immutable, and decentralized system that makes smart contracts possible.
+To truly appreciate these use cases, we must first understand the environment where these contracts live.
+
+The next lesson will explore the mechanics of the blockchain itself—the transparent, immutable, and decentralized system that makes smart contracts possible.
