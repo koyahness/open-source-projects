@@ -31,7 +31,7 @@ import "./MyLibrary.sol";
    
 A contract is similar to a "Class" in object-oriented programming. Inside the contract curly braces, the components should ideally follow this order for readability:
 
-A. State Variables
+### A. State Variables
 
 These are stored on-chain in Storage.
 
@@ -41,7 +41,7 @@ These are stored on-chain in Storage.
 
  * State Variables: uint256 public count;
    
-B. Type Definitions & Data Structures
+### B. Type Definitions & Data Structures
 
  * Events: For off-chain logging.
    
@@ -102,6 +102,7 @@ Solidity supports multiple inheritance. When a contract inherits from others, th
  * Rule: List parents from "most base-like" to "most derived."
  * Keyword: Use is to inherit.
 <!-- end list -->
+
 contract MyContract is Context, Ownable, ERC20 {
     // Logic here...
 }
