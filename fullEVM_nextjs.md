@@ -83,7 +83,7 @@ import { mainnet, sepolia } from 'wagmi/chains';
 
  * Create Web3 Provider Wrapper (dapp/app/providers.tsx): This is a Client Component that wraps your application with the necessary context for Wagmi and RainbowKit.
 
-```
+```javascript
    // dapp/app/providers.tsx - MUST include 'use client'
 'use client'; 
 import { WagmiProvider } from 'wagmi';
