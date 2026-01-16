@@ -6,9 +6,9 @@ Solidity files follow a specific, rigid hierarchy. Understanding this structure 
    
 Every Solidity file must start with two specific lines that tell the compiler how to treat the code.
 
- * SPDX License Identifier: Machine-readable code that specifies the legal licensing (e.g., MIT, Apache-2.0).
+ * ***SPDX License Identifier***: Machine-readable code that specifies the legal licensing (e.g., MIT, Apache-2.0).
    
- * Pragma Directive: Tells the compiler which version of Solidity to use. Using ^0.8.0 means "any version from 0.8.0 up to (but not including) 0.9.0."
+ * ***Pragma Directive***: Tells the compiler which version of Solidity to use. Using ^0.8.0 means "any version from 0.8.0 up to (but not including) 0.9.0."
 
 <!-- end list -->
 ```
