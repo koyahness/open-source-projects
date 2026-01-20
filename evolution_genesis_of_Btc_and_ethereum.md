@@ -30,7 +30,7 @@ Bitcoin is secured by Proof-of-Work (PoW), a computationally intensive process (
  * Institutionalization (2020s): Major investment from corporations (like MicroStrategy and Tesla) and the approval of the first US-based Bitcoin ETFs (Exchange-Traded Funds) marked its transition from a niche technology to a recognized institutional asset class.
 
 ## 2. Ethereum: The World's Programmable Blockchain
-Ethereum expanded the scope of blockchain technology beyond currency, turning it into a general-purpose, decentralized computing platform.
+Ethereum expanded the scope of blockchain technology beyond just currency, turning it into a general-purpose, decentralized computing platform.
 
 
 ### Genesis (2013–2015)
