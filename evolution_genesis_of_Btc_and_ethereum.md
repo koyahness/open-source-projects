@@ -1,6 +1,6 @@
 # The Genesis and Evolution of Bitcoin and Ethereum
 
-The history of Bitcoin and Ethereum marks the two fundamental phases of blockchain technology: Bitcoin as the original decentralized currency, and Ethereum as the platform for decentralized applications (dApps) and smart contracts.
+The history of Bitcoin and Ethereum marks the two fundamental phases of blockchain technology: Bitcoin as the original decentralized currency, and Ethereum as the platform for decentralized applications (dApps) and smart contracts (programmable money).
 
 ## 1. Bitcoin: A Peer-to-Peer Electronic Cash System
 Bitcoin was born directly out of the 2008 financial crisis, offering a radical, trust-less alternative to the centralized banking system.
