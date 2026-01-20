@@ -9,7 +9,7 @@ Here is a step-by-step guide with the necessary code steps to get the project ru
 
 The fastest way to start is by using the official Base/OnchainKit Mini App template, which provides all the necessary boilerplate for Base and Farcaster integration (built on Next.js/React).
 
-Code Step 1.1: Create Project
+## Code Step 1.1: Create Project
 
 Open your terminal and run the following command to bootstrap your new Mini App:
 
@@ -19,7 +19,7 @@ npx create-onchain@latest --mini
 
 When prompted, name your project (e.g., base-calculator-mini-app) and select your preferred language/package manager (TypeScript/pnpm is common).
 
-Code Step 1.2: Install Dependencies
+## Code Step 1.2: Install Dependencies
 
 Navigate into your new project directory and install the necessary packages.
 
