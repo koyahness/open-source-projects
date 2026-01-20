@@ -27,7 +27,7 @@ Bitcoin is secured by Proof-of-Work (PoW), a computationally intensive process (
  * The Halving Events (2012, 2016, 2020, etc.): Approximately every four years, the reward miners receive for creating a new block is cut in half. This deflationary mechanism is central to Bitcoin's economic model.
  * Mt. Gox Collapse (2014): The collapse of the largest crypto exchange highlighted security risks and led to a prolonged bear market, yet ultimately strengthened the community's focus on decentralized custody.
  * Scaling Debates (2015–2017): Intense internal disagreements over how to increase transaction capacity led to the creation of the SegWit upgrade (improving block efficiency) and a contentious hard fork, creating Bitcoin Cash (BCH).
- * Institutionalization (2020s): Major investment from corporations (like MicroStrategy and Tesla) and the approval of the first US-based Bitcoin ETFs (Exchange-Traded Funds) marked its transition from a niche technology to a recognized institutional asset class.
+ * Institutionalization (2020s): Major investment from corporations (like MicroStrategy and Tesla) and the approval of the first US-based Bitcoin ETFs (Exchange-Traded Funds) marked its transition from a niche technology to a recognized institutional investment asset class.
 
 ## 2. Ethereum: The World's Programmable Blockchain
 Ethereum expanded the scope of blockchain technology beyond just currency, turning it into a general-purpose, decentralized computing platform.
