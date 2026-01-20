@@ -8,29 +8,29 @@ Here is how each component fits into the overall system, from the back-end/on-ch
 
 # 🛠️ The DApp Architecture Stack
 
-1. Solidity (The Back-End/On-Chain Layer)
+## 1. Solidity (The Back-End/On-Chain Layer)
  * Role: The Smart Contract Language and the Decentralized Back-End Logic.
  * Function: Solidity is used to write the Smart Contracts—the immutable code that lives on the Ethereum Virtual Machine (EVM). It defines the rules, stores the data (e.g., token balances, NFT ownership), and executes the state changes (e.g., transferring tokens).
  * Output: The Solidity code is compiled into Bytecode (which the EVM executes) and the Application Binary Interface (ABI). The ABI is a JSON file that acts as the contract's public "API documentation," telling the front-end exactly what functions are available and what arguments they require.
-2. Javascript / React (The Front-End/Presentation Layer)
+## 2. Javascript / React (The Front-End/Presentation Layer)
  * Role: The User Interface (UI) and the application logic layer.
  * Function: This is the visible application the user interacts with in their browser.
    * React is used to build the interactive and reactive UI components (buttons, forms, displays).
    * Javascript (or more commonly, TypeScript) is the language that runs the logic of the front-end application, handling user input and, crucially, communicating with the blockchain.
-3. Ethers.js / web3.js / viem (The Client/Communication Layer)
+## 3. Ethers.js / web3.js / viem (The Client/Communication Layer)
  * Role: The JSON-RPC Client and Low-Level Interface to the Blockchain.
  * Function: These libraries are the bridge between your Javascript front-end and the remote blockchain node.
    * They take the contract's ABI and allow the front-end to construct function calls that adhere to the JSON-RPC standard.
    * Reading Data: They send read calls (e.g., checking a balance) directly to the blockchain node.
    * Writing Data: They handle transaction calls (e.g., sending tokens), wrapping the data and sending it to the user's wallet for signing.
    * Viem is the modern, lightweight, and type-safe choice, often used as the core engine.
-4. Wagmi (The State Management/Abstraction Layer)
+## 4. Wagmi (The State Management/Abstraction Layer)
  * Role: The React State Management Library and Developer Experience Enhancer.
  * Function: Wagmi sits on top of a client library (like Viem) and provides an essential layer of abstraction for React developers.
    * Wallet Management: Simplifies connecting wallets (MetaMask, WalletConnect) using hooks like useConnect and useAccount.
    * State & Caching: Handles loading, error, and data states automatically, and caches blockchain reads.
    * Hooks: It turns low-level client functions (like viem.readContract()) into reactive React hooks (like wagmi.useReadContract()) that automatically refresh when a new block is mined or the user changes their wallet address.
-The Flow of a DApp Interaction
+## The Flow of a DApp Interaction
 Here is the typical flow of data and control when a user clicks a button to execute a contract function:
  * User Interface (React): A user clicks a button, triggering a Wagmi hook (e.g., useWriteContract).
  * State Abstraction (Wagmi): Wagmi prepares the transaction and checks the user's connection status.
