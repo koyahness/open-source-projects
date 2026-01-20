@@ -1,4 +1,5 @@
-Understanding Common Blockchain Vulnerabilities
+#Understanding Common Blockchain Vulnerabilities
+
 Welcome to this lesson on blockchain vulnerabilities. Here, we will explore the different ways a blockchain network can be attacked. Before diving in, it’s important to clarify a few key points.
 
 First, this lesson covers attacks relevant to both Proof of Work (PoW) and Proof of Stake (PoS) consensus mechanisms. Second, for major blockchains like Bitcoin and Ethereum, most of the attacks we'll discuss are economically infeasible and have never been successfully executed. However, these vulnerabilities pose a real threat to smaller blockchains with fewer network participants, less computational power, or a lower total economic stake.
